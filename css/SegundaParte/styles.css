@@ -1,0 +1,20 @@
+*{
+    font-family: sans-serif;
+    font-weight: 60;
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+.nav{
+    background-color: slateblue;
+}
+
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+}
+.nav__li *{
+    color: white;
+    text-decoration: none;
+}

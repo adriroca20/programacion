@@ -1,0 +1,38 @@
+*{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 200;
+}
+div{
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+div div{
+    position: absolute;
+}
+.contenedor{
+    background-color:deeppink;
+    width: 550px;
+    height: 550px;
+    position: relative;
+    margin: 50px auto;
+    outline: 5px solid red;
+}
+.caja1{
+    background-color: orange;
+    left: 0;
+}
+.caja2{
+    background-color: green;
+    right: 0;
+    bottom: 0;
+}
+.caja3{
+    background-color: lightblue;
+    right: 0;
+}
+.caja4{
+    background-color: yellow;
+    bottom: 0;
+}
