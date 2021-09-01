@@ -2,6 +2,15 @@
     width: 70px;
 }
 
+#botonNavbar{
+    transition: all 0.3s linear;
+}
+#botonNavbar:hover{
+    color: red;
+    transform: rotate(90deg);
+}
+
+
 /* .nav{
     margin: 0 auto;
     padding: 0 50px;

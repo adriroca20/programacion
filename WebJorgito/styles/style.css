@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.contenedor-principal{
+    position: absolute;
+    top: 50%;
+}
