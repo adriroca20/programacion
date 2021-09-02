@@ -5,14 +5,139 @@
     box-sizing: content-box;
 }
 
+
 body{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    min-height: 100vh;
     overflow: hidden;
-    background-color: lightblue;
 }
 
-.contenedor-principal{
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    clip-path: circle(15px at calc(100% - 45px) 35px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .wrapper{
+    clip-path: circle(75%);
+}
+
+#active:checked ~ #boton-nav{
+    background: #fff;
+    color: #000;
+}
+
+#active:checked ~ #boton-nav i::before{
+    content: "\f00d";
+}
+
+#boton-nav{
+    position: absolute;
+    right: 18px;
+    transition: all 0.3s linear;
+    top: 15px;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    color: white;
+    background: black;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+#boton-nav:hover{ 
+    transform: rotate(90deg);
+}
+
+
+ul{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li::before{
+    content: attr(data-text);
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 6em;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 30px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+ul li:hover:before{
+    opacity: .3;
+    letter-spacing: 0px ;
+}
+ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #2196f3;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+
+ul:hover li a{
+    opacity: 0;
+}
+
+ul li a:hover{
+    transform: scale(
+        1.4
+    );
+    z-index: 1000;
+    background-color: #ff3f81;
+    opacity: 1;
+
+}
+
+ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, 
+    rgba(255,255,255,0.8),transparent);
+    transform: skew(35deg);
+    transition: 0s;
+
+}
+
+ul li a:hover:before{
+    left: calc(100%+100px);
+    transition: 0,5s;
+    transition-delay: .2s;
+}
+
+input{
+    display: none;
 }
