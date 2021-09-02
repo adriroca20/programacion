@@ -9,11 +9,12 @@
 body{
     display: flex;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrapper{
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
