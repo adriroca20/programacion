@@ -5,14 +5,11 @@
     box-sizing: content-box;
 }
 
-
 body{
     display: block;
     height: 100vh;
-    overflow: hidden;
-    background-color: black;
+    background: #000;
 }
-
 .wrapper{
     /* position: fixed; */
     position: absolute;
@@ -146,20 +143,15 @@ input{
     display: none;
 }
 
-#particles-js{
+
+.contenedor-titulo-contenido{
     height: 100%;
+    width: 100%;
     position: relative;
 }
 
-.titulo-central{
-    z-index: 3;
+.contenedor-titulo{
+    color: brown;
     position: absolute;
-    top: 40%;
-    text-align: center;
+    top: 90%;
 }
-
-.nombre{
-    letter-spacing: 2px;
-    font-size: 4rem;
-}
-

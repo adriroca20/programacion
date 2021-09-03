@@ -8,28 +8,51 @@
     <title>Jorge Espinosa</title>
     <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style_contacto.css">
 </head>
 
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+        
+        </nav>
     <input type="checkbox" id="active">
-    <!-- <a href="#"> <img src="#" alt="logo"></a> -->
     <label for="active" id="boton-nav"><i class="fa fa-bars"></i></label>
     <div class="wrapper">
         <ul class="menu">
-            <!-- <li data-text="Home"><a href="navbar.html">Home</a></li> -->
             <li data-text="Proyectos"><a href="proyectos.html">Proyectos</a></li>
             <li data-text="Sobre mi"><a href="#">Sobre mi</a></li>
-            <li data-text="Contactar"><a href="#">Contactar</a></li>
-            <!-- <li data-text="Home"><a href="#">Home</a></li>
-            <li data-text="Home"><a href="#">Home</a></li>
-            <li data-text="Home"><a href="#">Home</a></li> -->
+            <li data-text="Contactar"><a href="contacto.html">Contactar</a></li>
         </ul>
     </div>
 </header>
-    <script src="/js/bootstrap.min.js"></script>
+
+<div id="particles-js">
+    <div class="row d-flex p-2">
+        <div class="titulo-central col-lg-12 col-sm-12 justify-content-center align-items-center text-white">
+            <h1 class="nombre">Jorge Espinosa</h1>
+            <h4>Diseñador 3D</h4>
+            <button class="btn btn-primary mt-2" type="button">Contactame</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS.load('particles-js', "particles.json", function() {
+console.log('callback - particles.js config loaded');
+});
+</script>
+
+
+    <script  type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

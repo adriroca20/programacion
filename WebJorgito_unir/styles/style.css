@@ -7,10 +7,9 @@
 
 
 body{
-    display: block;
-    height: 100vh;
-    overflow: hidden;
-    background-color: black;
+    display: flex;
+    min-height: 100vh;
+    /* overflow: hidden; */
 }
 
 .wrapper{
@@ -20,19 +19,18 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background: white;
+    background: black;
     clip-path: circle(15px at calc(100% - 45px) 35px);
     transition: all 0.3s ease-in-out;
 }
 
 #active:checked ~ .wrapper{
-    z-index: 900;
     clip-path: circle(75%);
 }
 
 #active:checked ~ #boton-nav{
-    background: black;
-    color: #2196f3;
+    background: #fff;
+    color: #000;
 }
 
 #active:checked ~ #boton-nav i::before{
@@ -43,8 +41,8 @@ body{
     position: absolute;
     right: 18px;
     transition: all 0.3s linear;
-    top: 3px;
-    z-index: 950;
+    top: 15px;
+    z-index: 2;
     text-align: center;
     line-height: 50px;
     width: 50px;
@@ -74,13 +72,12 @@ ul li{
 }
 
 ul li::before{
-    z-index: 800;
     content: attr(data-text);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: black;
+    color: #fff;
     font-size: 6em;
     font-weight: 700;
     pointer-events: none;
@@ -145,21 +142,3 @@ ul li a:hover:before{
 input{
     display: none;
 }
-
-#particles-js{
-    height: 100%;
-    position: relative;
-}
-
-.titulo-central{
-    z-index: 3;
-    position: absolute;
-    top: 40%;
-    text-align: center;
-}
-
-.nombre{
-    letter-spacing: 2px;
-    font-size: 4rem;
-}
-
