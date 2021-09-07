@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/scroll.css">
     <link rel="stylesheet" href="../styles/bootstrap.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Navbar</a>
+            </div>
+        
+        </nav>
+    <input type="checkbox" id="active">
+    <label for="active" id="boton-nav"><i class="fa fa-bars"></i></label>
+    <div class="wrapper">
+        <ul class="menu">
+            <li data-text="Proyectos"><a href="proyectos.html">Proyectos</a></li>
+            <li data-text="Sobre mi"><a href="aboutMe.html">Sobre mi</a></li>
+            <li data-text="Contactar"><a href="contacto.html">Contactar</a></li>
+        </ul>
+    </div>
+</header>
+
+
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
     <section>
@@ -89,6 +111,7 @@
         
 
     </script>
-    <script src="/js/bootstrap.min.js"></script>
+<script  type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
 </body>
 </html>
