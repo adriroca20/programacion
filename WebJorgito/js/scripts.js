@@ -6,7 +6,7 @@ var typed = new Typed(".typing", {
 });
 
 var typed = new Typed(".typing-2", {
-    strings: ["Diseñador 3D", "Animador","Freelancer"],
+    strings: ["Volleyball", "XXX","XXX"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

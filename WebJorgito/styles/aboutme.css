@@ -10,10 +10,17 @@ body{
 }
 
 .about-content{
-    position: absolute;
+    position: relative;
     display:flex;
     justify-content: center;
-    top: 30%;
+    margin-top: 5%;
+}
+
+.aficiones{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-top: 5%;
 }
 
 #fotoAbout{
