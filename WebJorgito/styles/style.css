@@ -21,15 +21,19 @@ body{
 .titulo-central{
     z-index: 3;
     position: absolute;
-    top: 40%;
+    top: 35%;
     text-align: center;
 }
 
 .nombre{
     letter-spacing: 2px;
-    font-size: 4rem;
+    font-size: 7rem;
 }
 
+.subtitulo{
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
 
  
 .loader-wrapper {

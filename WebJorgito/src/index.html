@@ -18,7 +18,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Navbar</a>
+                <a class="navbar-brand" href="index.html"><img src="../recursos/img/logo.png" alt="logo"
+                        class="w-50"></a>
             </div>
 
         </nav>
@@ -27,8 +28,9 @@
         <div class="wrapper">
             <ul class="menu">
                 <li data-text="Proyectos"><a href="proyectos.html">Proyectos</a></li>
-                <li data-text="Sobre mi"><a href="aboutMe.html">Sobre mi</a></li>
+                <li id="boton-sobre-mi" data-text="Sobre mi"><a href="aboutMe.html">Sobre mi</a></li>
                 <li data-text="Contactar"><a href="contacto.html">Contactar</a></li>
+                <li data-text="Inicio"><a href="./index.html">Inicio</a></li>
             </ul>
         </div>
     </header>
@@ -37,8 +39,8 @@
         <div class="row d-flex p-2">
             <div class="titulo-central col-lg-12 col-sm-12 justify-content-center align-items-center text-white">
                 <h1 class="nombre">Jorge Espinosa</h1>
-                <h4>Diseñador 3D</h4>
-                <button class="btn btn-primary mt-2" type="button">Contactame</button>
+                <h2><span class="subtitulo">Diseñador 3D</span></h2>
+                <a href="../src/contacto.html"><button class="btn btn-primary mt-2">Contactame</button></a>
             </div>
         </div>
 
@@ -65,10 +67,10 @@
     </div>
 
     <script>
-      var loader= document.getElementById("preloader");
-       window.addEventListener("load",function(){
-           loader.style.display="none";
-       });
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -77,12 +79,15 @@
         particlesJS.load('particles-js', "../recursos/particles.json", function () {
             console.log('callback - particles.js config loaded');
         });
-        
+
     </script>
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
 </body>
 
 </html>

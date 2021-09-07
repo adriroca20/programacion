@@ -1,0 +1,19 @@
+{
+    "particles" : {
+        "number":{
+            "value":100
+        },
+        "color":{
+            "value":"#fff"
+        },
+        "shape":{
+            "type":"circle",
+            "image":{
+                "src":"/img/casco_1.png"
+            }
+        },
+        "size":{
+            "value": 12
+        }
+    }
+}
