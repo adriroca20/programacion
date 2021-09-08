@@ -11,6 +11,7 @@
     transition: all 0.3s ease-in-out;
 }
 
+
 #active:checked ~ .wrapper{
     z-index: 900;
     clip-path: circle(75%);
@@ -68,8 +69,6 @@ header ul li::before{
     left: 50%;
     transform: translate(-50%,-50%);
     color: black;
-    font-size: 20em;
-    font-weight: 700;
     pointer-events: none;
     opacity: 0;
     letter-spacing: 30px;
@@ -108,6 +107,7 @@ header ul li a:hover{
     background-color: #ff3f81;
     opacity: 1;
 
+
 }
 
 header ul li a:before{
@@ -139,3 +139,52 @@ footer{
     display: flex;
     top: 20vh;
 }
+
+@media (max-width: 576px) {  
+    header ul li::before{
+        display: none;
+       }
+
+       header ul li a{
+        padding: 20px 30px;
+        margin: 20px 0;
+        font-size: 4vw;
+        width: 45vw;
+    }
+
+#boton-nav{
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 3vw;
+    line-height: 45px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    header ul li::before{
+        font-size: 7vw;
+       font-weight: 700; 
+       }
+       header ul li a{
+        width: 30vw;
+    }
+ }
+
+@media (min-width: 992px) {
+    header ul li::before{
+     font-size: 10vw;
+    font-weight: 700; 
+    }
+
+ }
+
+
+@media (min-width: 1200px) { 
+ 
+}
+
+@media (min-width: 1400px) { 
+
+ }

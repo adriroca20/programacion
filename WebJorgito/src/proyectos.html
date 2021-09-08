@@ -269,11 +269,20 @@
       let progressHeight = (window.pageYOffset / totalHeight) * 100;
       progress.style.height = progressHeight + "%";
     }
-
-
   </script>
+
+<script type="text/javascript">
+  let boton = document.getElementById("boton-nav");
+  let cuerpo= document.body;
+  
+  boton.addEventListener("click", function(){
+      cuerpo.classList.toggle("overflow-hidden");
+  });
+  </script>
+
+  
   <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
