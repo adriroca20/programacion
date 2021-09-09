@@ -145,11 +145,12 @@ footer{
         display: none;
        }
 
-       header ul li a{
-        padding: 20px 30px;
+    header ul li a{
+        padding: 20px 0px;
         margin: 20px 0;
         font-size: 4vw;
         width: 45vw;
+
     }
 
 #boton-nav{
@@ -158,6 +159,10 @@ footer{
     height: 40px;
     font-size: 3vw;
     line-height: 45px;
+    }
+
+    header ul{
+        padding-right: 2rem;
     }
 }
 
@@ -177,7 +182,10 @@ footer{
      font-size: 10vw;
     font-weight: 700; 
     }
-
+    header ul li a{
+        width: 200px;
+        text-align: center;
+    }
  }
 
 
