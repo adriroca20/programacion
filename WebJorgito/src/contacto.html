@@ -21,7 +21,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="../recursos/img/logo.png" alt="logo" class="w-50"></a>
+                <a class="navbar-brand" href="index.html"><img src="../recursos/img/logo.png" alt="logo"
+                        class="w-50"></a>
             </div>
 
         </nav>
@@ -35,90 +36,107 @@
                 <li data-text="Inicio"><a href="./index.html">Inicio</a></li>
             </ul>
         </div>
-        
+
     </header>
 
 
-<div class="container-fluid">
-    <div class="row py-5">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-sm-12">
-            <div class="texto-contacto">
-                <h2><b>Contactame</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque facere repudiandae quibusdam, rerum soluta expedita officia officiis! Cumque, cupiditate?</p>
-            </div>
-            <div class="imagenes-datos d-flex align-items-start">
-                <i class="fas fa-male fs-1 py-3"></i>
-                <div class="datos d-block px-4">
-                    <h4><b>Nombre</b></h4>
-                    <p>Jorge Espinosa</p>
+    <div class="container-fluid">
+        <div class="row py-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-sm-12">
+                <div class="texto-contacto">
+                    <h2><b>Contactame</b></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque facere repudiandae
+                        quibusdam, rerum soluta expedita officia officiis! Cumque, cupiditate?</p>
+                </div>
+                <div class="imagenes-datos d-flex align-items-start">
+                    <i class="fas fa-male fs-1 py-3"></i>
+                    <div class="datos d-block px-4">
+                        <h4><b>Nombre</b></h4>
+                        <p>Jorge Espinosa</p>
+                    </div>
+                </div>
+                <div class="imagenes-datos d-flex align-items-start">
+                    <i class="fas fa-mobile fs-1 py-3"></i>
+                    <div class="datos d-block px-4">
+                        <h4><b>Telefono</b></h4>
+                        <p>XXX XXX XXX</p>
+                    </div>
+                </div>
+                <div class="imagenes-datos d-flex align-items-start">
+                    <i class="fas fa-envelope fs-1 py-3"></i>
+                    <div class="datos d-block px-4">
+                        <h4><b>Email</b></h4>
+                        <p>jorgeespinosa@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="imagenes-datos d-flex align-items-start">
-                <i class="fas fa-mobile fs-1 py-3"></i>
-                <div class="datos d-block px-4">
-                    <h4><b>Telefono</b></h4>
-                    <p>XXX XXX XXX</p>
-                </div>
-            </div>
-            <div class="imagenes-datos d-flex align-items-start">
-                <i class="fas fa-envelope fs-1 py-3"></i>
-                <div class="datos d-block px-4">
-                    <h4><b>Email</b></h4>
-                    <p>jorgeespinosa@gmail.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-5 col-sm-12">
-            <h2><b>Escribeme</b></h2>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="col-lg-5 col-sm-12">
+                <h2><b>Escribeme</b></h2>
+                <form action="https://formsubmit.co/44e166eedb650c8f9d985218624426f2" method="POST">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" class="form-control" name="name" id="" placeholder="Nombre">
+                                <small id="emailHelpId" class="form-text text-muted">Nombre</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" class="form-control" name="" id="" placeholder="Apellidos">
+                                <small id="emailHelpId" class="form-text text-muted">Apellidos</small>
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" name="" id="" placeholder="Nombre">
-                        <small id="emailHelpId" class="form-text text-muted">Nombre</small>
-                      </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" name="" id="" placeholder="Apellidos">
-                        <small id="emailHelpId" class="form-text text-muted">Apellidos</small>
-                      </div>
-                </div>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        <small id="emailHelpId" class="form-text text-muted">Email</small>
+                    </div>
+
+                    <div class="form-group mensaje py-2">
+                        <textarea class="textarea w-100" name="messaje" id="" rows="6"
+                            placeholder="Mensaje"></textarea>
+                        <br>
+                        <small id="mensaje" class="form-text text-muted">Mensaje</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                    <input type="hidden" class="form-control" name="_subject" value="Email prueba"  id="">
+                    <input type="hidden" class="form-control" name="_next" value="index.html"  id="">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
             </div>
-            <div class="form-group">
-                <!-- <label for="email"> Email</label> -->
-                <input type="email" class="form-control" name="" id="email" placeholder="Email">
-                <small id="emailHelpId" class="form-text text-muted">Email</small>
-              </div>
-
-              <div class="form-group mensaje py-2">
-                <textarea class="textarea w-100"  name="contenido-mensaje" id="" rows="6"  placeholder="Mensaje"></textarea>
-                <br>
-                <small id="mensaje" class="form-text text-muted">Mensaje</small>
-              </div>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-
-              
-            
+            <div class="col-lg-1"></div>
         </div>
-        <div class="col-lg-1"></div>
     </div>
-</div>
 
-<footer class="container d-flex justify-content-between ">
-   <h4 class="text-muted">&copy; 2021 Company, Inc</h4>
-    <div class="redes me-2">
-        <a href="#"><i class="fa fa-twitter fs-2" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-youtube fs-2" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram fs-2" aria-hidden="true"></i></a>
-    </div>
-  </footer>
-  
+    <footer class="container d-flex justify-content-between ">
+        <h4 class="text-muted">&copy; 2021 Company, Inc</h4>
+        <div class="redes me-2">
+            <a href="#"><i class="fa fa-twitter fs-2" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube fs-2" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram fs-2" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        let boton = document.getElementById("boton-nav");
+        let cuerpo = document.body;
+
+        boton.addEventListener("click", function () {
+            cuerpo.classList.toggle("overflow-hidden");
+        });
+    </script>
+
+
     <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

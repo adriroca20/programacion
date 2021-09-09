@@ -19,6 +19,7 @@ body{
 }
 
 .titulo-central{
+  padding-right: 0;
     z-index: 3;
     position: absolute;
     top: 35%;
@@ -26,13 +27,14 @@ body{
 }
 
 .nombre{
+  
     letter-spacing: 2px;
-    font-size: 7rem;
+    font-size: 7vw;
 }
 
 .subtitulo{
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 4vw;
 }
 
  
