@@ -42,7 +42,7 @@
         <h1 class="display-4 fw-normal">Proyectos</h1>
         <p class="lead fw-normal">En este apartado podras encontrar algunos de los proyectos en los que he estado
           trabajando</p>
-        <a class="btn btn-outline-secondary" href="../src/contacto.html">Contactar</a>
+        <a class="btn btn-primary" href="../src/contacto.html">Contactar</a>
       </div>
     </div>
 
@@ -76,9 +76,10 @@
               </div>
 
               <div class="card-body">
-                <p class="card-text text-black">Aqui se puede escribir una pequeña descripción.</p>
-                <div class="position-absolute start-50 translate-middle mt-3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                <p class="card-text text-black d-inline">Aqui se puede escribir una pequeña descripción.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver">Ver</button>
                 </div>
               </div>
             </div>
@@ -108,9 +109,10 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text text-black">Aqui se puede escribir una pequeña descripción.</p>
-                <div class="position-absolute start-50 translate-middle mt-3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                <p class="card-text text-black d-inline">Aqui se puede escribir una pequeña descripción.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver">Ver</button>
                 </div>
               </div>
             </div>
@@ -140,9 +142,10 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text text-black">Aqui se puede escribir una pequeña descripción.</p>
-                <div class="position-absolute start-50 translate-middle mt-3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                <p class="card-text text-black d-inline">Aqui se puede escribir una pequeña descripción.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver">Ver</button>
                 </div>
               </div>
             </div>
@@ -172,9 +175,10 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text text-black">Aqui se puede escribir una pequeña descripción.</p>
-                <div class="position-absolute start-50 translate-middle mt-3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                <p class="card-text text-black d-inline">Aqui se puede escribir una pequeña descripción.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver">Ver</button>
                 </div>
               </div>
             </div>
@@ -204,9 +208,10 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text text-black">Aqui se puede escribir una pequeña descripción.</p>
-                <div class="position-absolute start-50 translate-middle mt-3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                <p class="card-text text-black d-inline">Aqui se puede escribir una pequeña descripción.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver">Ver</button>
                 </div>
               </div>
             </div>
@@ -236,9 +241,10 @@
                 </div>
               </div>
               <div class="card-body">
-                <p class="card-text text-black">Aqui se puede escribir una pequeña descripción.</p>
-                <div class="position-absolute start-50 translate-middle mt-3">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                <p class="card-text text-black d-inline">Aqui se puede escribir una pequeña descripción.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver">Ver</button>
                 </div>
               </div>
             </div>
@@ -246,9 +252,10 @@
         </div>
       </div>
     </div>
-
-
-
+    <div class="modal-tuto">
+      <img src="../recursos/foto_about.jpg" alt="imagen" class="full-img">
+      <p class="caption">Holaaaaaaaa</p>
+    </div>
   </main>
 
   <footer class="container d-flex justify-content-between ">
@@ -261,6 +268,8 @@
   </footer>
 
 
+
+
   <script type="text/javascript">
     let progress = document.getElementById("progressbar");
     let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -269,11 +278,45 @@
       let progressHeight = (window.pageYOffset / totalHeight) * 100;
       progress.style.height = progressHeight + "%";
     }
+  </script>
+
+  <script type="text/javascript">
+    let boton = document.getElementById("boton-nav");
+    let cuerpo = document.body;
+
+    boton.addEventListener("click", function () {
+      cuerpo.classList.toggle("overflow-hidden");
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    const botonModal = document.querySelectorAll(".boton-ver");
+    const modal= document.querySelector(".modal-tuto");
+    const imagenModal= document.querySelector(".full-img");
+
+    botonModal.forEach((element) => {
+      element.addEventListener("click", function(){
+      modal.classList.add("open");
+      imagenModal.classList.add("open");
+      document.body.classList.add("overflow-hidden");
+    });
+    });
+
+    modal.addEventListener("click", (e) =>{
+      if(e.target.classList.contains('modal-tuto')){
+        modal.classList.remove("open");
+        imagenModal.classList.remove("open");
+        document.body.classList.remove("overflow-hidden");
+      }
+    });
 
 
   </script>
+
+
   <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

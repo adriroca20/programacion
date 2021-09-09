@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-section{
-    padding: 50px;
-    background-color: black;
-}
-
-section h2{
-    font-size: 2.5em;
-    color: white;
-}
-
-section p{
-    font-size: 1.2em;
-    color: white;
-}
 
 ::-webkit-scrollbar{
     width: 0;
@@ -37,7 +23,7 @@ section p{
     z-index: 1001;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0px;
     width: 10px;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
