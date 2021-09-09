@@ -13,6 +13,11 @@ body{
     overflow: hidden;
 }
 
+.row{
+    --bs-gutter-x:0rem;
+    --bs-gutter-y:0rem;
+}
+
 .about-content{
     position: relative;
     display:flex;
@@ -38,7 +43,7 @@ body{
     width: 200px;
     height: 50px;
     position: relative;
-    margin-top: 10px;
+    margin: 30px auto;
     margin-left: auto;
 }
 
@@ -51,8 +56,10 @@ p{
 }
 
 
-@media (min-width: 576px) {  
-
+@media (max-width: 576px) {  
+    h2{
+        font-size: 9vw;
+    }
 }
 
 

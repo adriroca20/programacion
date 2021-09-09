@@ -18,3 +18,6 @@ var typed2 = new Typed(".typing-3", {
     backSpeed: 60,
     loop: true
 });
+
+
+
