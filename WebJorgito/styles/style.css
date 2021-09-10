@@ -34,7 +34,7 @@ body{
 
 .subtitulo{
   letter-spacing: 1px;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
  .nombre, .subtitulo{
@@ -45,6 +45,8 @@ body{
     -webkit-background-clip: text;
     text-transform: uppercase;
     margin: 10px 0;
+
+    font-family: 'Allerta Stencil', sans-serif;
 } 
 
 
@@ -108,6 +110,8 @@ body{
 
   .title-inner {
     display: inline-block;
+    pointer-events: none;
+    
   }
 
 
