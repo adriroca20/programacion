@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 16px;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -55,6 +56,15 @@ p{
     font-size: 3vw;
 }
 
+<<<<<<< HEAD
+=======
+.carousel-inner img {
+    margin: auto;
+  }
+
+
+
+>>>>>>> 1ba046b20021dafb2d25d65269366cb7908e64c5
 .typing, .typing-2{
     margin-top: 10%;
     -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 10%, #000 80%, rgba(0,0,0,.6) 90%);
@@ -72,6 +82,10 @@ p{
     -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 10%, #000 80%, rgba(0,0,0,.6) 90%);
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
+<<<<<<< HEAD
+=======
+    font-family: 'Allerta Stencil', sans-serif;
+>>>>>>> 1ba046b20021dafb2d25d65269366cb7908e64c5
 }
 
 .descripcion b{

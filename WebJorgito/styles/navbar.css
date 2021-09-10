@@ -1,3 +1,7 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
 
 .wrapper{
     /* position: fixed; */
@@ -86,7 +90,7 @@ header ul li a{
     padding: 30px 50px;
     margin: 20px 0;
     text-decoration: none;
-    background-color: #2196f3;
+    background-color: #2c86be;
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -104,9 +108,10 @@ header ul li a:hover{
         1.4
     );
     z-index: 1000;
-    background-color: #ff3f81;
+    background-color: rgb(218, 33, 88);
     opacity: 1;
-
+    color: #2c86be;
+    font-weight: 800;
 
 }
 
@@ -183,7 +188,11 @@ footer{
     font-weight: 700; 
     }
     header ul li a{
+<<<<<<< HEAD
         width: 200px;
+=======
+        width: 250px;
+>>>>>>> 1ba046b20021dafb2d25d65269366cb7908e64c5
         text-align: center;
     }
  }
