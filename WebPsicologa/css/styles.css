@@ -7,6 +7,8 @@
 }
 
 
+
+
 .intro{
     background: black;
     position: fixed;
@@ -49,15 +51,23 @@
 }
 
 .principal{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100px;
     background: #71837F;
     overflow: hidden;
 }
-
+#sobre-mi{
+    height: 100vh;
+    background-color: blue;
+}
+#contacto{
+    height: 100vh;
+    background-color: darkgoldenrod;
+}
 #servicios{
-    height: 200vw;
+    height: 100vh;
     background-color: red;
+    
 }
 
 button a{
@@ -96,13 +106,14 @@ nav.sticky{
 .imagenPrincipal{
     transform: rotateY(180deg);
     width: 100%;
-   
+    position: relative;
+    top: 40vh;
+    height: 60vh;
 }
 
 .contenedor-principal-datos{
-
-    align-items: center;
-    justify-content: center;
+   position: absolute;
+   top: 30%;
 }
 
 .boton-contactar{
@@ -113,4 +124,20 @@ nav.sticky{
 .titulo, .numero-colegiado{
     color: white;
     font-size: 4vw;
+}
+
+.row{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.botones-swiper{
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
 }
