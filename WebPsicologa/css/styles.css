@@ -7,11 +7,6 @@
 }
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 58c497c336bc006090cd1c1bb225d2c0b6f3e047
 .intro{
     background: black;
     position: fixed;
@@ -56,7 +51,7 @@
 .principal{
     min-height: 90vh;
     width: 100px;
-    background: #71837F;
+    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
     overflow: hidden;
 }
 #sobre-mi{
@@ -68,12 +63,10 @@
     background-color: darkgoldenrod;
 }
 #servicios{
+    position: relative;
     height: 100vh;
-    background-color: red;
-<<<<<<< HEAD
-    
-=======
->>>>>>> 58c497c336bc006090cd1c1bb225d2c0b6f3e047
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(65deg, #000 50%, white 50%);
 }
 
 button a{
@@ -140,15 +133,6 @@ nav.sticky{
     width: 100%;
 }
 
-<<<<<<< HEAD
-.botones-swiper{
-    position: relative;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    z-index: 20;
-}
-=======
 .swiper {
     width: 100%;
     padding-top: 50px;
@@ -167,4 +151,4 @@ nav.sticky{
     display: block;
     width: 100%;
   }
->>>>>>> 58c497c336bc006090cd1c1bb225d2c0b6f3e047
+
