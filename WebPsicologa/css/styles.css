@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    background: #71837F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+}
+
+.intro-text{
+    color: white;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.principal{
+    height: 100vh;
+    background: #71837F;
+    overflow: hidden;
+}
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+
+#sobre-mi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+}
+#contacto{
+    height: 100vh;
+    background-color: darkgoldenrod;
+    overflow: hidden;
+}
+#servicios{
+    position: relative;
+    height: 100vh;
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(65deg, #000 50%, white 50%);
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul li a{
+    letter-spacing: 3px;
+    transition: 0.6s;
+    text-decoration: none;
+    color: black;
+}
+nav{
+    transition: 0.4s;
+    background: white;
+}
+
+nav.sticky{
+    padding: 5px 0px;
+    background: #71837F;
+}
+
+
+.contenedor-principal-datos{
+   position: absolute;
+   top: 50%;
+   transform: translate(0,-50%);
+}
+
+.boton-contactar{
+    background: #fff;
+    border-radius: 20px;
+}
+
+.titulo{
+    /*Hacer resizeable*/
+    color: white;
+    font-size: 4vw;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.numero-colegiado{
+    color: white;
+    font-size: 2vw;
+}
+
+.row{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.card-body{
+    background-color: blanchedalmond;
+}
+
+.card{
+    height: 200px;
+    transition: all .3s ease;
+
+}
+
+.botones{
+    /* Margin responsive */
+    margin-top: 20px;
+}
+.fila-contacto{
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+
+/*Style form contact*/
+
+.textos-form{
+    font-size: 1.5rem;
+}
+
+#wrap{
+    width: 530px;
+    margin: 20px auto 0;
+    height: 1000px;
+}
+
+titulos-form{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+#form-wrap{
+    overflow: hidden;
+    height: 447px;
+    position: relative;
+    top: 0px;
+    transition: all 1s ease-in-out .3s;
+}
+
+#form-wrap:before{
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url(../recursos/ama/before.png);
+    width: 530px;
+    height: 317px;
+}
+
+#form-wrap:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: url(../recursos/ama/after.png);
+    width: 530px;
+    height: 259px;
+}
+
+#form-wrap.hide:after,#form-wrap.hide:before{
+    display: none;
+}
+
+#form-wrap:hover{
+    height: 770px;
+    top: -250px;
+}
+
+/* form{
+    background: white;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 200px;
+    width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-right: 3px;
+    transition: all 1s ease-in-out .3s;
+}
+
+#form-wrap:hover form{
+    height: 530px;
+}
+
+label{
+    margin: 11px 20px 0 0;
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+input[type=text], textarea{
+    font: 14px normal uppercase, arial, serif;
+    color: dimgray;
+    background: none;
+    width: 90%;
+    height: 37px;
+    padding: 0px 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 80px;
+    padding-top: 14px;
+}
+
+textarea:focus, input[type=text]:focus{
+    background: white;
+}
+
+#form-wrap input[type=submit]{
+    
+    position: relative;
+    font-size: 15px;
+    color: gray;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    opacity: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: opacity 0.7s ease-in-out 0s;
+}
+
+#form-wrap:hover input[type=submit]{
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 1.3s;
+} */
+
+
+/*Formulario Whastapp*/
+.formulario {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: rgba(255, 255, 255, 0.97);
+  }
+  
+  .imgLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+  }
+  
+  .formulario__titulo,
+  .formulario__subtitulo,
+  .formulario__parrafo {
+    text-align: center;
+    margin-top: 0;
+  }
+  .formulario__titulo,
+  .formulario__subtitulo {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .formulario__parrafo {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .formulario__input,
+  .formulario__label {
+    display: block;
+    width: 100%;
+    font-size: 1, 3em;
+  }
+  .formulario__input {
+    padding: 10px;
+    background: transparent;
+    /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .formulario__input:focus {
+    /*outline: 1px solid rgba(0,0,0,0.7);*/
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+  }
+  /*.formulario__input:focus + .formulario__label{
+      margin-top: -120px;
+  }*/
+  .formulario__label {
+    padding-left: 15px;
+    /*position: absolute;*/
+    /*margin-top: -78px;*/
+    /*z-index: -20;*/
+    color: rgba(0, 0, 0, 0.7);
+    /*transition: all 0.2s;*/
+    margin: 2px;
+  }
+  .formulario__submit {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    width: 50%;
+    font-size: 1, 3em;
+  }
+  
+  /*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
+  
+  .formulario__input,
+  .formulario__submit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*.fijar {
+      margin-top: -120px;
+  } */
+  
+  /* respuesta del formulario */
+  #respuesta {
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+  }
+  #respuesta.fail {
+    color: red;
+  }
+  #respuesta.send {
+    color: green;
+  }
+
+
+  /*Fondos*/
+  .dot1-princ {
+    height: 300px;
+    width: 300px;
+  }
+.dot2-princ {
+    height: 250px;
+    width: 250px;
+  }
+  .dot3-princ{
+    height: 350px;
+    width: 350px;
+  }
+ .dot4-princ {
+    height: 200px;
+    width: 200px;
+  }
+
+  .dot{
+      background-color: #D3C0A7;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      transform: translateX(-120%);
+  }
+  .imagenPrincipal{
+      position: fixed;
+      right: 0;
+      display: block;
+      bottom: 0;
+      height: 70%;
+      transform: rotateY(180deg);
+  }
