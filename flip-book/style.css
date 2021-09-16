@@ -102,3 +102,74 @@ p{
 	transform: rotateY(-180deg);
 	z-index: 3;
 }
+
+@media (max-width: 576px) {  
+    h2{
+        font-size: 9vw;
+    }
+    .descripcion {
+        font-size: 4vw;
+        text-align: center;
+    }
+   .descripcion b{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .descripcion-derecha{
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .descripcion-izquierda{
+        text-align: center;
+        margin-right: 10px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    h2{
+        font-size: 5vw;
+    }
+
+
+ }
+
+@media (min-width: 992px) {
+    #fotoAbout{
+        display: block;
+        width: 100%;
+        margin-top: 70%;
+    }
+
+    #carouselAficiones{
+        margin-top: 40%;
+    }
+
+    h2{
+        font-size: 5vw;
+    }
+
+    .descripcion-derecha{
+        text-align: left;   
+        margin-right: 10px;
+    }
+    .descripcion-izquierda{
+        text-align: right;
+        margin-left: 10px;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    #fotoAbout{
+        display: block;
+        width: 100%;
+        margin-top: 50%;
+    }
+}
+
+@media (min-width: 1400px) { 
+
+ }

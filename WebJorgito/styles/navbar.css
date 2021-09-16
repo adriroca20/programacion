@@ -97,6 +97,7 @@ header ul li a{
     overflow: hidden;
     transition: .5s;
     z-index: 1;
+    font-weight: 900;
 }
 
 header ul:hover li a{
@@ -111,7 +112,7 @@ header ul li a:hover{
     background-color: rgb(218, 33, 88);
     opacity: 1;
     color: #2c86be;
-    font-weight: 800;
+
 
 }
 
@@ -188,11 +189,7 @@ footer{
     font-weight: 700; 
     }
     header ul li a{
-<<<<<<< HEAD
-        width: 200px;
-=======
         width: 250px;
->>>>>>> 1ba046b20021dafb2d25d65269366cb7908e64c5
         text-align: center;
     }
  }

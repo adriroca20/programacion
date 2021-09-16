@@ -44,11 +44,8 @@ body{
     -webkit-background-clip: text;
     text-transform: uppercase;
     margin: 10px 0;
-<<<<<<< HEAD
-=======
 
     font-family: 'Allerta Stencil', sans-serif;
->>>>>>> 1ba046b20021dafb2d25d65269366cb7908e64c5
 } 
 
 
@@ -112,11 +109,8 @@ body{
 
   .title-inner {
     display: inline-block;
-<<<<<<< HEAD
-=======
     pointer-events: none;
     
->>>>>>> 1ba046b20021dafb2d25d65269366cb7908e64c5
   }
 
 

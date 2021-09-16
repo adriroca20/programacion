@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/style-libro.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+  
+  </head>
+  <body>
+    <div class="container">
+    <nav class="nav justify-content-between">
+      <div class="navbar-brand">Logotipo</div>
+      <div class="links d-flex justify-content-evenly">
+        <a class="link" href="#principal">Principal</a>
+        <a class="link" href="#sobre-mi">sobre-mi</a>
+        <a class="link" href="#sevicios">sevicios</a>
+        <a class="link" href="#contacto">contacto</a>
+      </div>
+    </nav>
+  </div>
+
+    <section id="principal">
+
+    </section>
+
+    <section id="sobre-mi">
+      <div class="book">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <div id="cover"><img class="fotos-libro" src="./resources/psicologa.jpg"></div>
+        <div class="flip-book">
+          <div class="flip" id="p1">
+            <div class="back">
+              <img class="fotos-libro" src="./resources/libro2.jpg">
+              <label class="back-btn" for="c1">Back</label>
+            </div>
+            <div class="front">
+              <h2>Apple</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum
+                voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
+                voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
+                maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+              <label class="next-btn" for="c1">Next</label>
+            </div>
+          </div>
+          <div class="flip" id="p2">
+            <div class="back">
+              <img class="fotos-libro ultima-foto" src="./resources/libro3.jpg">
+              <label class="back-btn" for="c2">Back</label>
+            </div>
+            <div class="front">
+              <h2>Pineapple</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum
+                voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
+                voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
+                maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+              <label class="next-btn" for="c2">Next</label>
+            </div>
+          </div>
+    
+          <div class="flip" id="p3">
+            <div class="back">
+              <label class="back-btn" for="c3">Back</label>
+            </div>
+            <div class="front">
+              <h2>Strawberry</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum
+                voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
+                voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
+                maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+              <label class="next-btn" for="c3">Next</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sevicios">
+
+    </section>
+
+    <section id="contacto">
+      
+    </section>
+
+    <div class="container d-flex align-items-center justify-content-center mt-5 mb-5">
+      <button><a href="#principal">Vuelta inicio</a></button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
