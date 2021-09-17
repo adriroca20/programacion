@@ -7,7 +7,18 @@
 // tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
 // tl.fromTo(".contenedor-principal-datos", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
-gsap.to(".dot1-princ", {duration: 1, ease:"bounce.in", x:"20%", y:"30%", delay: 1});
-gsap.to(".dot2-princ", {duration: 1, ease:"bounce.in", x:"300px", y:"0px", delay: 1});
-gsap.to(".dot3-princ", {duration: 1, ease:"bounce.in", x:"200px", y:"450px", delay: 1});
-gsap.to(".dot4-princ", {duration: 1, ease:"bounce.in", x:"800px", y:"500px", delay: 1});
+// gsap.to(".dot1-princ", {duration: 1, ease:"bounce.in", x:"20%", y:"30%", delay: 1});
+// gsap.to(".dot2-princ", {duration: 1, ease:"bounce.in", x:"300px", y:"0px", delay: 1});
+// gsap.to(".dot3-princ", {duration: 1, ease:"bounce.in", x:"200px", y:"450px", delay: 1});
+// gsap.to(".dot4-princ", {duration: 1, ease:"bounce.in", x:"800px", y:"500px", delay: 1});
+
+// var tl3 = new TimelineMax({ paused: true });
+// tl3.to("#contenedor-formulario", 0, { rotation: 360, ease: Power2.easeInOut });
+
+// document.querySelector("#contenedor-formulario").addEventListener("click", doCoolStuff);
+
+// function doCoolStuff() {
+//   if (!tl3.isActive()) {
+//     tl3.play(0);
+//   }
+// }

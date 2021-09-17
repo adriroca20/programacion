@@ -11,12 +11,12 @@
     justify-content: center;  
 }
 #cover{
-	width:500px;
-	height:700px;
+	width:30vw;
+	height:70vh;
 }
 .flip-book{
-	width:500px;
-	height:700px;
+	width:30vw;
+	height:70vh;
 	position: relative;
 	perspective: 1500px;
 }
@@ -34,7 +34,7 @@
 	color: #000;
 }
 .texto-libro{
-	font-size: 2vw;
+	font-size: 1.4vw;
 	line-height: 40px;
 }
 .front{

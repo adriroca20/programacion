@@ -8,7 +8,7 @@
     />
 
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Link Swiper's CSS -->
     <link
@@ -16,209 +16,47 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
-    <!-- Demo styles -->
-    <style>
-     *{
-       margin: 0;
-       padding: 0;
-       border: 0;
-       outline: none;
-     }
-     body{
-       background-color: white;
-       color: black;
-     }
-
-.textos-form{
-    font-size: 1.5rem;
-}
-
-#wrap{
-  background-color: black;
-    width: 530px;
-    margin: 20px auto 0;
-    height: 1000px;
-}
-
-h1{
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}
-
-#form-wrap{
-    overflow: hidden;
-    height: 447px;
-    position: relative;
-    top: 0px;
-    transition: all 1s ease-in-out .3s;
-}
-
-#form-wrap:before{
-    content: "";
-    position: absolute;
-    bottom: 128px;
-    left: 0px;
-    background: url(../recursos/ama/before.png);
-    width: 530px;
-    height: 317px;
-}
-
-#form-wrap:after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    background: url(../recursos/ama/after.png);
-    width: 530px;
-    height: 259px;
-}
-
-#form-wrap.hide:after,#form-wrap.hide:before{
-    display: none;
-}
-
-#form-wrap:hover{
-    height: 777px;
-    top: -200px;
-}
-
-form{
-    background: white;
-    position: relative;
-    top: 200px;
-    overflow: hidden;
-    height: 200px;
-    width: 400px;
-    margin: 0px auto;
-    padding: 20px;
-    border: 1px solid white;
-    border-right: 3px;
-    transition: all 1s ease-in-out .3s;
-}
-
-#form-wrap:hover form{
-    height: 530px;
-}
-
-label{
-    margin: 11px 20px 0 0;
-    font-size: 15px;
-    color: gray;
-    text-transform: uppercase;
-}
-
-input[type=text], textarea{
-    font: 14px normal uppercase, arial, serif;
-    color: dimgray;
-    background: none;
-    width: 380px;
-    height: 37px;
-    padding: 0px 10px;
-    margin: 0 0 10px 0;
-    border: 1px solid #f8f5f1;
-    border-radius: 5px;
-}
-
-textarea{
-    height: 80px;
-    padding-top: 14px;
-}
-
-textarea:focus, input[type=text]:focus{
-    background: white;
-}
-
-#form-wrap input[type=submit]{
-    position: relative;
-    font-size: 24px;
-    color: gray;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    background: none;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: opacity 0.7s ease-in-out 0s;
-}
-
-#form-wrap:hover input[type=submit]{
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out 1.3s;
-}
-      
-    </style>
   </head>
 
   <body>
-    <!-- <header>
-        <nav class="navbar navbar-expand-md navbar-light" aria-label="Fourth navbar example">
-          <div class="container-fluid ">
-            <a class="navbar-brand" href="#">Expand at md</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
-              aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse justify-content-end" id="navbarPrincipal">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="prueba.html"> Inicio</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#sobre-mi">Sobre mi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header> -->
 
-       <!-- <div class="intro">
-      <div class="intro-text">
-        <h1 class="hide">
-          <span class="text">La psicologia puede ayudarte</span>
-        </h1>
-        <h1 class="hide">
-          <span class="text">La psicologia puede ayudarte</span>
-        </h1>
-        <h1 class="hide">
-          <span class="text">La psicologia puede ayudarte</span>
-        </h1>
+    <style>
+      i{
+        text-align: center;
+        
+      }
+    </style>
+   
+    <div class="text-center texto-sobre px-4">
+      <div class="texto-contacto">
+          <h2><b>Contactame</b></h2>
+
+          <h5>¡Te resolveré cualquier duda!</h3>
+            <br>
       </div>
-    </div>
 
-    <div class="slider"></div> -->
-      
-    <div id="wrap">
-      <h1 class="titulos-form">MANDA UN MENSAJE</h1>
-      <br> <br> <br>
-      <div id="form-wrap">
-      <form>
-        <p class="textos-form">HOLA,</p>
-        <label for="email">Tu mensaje:</label>
-        <textarea name="message" id="message" value="Tu Mensaje"></textarea>
-        <p class="textos-form">BEST,</p>
-        <label for="name">Nombre:</label>
-        <input type="text" name="name" value="" id="name">
+      <button class="btn btn-secondary boton-contacto-whatsapp">
+        <div class="imagenes-datos d-flex align-items-center justify-content-center">
+          <i class="fa fa-whatsapp fs-1" aria-hidden="true"></i>
+          <div class="datos d-block px-4">
+              <h4><b>WhatsApp</b></h4>
+              <p>XXX XXX XXX</p>
+          </div>
+      </div>
+      </button>
+      <button class="btn btn-secondary mt-3 boton-contacto-email">
 
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email">
-
-        <input type="submit" name="submit" id="" value="NOW, I SEND THANKS!">
-      </form>
-    </div>
-    </div>
+    <div class="imagenes-datos d-flex align-items-center justify-content-center">
+      <i class="fas fa-envelope fs-1 py-3"></i>
+      <div class="datos d-block px-4">
+          <h4><b>Nombre</b></h4>
+          <p>Jorge Espinosa Revuelta</p>
+      </div>
+    </button>
+  </div>
 
 
+      <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>

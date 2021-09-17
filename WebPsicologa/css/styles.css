@@ -49,7 +49,7 @@
 }
 
 .principal{
-    height: 100vh;
+    height: 95vh;
     background: #71837F;
     overflow: hidden;
 }
@@ -70,9 +70,9 @@ svg {
     background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
 }
 #contacto{
+    overflow: hidden;
     height: 100vh;
     background-color: darkgoldenrod;
-    overflow: hidden;
 }
 #servicios{
     position: relative;
@@ -175,17 +175,17 @@ nav.sticky{
 #wrap{
     width: 530px;
     margin: 20px auto 0;
-    height: 1000px;
+    height: 100vh;
 }
 
-titulos-form{
+.titulos-form{
     margin-bottom: 20px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
 
-#form-wrap{
+#sobre{
     overflow: hidden;
     height: 447px;
     position: relative;
@@ -193,7 +193,7 @@ titulos-form{
     transition: all 1s ease-in-out .3s;
 }
 
-#form-wrap:before{
+#sobre:before{
     content: "";
     position: absolute;
     bottom: 128px;
@@ -203,7 +203,7 @@ titulos-form{
     height: 317px;
 }
 
-#form-wrap:after{
+#sobre:after{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -213,93 +213,49 @@ titulos-form{
     height: 259px;
 }
 
-#form-wrap.hide:after,#form-wrap.hide:before{
+#sobre.hide:after,#sobre.hide:before{
     display: none;
 }
 
-#form-wrap:hover{
+#sobre:hover{
     height: 770px;
-    top: -250px;
+    top: -90px;
 }
 
-/* form{
-    background: white;
-    position: relative;
-    top: 200px;
-    overflow: hidden;
-    height: 200px;
-    width: 400px;
-    margin: 0px auto;
-    padding: 20px;
-    border: 1px solid white;
-    border-right: 3px;
-    transition: all 1s ease-in-out .3s;
-}
-
-#form-wrap:hover form{
-    height: 530px;
-}
-
-label{
-    margin: 11px 20px 0 0;
-    font-size: 12px;
-    color: gray;
-    text-transform: uppercase;
-}
-
-input[type=text], textarea{
-    font: 14px normal uppercase, arial, serif;
-    color: dimgray;
-    background: none;
-    width: 90%;
-    height: 37px;
-    padding: 0px 10px;
-    margin: 0 0 10px 0;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-textarea{
-    height: 80px;
-    padding-top: 14px;
-}
-
-textarea:focus, input[type=text]:focus{
-    background: white;
-}
-
-#form-wrap input[type=submit]{
-    
-    position: relative;
-    font-size: 15px;
-    color: gray;
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-    opacity: 0;
-    background: none;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: opacity 0.7s ease-in-out 0s;
-}
-
-#form-wrap:hover input[type=submit]{
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out 1.3s;
-} */
-
-
-/*Formulario Whastapp*/
-.formulario {
-    width: 500px;
+.texto-sobre{
+    width:  510px;
     max-width: 100%;
-    margin: auto;
     margin-top: 30px;
     padding: 20px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
     position: relative;
     background: rgba(255, 255, 255, 0.97);
+    transform: translate(10px,0);
+}
+
+.boton-contacto-email, .boton-contacto-whatsapp{
+    width: 300px;
+
+}
+.boton-contacto-email{
+    border-color: rgb(250, 31, 31);
+    color: red;
+}
+.boton-contacto-whatsapp{
+    border-color: #04AA6D;
+    color: green;
+}
+
+/*Formulario Whastapp*/
+.formulario {
+    width: 450px;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: rgba(255, 255, 255, 0.97);
+    transform: translate(0,-10%);
   }
   
   .imgLogo {
@@ -422,10 +378,9 @@ textarea:focus, input[type=text]:focus{
       transform: translateX(-120%);
   }
   .imagenPrincipal{
-      position: fixed;
-      right: 0;
-      display: block;
-      bottom: 0;
-      height: 70%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 90vh;
       transform: rotateY(180deg);
   }
