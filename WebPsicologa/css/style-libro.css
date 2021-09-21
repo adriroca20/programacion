@@ -9,7 +9,14 @@
 	display: flex;
     align-items: center;
     justify-content: center;  
+	transition: all .5s ease-in-out;
+	box-shadow: 7px 8px gray ;
 }
+
+.book:hover{
+	transform: scale(1.03);
+}
+
 #cover{
 	width:30vw;
 	height:70vh;
@@ -82,6 +89,7 @@
 #p3{
 	z-index: 1;
 }
+
 #c1:checked ~ .flip-book #p1{
 	transform: rotateY(-180deg);
 	z-index: 1;

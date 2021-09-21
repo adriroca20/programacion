@@ -95,23 +95,29 @@
       <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#71837F;"></path>
     </svg> -->
 
-    <span class="dot1-princ dot"></span>
+    <!-- <span class="dot1-princ dot"></span>
     <span class="dot2-princ dot"></span>
     <span class="dot3-princ dot"></span>
-    <span class="dot4-princ dot"></span>
+    <span class="dot4-princ dot"></span> -->
 
 
 
 
 
     <div class="container contenedor-principal-datos">
-      <h1 class="titulo">Sonia E.Dnanou</h1>
+      <img src="./recursos/Logo_SoniaEDnanou-02.png" alt="" class="imagen-logo-central">
+      <!-- <h1 class="titulo">Sonia E.Dnanou</h1>
       <h2>Psicofisiología integrativa </h2>
       <p class="numero-colegiado">Numero colegiado</p>
-      <button class="boton-contactar"><a href="#contacto">Contáctame</a></button>
+       -->
+       <br>
+       <!-- <button class="boton-contactar"><a href="#contacto">Contáctame</a></button> -->
+       <!-- <input type="checkbox" id="cb1" class="prueba-boton"/>
+       <label for="cb1" class="label-animada"><a href="#sobre-mi">¡Contáctame!</a></label> -->
+       <div class="boton boton-pantalla-principal from-top">¡Contáctame!</div>
     </div>
-
-    <img class="imagenPrincipal" src="./recursos/imagenPrincipal.png" alt="">
+    
+    <!-- <img class="imagenPrincipal" src="./recursos/imagenPrincipal.png" alt=""> -->
 
   </div>
   <section id="sobre-mi">
@@ -124,7 +130,7 @@
         <div class="flip" id="p1">
           <div class="back">
             <img class="fotos-libro" src="./recursos/psicologa.jpg">
-            <label class="back-btn" for="c1">Back</label>
+            <label class="back-btn" for="c1">Atrás</label>
           </div>
           <div class="front">
             <h2>Apple</h2>
@@ -133,13 +139,13 @@
               voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
               voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
               maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
-            <label class="next-btn" for="c1">Next</label>
+            <label class="next-btn" for="c1">Siguiente</label>
           </div>
         </div>
         <div class="flip" id="p2">
           <div class="back">
             <img class="fotos-libro ultima-foto" src="./recursos/psicologa.jpg">
-            <label class="back-btn" for="c2">Back</label>
+            <label class="back-btn" for="c2">Atrás</label>
           </div>
           <div class="front">
             <h2>Pineapple</h2>
@@ -148,13 +154,14 @@
               voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
               voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
               maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
-            <label class="next-btn" for="c2">Next</label>
+            <label class="next-btn" for="c2">Siguiente</label>
           </div>
         </div>
 
         <div class="flip" id="p3">
           <div class="back">
-            <label class="back-btn" for="c3">Back</label>
+            <img class="fotos-libro ultima-foto" src="./recursos/psicologa.jpg">
+            <label class="back-btn" for="c3">Atrás</label>
           </div>
           <div class="front">
             <h2>Strawberry</h2>
@@ -163,7 +170,22 @@
               voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
               voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
               maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
-            <label class="next-btn" for="c3">Next</label>
+            <label class="next-btn" for="c3">Siguiente</label>
+          </div>
+        </div>
+
+        <div class="flip" id="p4">
+          <div class="back">
+            <label class="back-btn" for="c4">Atrás</label>
+          </div>
+          <div class="front">
+            <h2>Strawberry</h2>
+            <p class="texto-libro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam
+              illum
+              voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
+              voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
+              maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+            <!-- <label class="next-btn" for="c3">Next</label> -->
           </div>
         </div>
       </div>
@@ -187,6 +209,7 @@
           <div class="card">
             <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+              <!-- <h2>Titulo</h2> -->
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
@@ -255,10 +278,11 @@
             </div>
           </div>
         </div>
+        
       </div>
       <div class="botones container d-flex justify-content-center">
-        <button class="boton-contactar me-4"><a class="nav-link" href="#contacto">Contacto</a></button>
-        <button class="boton-contactar ms-4"><a class="nav-link" href="#contacto">Información</a></button>
+        <button class="boton-contactar boton from-top me-4"><a href="#contacto">Contacto</a></button>
+        <button class="boton-contactar boton from-top ms-4"><a href="#contacto">Información</a></button>
 
       </div>
     </div>
@@ -279,9 +303,9 @@
 
 
   <section id="contacto">
-    <div class="row fila-contacto">
-      <div class="col-lg-6">
-        <div id="wrap">
+    <div class="row ">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+
           <!-- <h1 class="titulos-form">MANDA UN MENSAJE</h1> -->
           <br> <br> <br>
           <div id="sobre">
@@ -313,11 +337,9 @@
               </div>
             </button>
           </div>
-          </div>
-        </div>
-
       </div>
-      <div class="col-lg-5 d-flex align-items-center justify-content-center">
+    </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
 
           <form action="" class="formulario">
             <!-- <img src="logo.jpg" class="imgLogo" /> -->
@@ -352,7 +374,8 @@
             <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
           </form>
       </div>
-    </div>
+
+ 
 
   </section>
   <!-- Swiper JS -->

@@ -1,0 +1,17 @@
+Su implantación en Álava se hará de forma gradual, a lo largo de 2022. 
+El campo IDDestinatario pasa a incluirse dentro de destinatarios(del 1 al 100)
+En el campo "Factura emitida por tercero o por destinatario" admite los valores T (factura emitida por tercer@) y D(factura emitida por destinatari@ de la operación)
+El campo ID facturas rectificadas o sustituidas pasa a incluirse dentro de facturas rectificadas o sustituidas (del 1 al 100)
+El campo IDDetalleFactura pasa a incluirse dentro de DetallesFactura(1 a 1000)
+Claves e IDClave(1 a 3) pasa a ser Claves de REGÍMENES DE IVA Y OPERACIONES CON TRASCENDENCIA TRIBUTARIA (1 a 3)
+Exenta pasa a ser Exenta Detalle Exenta(1 a 7, una agrupación de datos por causa de exención) 
+El tipo de desglose va dentro de Desglose a nivel de operacion
+Tipo de desglose: Desglose a nivel de prestación de servicios Desglose a nivel de entrega de bienes 
+El campo DetalleNoExenta (1 a 2)  pasa a incluirse dentro de NO EXENTA (1 a 2)
+Se elimina DesgloseIVA
+El campo DetalleNoSujeta (1 a 2)  pasa a incluirse dentro de NoSujeta(1 a 2)
+El campo DetalleNoExenta (1 a 2)  pasa a incluirse dentro de NoExenta(1 a 2)
+Huellas->HuellasTicketBAI
+Dispositivo->NumSerieDispositivo
+Elimina Persona o entidad desarrolladora
+Firma de la factura-> Firma Electrónica ->DatosFirma->FirmaTBAI

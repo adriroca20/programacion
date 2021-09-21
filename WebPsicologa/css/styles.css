@@ -56,9 +56,26 @@
 
 .principal{
     height: 95vh;
-    background: #71837F;
+    background-image: url("../recursos/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.imagen-logo-central{
+    width: 60%;
+    height: 40%;
+    transition: all .5s ease-in-out;
+}
+.imagen-logo-central:hover{
+    transform: scale(1.1);
+}
+
 svg {
     display: inline-block;
     position: absolute;
@@ -74,11 +91,11 @@ svg {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+    background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%);
 }
 #contacto{
     height: 100vh;
-    background-color: darkgoldenrod;
+    background-color: #CCD4C9;
 }
 
 
@@ -86,10 +103,15 @@ svg {
     position: relative;
     height: 100vh;
     background-color: #013A6B;
-    background-image: -webkit-linear-gradient(65deg, #000 50%, white 50%);
+    background-image: -webkit-linear-gradient(65deg, #71837F 50%, white 50%);
 }
 
 button a{
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+button a:hover{
     text-decoration: none;
     color: black;
     padding: 9px;
@@ -98,6 +120,7 @@ button a{
 a{
     text-decoration: none;
 }
+
 
 header{
     position: sticky;
@@ -127,11 +150,143 @@ nav.sticky{
    position: absolute;
    top: 50%;
    transform: translate(0,-50%);
+   display: block;
 }
 
+/*Animacion botón*/
+/* .prueba-boton {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+     
+        .prueba-boton:checked + .label-animada:after {
+        transform: scale(4.2);
+      } 
+    
+  
+  
+  .label-animada {
+    outline: none;
+    user-select: none;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.04rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    border-radius: .4rem;
+    border: .3rem solid black;
+    background:black;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 0 0 black;
+  }
+  
+  .label-animada::after {
+      color: black;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%; 
+      top: 0;
+      left: 0;
+      transform: scale(0);
+      transition: transform .3s ease-in;
+      mix-blend-mode: difference;
+     
+      background: radial-gradient(
+        circle at center, 
+        white 24%, 
+        black 25%, 
+        black 100%);
+    }  
+  
+    
+    .label-animada:active {
+      top: 3px;
+      box-shadow: none;
+    } */
+  
+/*Fin animacion botón*/
+
+/*Animacion boton hover*/
+
+.boton-pantalla-principal {		
+    width: 600px;
+	position: relative;	
+    left: 50%;
+    transform: translate(-50%,0);
+	padding: 1.4rem 0;
+	font-size: 1.4rem;
+	color: black;
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.boton:before, .boton:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.boton:hover {
+	color: black;
+	transition-delay: .5s;
+}
+
+.boton:hover:before {
+	transition-delay: 0s;
+}
+
+.boton:hover:after {
+	background: white;
+	transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid white;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+/*Fin animacion boton hover*/
+
 .boton-contactar{
-    background: #fff;
-    border-radius: 20px;
+    background: transparent;
+
+	position: relative;	
+    transform: translate(-50%,0);
+	padding: 10px;
+	color: black;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
 }
 
 .titulo{
@@ -150,7 +305,7 @@ nav.sticky{
     position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -185,11 +340,7 @@ nav.sticky{
     font-size: 1.5rem;
 }
 
-#wrap{
-    width: 530px;
-    margin: 20px auto 0;
-    height: 100vh;
-}
+
 
 .titulos-form{
     margin-bottom: 20px;
@@ -231,11 +382,16 @@ nav.sticky{
 }
 
 #sobre:hover{
-    height: 770px;
-    top: -90px;
+    height: 700px;
+    top: -30px;
+}
+
+#sobre:hover .texto-sobre{
+    transform: translate(10px, 60px);
 }
 
 .texto-sobre{
+    transition: all 1s ease-in-out;
     width:  510px;
     max-width: 100%;
     margin-top: 30px;
@@ -262,18 +418,17 @@ nav.sticky{
 /*Formulario Whastapp*/
 .formulario {
    
-    width: 450px;
+    width: 650px;
     max-width: 100%;
     margin-top: 30px;
     padding: 20px;
     position: relative;
-    background: rgba(255, 255, 255, 0.97);
-    transform: translate(0,-15%);
+    background: white;
     transition: all 1s ease-in-out;
   }
 
   .formulario:hover{
-      box-shadow: -15px 15px 5px -2px rgb(158, 115, 6); 
+      box-shadow: -15px 15px 5px -2px #939991; 
   }
   
   .imgLogo {
@@ -399,6 +554,96 @@ nav.sticky{
     position: absolute;
     bottom: 0px;
     right: 0;
+<<<<<<< HEAD
     height: 90vh;
       transform: rotateY(180deg);
   }
+=======
+    height: 90vh;  
+  }
+
+
+  
+  
+
+@media (max-width: 760px) { 
+    .imagen-logo-central{
+        
+        width: 100%;
+        height: 100%;
+    }
+    .boton{
+        text-align: center;
+        width: 90%
+    }
+
+    /*Sobre resize*/
+    
+#sobre{
+
+    width: 100%;
+    position: relative;
+    top: 0px;
+    transition: all 1s ease-in-out .3s;
+}
+
+#sobre:before{
+    width: 100%;
+
+}
+
+#sobre:after{
+    width: 100%;
+
+}
+
+#sobre.hide:after,#sobre.hide:before{
+    display: none;
+}
+
+#sobre:hover .texto-sobre{
+    transform: translate(10px,50px);
+}
+
+.texto-sobre{
+    width: 80vw;
+
+}
+
+.boton-contacto-email, .boton-contacto-whatsapp{
+    width: 50vw;
+
+}
+.boton-contacto-email{
+    border-color: rgb(250, 31, 31);
+    color: red;
+}
+.boton-contacto-whatsapp{
+    border-color: #04AA6D;
+    color: green;
+}
+
+#contacto{
+    height: 200vh;
+}
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) {
+ 
+ }
+
+
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 1400px) { 
+
+ }
+
+>>>>>>> 3ac4c62b8afadbfe4d08ba146d285cf2c515914c
