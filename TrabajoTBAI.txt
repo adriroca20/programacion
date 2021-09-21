@@ -1,0 +1,4 @@
+conexion bidireccional
+cliente llama a metodo en el servidor y el servidor dispara evento que le salta al cliente
+Definir una clase y que pase un objeto
+Definir metodo factura en clase servidor y como argumento le pasas un objeto de la clase factura con 3 propiedades basicas con string con nombre factura, nif y otro integer 
