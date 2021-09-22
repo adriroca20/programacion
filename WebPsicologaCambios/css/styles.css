@@ -89,19 +89,23 @@
     /* background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); */
 }
 
-#titulo-sobre-mi{
-}
-
 #contacto{
     height: 100vh;
     background-color: #CCD4C9;
 }
 
 
-.servicios{
+#servicios{
     position: relative;
-    background-color: #013A6B;
-    background-image: -webkit-linear-gradient(65deg, #71837F 50%, white 50%);
+    background-color: #71837F;
+    /* background-image: -webkit-linear-gradient(65deg, #71837F 50%, white 50%); */
+}
+
+#servicios p{
+    color: white;
+}
+#servicios h2{
+    color: white;
 }
 
 button a{
@@ -497,7 +501,10 @@ nav.sticky{
     height: 90vh;  
   }
 
-
+  #titulo-sobre-mi{
+    display: block;
+    margin-top: 85px;
+}
   
   
 
@@ -511,52 +518,8 @@ nav.sticky{
         text-align: center;
         width: 90%
     }
-
-    /*Sobre resize*/
     
-#sobre{
 
-    width: 100%;
-    position: relative;
-    top: 0px;
-    transition: all 1s ease-in-out .3s;
-}
-
-#sobre:before{
-    width: 100%;
-
-}
-
-#sobre:after{
-    width: 100%;
-
-}
-
-#sobre.hide:after,#sobre.hide:before{
-    display: none;
-}
-
-#sobre:hover .texto-sobre{
-    transform: translate(10px,50px);
-}
-
-.texto-sobre{
-    width: 80vw;
-
-}
-
-.boton-contacto-email, .boton-contacto-whatsapp{
-    width: 50vw;
-
-}
-.boton-contacto-email{
-    border-color: rgb(250, 31, 31);
-    color: red;
-}
-.boton-contacto-whatsapp{
-    border-color: #04AA6D;
-    color: green;
-}
 
 #contacto{
     height: 200vh;

@@ -111,14 +111,20 @@
 
 
 @media (max-width: 576px) {  
+	.book{
+		width:90vw;
+        height:45vh;
+	}
     .flip-book{
-        width:45vw;
-        height:40vh;
+        width:90vw;
+        height:45vh;
     }
-
+	.columna-conoceme{
+		max-height: 10vh;
+	}
     #cover{
-        width:45vw;
-        height:40vh;;
+        width:90vw;
+        height:45vh;;
     }
 	.texto-libro{
 		font-size: 10px;
@@ -139,7 +145,7 @@
 }
 
 
-@media (max-width: 768px) { 
+@media (min-width: 580px) { 
     .flip-book{
         width:30vw;
         height:50vh;
