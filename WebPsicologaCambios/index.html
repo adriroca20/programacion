@@ -362,28 +362,42 @@
 
 			<form class="contact1-form validate-form">
 				<span class="contact1-form-title">
-					Get in touch
+					¡Pide una cita!
 				</span>
 
-				<div class="wrap-input1 validate-input" data-validate = "Name is required">
-					<input class="input1" type="text" name="name" placeholder="Name">
+				<div class="wrap-input1 validate-input" data-validate = "Es obligatorio indicar tu nombre">
+					<input class="input1" type="text" name="name" placeholder="Nombre">
 					<span class="shadow-input1"></span>
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<!-- <div class="wrap-input1 validate-input" data-validate = "Se necesita un email válido: ejemplo@gmail.com">
 					<input class="input1" type="text" name="email" placeholder="Email">
 					<span class="shadow-input1"></span>
 				</div>
 
-				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
-					<input class="input1" type="text" name="subject" placeholder="Subject">
+				<div class="wrap-input1 validate-input" data-validate = "Se necesita introducir el asunto">
+					<input class="input1" type="text" name="subject" placeholder="Asunto">
 					<span class="shadow-input1"></span>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
 					<textarea class="input1" name="message" placeholder="Message"></textarea>
 					<span class="shadow-input1"></span>
-				</div>
+				</div> -->
+        <label for="fecha" class="formulario__label">Indica la fecha de tu reserva</label>
+        <input id="fecha" type="date" class="formulario__input" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+
+        <label for="hora" class="formulario__label">Indica la hora de tu reserva</label>
+        <input id="hora" type="time" class="formulario__input" />
+
+        <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
+        <select id="servicio" name="listaservicios" class="formulario__input">
+          <option>SERVICIO 1 - $VALOR</option>
+          <option>SERVICIO 2 - $VALOR</option>
+          <option>SERVICIO 3 - $VALOR</option>
+          <option>SERVICIO 4 - $VALOR</option>
+          <option>SERVICIO 5 - $VALOR</option>
+        </select>
 
 				<div class="container-contact1-form-btn">
 					<button class="contact1-form-btn">
