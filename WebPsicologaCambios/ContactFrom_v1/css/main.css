@@ -127,11 +127,12 @@ iframe {
   min-height: 100%;
   padding: 15px;
 
-  background: #009bff;
+  background: white;
+  /* background: #009bff;
   background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
   background: -o-linear-gradient(left, #0072ff, #00c6ff);
   background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-  background: linear-gradient(left, #0072ff, #00c6ff);
+  background: linear-gradient(left, #0072ff, #00c6ff); */
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -145,7 +146,7 @@ iframe {
 
 .container-contact1 {
   width: 1163px;
-  background: #fff;
+  background: #CCD4C9;
   border-radius: 10px;
   overflow: hidden;
 

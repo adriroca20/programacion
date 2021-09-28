@@ -109,8 +109,41 @@
     width: 100%;
 }
 
-
 @media (max-width: 576px) {  
+	.book{
+		width:90vw;
+        height:35vh;
+	}
+    .flip-book{
+        width:60vw;
+        height:35vh;
+    }
+	.columna-conoceme{
+		max-height: 10vh;
+	}
+    #cover{
+        width:60vw;
+        height:35vh;
+    }
+	.texto-libro{
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.titulo-libro{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	.next-btn{
+		font-size: 10px;
+		
+	}
+	.back-btn{
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 576px) {  
 	.book{
 		width:90vw;
         height:45vh;
@@ -124,7 +157,7 @@
 	}
     #cover{
         width:90vw;
-        height:45vh;;
+        height:45vh;
     }
 	.texto-libro{
 		font-size: 10px;
@@ -153,7 +186,7 @@
 
     #cover{
         width:30vw;
-        height:50vh;;
+        height:50vh;
     }
 	.texto-libro{
 		font-size: 10px;
@@ -172,9 +205,57 @@
 
 
 @media (min-width: 1200px) { 
+    .flip-book{
+        width:30vw;
+        height:70vh;
+    }
 
+    #cover{
+        width:30vw;
+        height:70vh;
+    }
+	.texto-libro{
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.titulo-libro{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
 }
 
 @media (min-width: 1400px) { 
-
- }
+	.book{
+		width:70vw;
+        height:70vh;
+	}
+    .flip-book{
+        width:70vw;
+        height:70vh;
+    }
+	.columna-conoceme{
+		max-height: 10vh;
+	}
+    #cover{
+        width:70vw;
+        height:70vh;
+    }
+	.texto-libro{
+		font-size: 20px;
+		line-height: 40px;
+	}
+	.titulo-libro{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 30px;
+		letter-spacing: 3px;
+	}
+	.next-btn{
+		font-size: 25px;
+		
+	}
+	.back-btn{
+		font-size: 25px;
+	}
+}
