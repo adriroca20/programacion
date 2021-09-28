@@ -427,7 +427,10 @@
           <span class="contact1-form-title">
             ¡Pide una cita!
           </span>
-          <p class="text-secondary text-center mb-3">Si desea otro horario puede contactarme por <a href="#" id="link-whatsapp-subtitulo">whatsapp</a></p>
+          <p class="text-secondary text-center mb-3">Si desea otro horario puede contactarme por <a href="#" id="link-whatsapp-subtitulo"  
+            target="_blank"
+      onclick="location.href='https://api.whatsapp.com/send?phone=+34 605 41 09 29&amp&text=¡Hola! Si quieres hablar conmigo desde el ordenador accede a Whastapp Web desde la parte superior de esta página.';"
+      align=”center”>whatsapp</a></p>
           <div class="wrap-input1 validate-input" data-validate="Es obligatorio indicar tu nombre">
             <label for="nombre" class="formulario__label">Escribe tu nombre y apellidos</label>
             <input class="input1" type="text" name="name" placeholder="Nombre y apellidos" id="nombre">
@@ -599,10 +602,10 @@
 
   <script type="text/javascript">
     window.addEventListener("scroll", function () {
-      var servicios= document.getElementById("titulo-sobre-mi").scrollHeight;
-      var about= document.getElementById("myCarousel").scrollHeight;
+      // var servicios= document.getElementById("titulo-sobre-mi").scrollHeight;
+       var about= document.getElementById("myCarousel").getBoundingClientRect().top;
       var nav = document.querySelector("nav");
-      nav.classList.add("sticky", window.scrollY > 0);
+      nav.classList.toggle("sticky", window.scrollY > 0);
       // nav.classList.remove("sticky", window.scrollY > about);
       // nav.classList.remove("sticky", window.scrollY > servicios);
 

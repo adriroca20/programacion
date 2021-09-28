@@ -82,8 +82,13 @@
     margin: 0 20px;
     display: inline-block;
   position: relative;
-  color: #0087ca;
+  
 }
+
+.nav-linkk:hover{
+  color: white;
+}
+
 
 .nav-linkk:after{
     content: '';
@@ -93,14 +98,15 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 .nav-linkk:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+    
+}
 
 #sobre-mi{
     position: relative;
@@ -164,11 +170,13 @@ nav ul li a{
 nav{
     transition: 0.4s;
     background: white;
+    color: black;
 }
 
 nav.sticky{
     padding: 5px 0px;
     background: #71837F;
+    color: white;
 }
 
 
@@ -545,6 +553,7 @@ nav.sticky{
     bottom: 40px;
     right: 40px;
     z-index: 99999;
+    transition: all 0.4s ease-in-out;
   }
   .download-btn a{
     background: none;
@@ -554,7 +563,7 @@ nav.sticky{
     border-radius: 6px;
     border: 2px solid green;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
+   
   }
   .download-btn a:hover{
       color: #ffffff;
@@ -563,11 +572,26 @@ nav.sticky{
 
   #link-whatsapp-subtitulo{
     color: green;
-    transition: all .3s ease-in-out;
+    display: inline-block;
+  position: relative;
   }
-  #link-whatsapp-subtitulo:hover{
-    border-color: green;
-  }
+
+  #link-whatsapp-subtitulo:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+#link-whatsapp-subtitulo:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
   @media screen and (max-width: 600px){
       .download-btn{
