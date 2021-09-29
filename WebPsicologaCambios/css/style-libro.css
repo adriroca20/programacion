@@ -10,7 +10,7 @@
     justify-content: center;  
 	transition: all .5s ease-in-out;
 	box-shadow: 7px 8px gray ;
-	width:60vw;
+	width:30vw;
 }
 
 .book:hover{
@@ -179,13 +179,18 @@
 
 
 @media (min-width: 580px) { 
+	.book{
+		width: 90vw;
+		height: 50vh;
+	}
+
     .flip-book{
-        width:30vw;
+        width:45vw;
         height:50vh;
     }
 
     #cover{
-        width:30vw;
+        width:45vw;
         height:50vh;
     }
 	.texto-libro{
