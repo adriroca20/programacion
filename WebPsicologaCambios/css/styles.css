@@ -86,7 +86,7 @@
 }
 
 .nav-linkk:hover{
-  color: white;
+  color: black;
 }
 
 
@@ -98,7 +98,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -178,6 +178,18 @@ nav.sticky{
     background: #71837F;
     color: white;
 }
+
+nav.sticky .nav-linkk:hover{
+    color: white;
+  }
+  
+  
+  nav.sticky .nav-linkk:after{
+      background-color: white;
+
+  }
+
+
 
 
 .contenedor-principal-datos{
