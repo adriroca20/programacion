@@ -44,9 +44,14 @@
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
+  
 }
 /* rtl:end:ignore */
-
+.marketing .col-lg-4 .btn-secondary {
+  margin-top: 200px;
+  position: relative;
+  
+}
 
 /* Featurettes
 ------------------------- */

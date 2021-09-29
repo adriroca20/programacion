@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>¡Hola!</title>
 
+
   <link rel="stylesheet" href="./css/style-libro.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +16,7 @@
   <link rel="stylesheet" href="./css/carousel.css">
   <!-- Cosas Contacto -->
 
-  <link rel="icon" type="image/png" href="./recursos/Logo_SoniaEDnanou-1.png" />
+  <link rel="icon" type="image/png" href="./recursos/Logo_SoniaEDnanou-12.png" />
 
   <link rel="stylesheet" type="text/css" href="./ContactFrom_v1/vendor/bootstrap/css/bootstrap.min.css">
 
@@ -34,6 +35,22 @@
 
 <body id="inicio">
   <header>
+    <ul class="nav justify-content-center bg-white">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fab fa-instagram iconos-barra-superior"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fab fa-whatsapp iconos-barra-superior"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-mobile-alt iconos-barra-superior"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hov-pointer"><i class="far fa-envelope iconos-barra-superior"></i></a>
+      </li>
+    </ul>
+
+
     <nav class="navbar navbar-expand-md navbar-light" aria-label="">
       <div class="container-fluid ">
         <a class="navbar-brand " href="#inicio"><img class="logo" src="./recursos/Logo_SoniaEDnanou-12.png" alt=""></a>
@@ -294,8 +311,8 @@
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider"  id="servicio-1">
-      
+      <hr class="featurette-divider" id="servicio-1">
+
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Titulo principal tratamiento <span class="text-muted">Pequeño subtitulo</span>
@@ -303,15 +320,15 @@
           <p class="lead">Informacion, datos, frase con la que se identifiquen los pacientes...</p>
         </div>
         <div class="col-md-5">
-         <img src="./recursos/imagenes-about/imagen-circulos-1.jpg" alt="" class="imagenes-servicios">
+          <img src="./recursos/imagenes-about/imagen-circulos-1.jpg" alt="" class="imagenes-servicios">
 
         </div>
       </div>
 
       <hr class="featurette-divider" id="#servicio-2">
 
-      <div class="row featurette"  >
-        <div class="col-md-7 order-md-2">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 text-end">
           <h2 class="featurette-heading">Titulo principal <span class="text-muted">Subtitulo</span></h2>
           <p class="lead">Informacion, datos, frase con la que se identifiquen los pacientes...</p>
         </div>
@@ -324,7 +341,7 @@
 
       <hr class="featurette-divider" id="#servicio-3">
 
-      <div class="row featurette"  >
+      <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Titulo <span class="text-muted">Subtitulo</span></h2>
           <p class="lead">Informacion, datos, frase con la que se identifiquen los pacientes...</p>
@@ -338,8 +355,8 @@
 
       <hr class="featurette-divider" id="#servicio-4">
 
-      <div class="row featurette"  >
-        <div class="col-md-7 order-md-2">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 text-end">
           <h2 class="featurette-heading">Titulo <span class="text-muted">Subtitulo</span></h2>
           <p class="lead">Informacion, datos, frase con la que se identifiquen los pacientes...</p>
         </div>
@@ -350,7 +367,7 @@
         </div>
       </div>
 
-      <hr class="featurette-divider"  id="#servicio-5">
+      <hr class="featurette-divider" id="#servicio-5">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -382,10 +399,10 @@
           <span class="contact1-form-title">
             ¡Pide una cita!
           </span>
-          <p class="text-secondary text-center mb-3">Si desea otro horario puede contactarme por <a href="#" id="link-whatsapp-subtitulo"  
-            target="_blank"
-      onclick="location.href='https://api.whatsapp.com/send?phone=+34 605 41 09 29&amp&text=¡Hola! Si quieres hablar conmigo desde el ordenador accede a Whastapp Web desde la parte superior de esta página.';"
-      align=”center”>whatsapp</a></p>
+          <p class="text-secondary text-center mb-3">Si desea otro horario puede contactarme por <a href="#"
+              id="link-whatsapp-subtitulo" target="_blank"
+              onclick="location.href='https://api.whatsapp.com/send?phone=+34 605 41 09 29&amp&text=¡Hola! Si quieres hablar conmigo desde el ordenador accede a Whastapp Web desde la parte superior de esta página.';"
+              align=”center”>whatsapp</a></p>
           <div class="wrap-input1 validate-input" data-validate="Es obligatorio indicar tu nombre">
             <label for="nombre" class="formulario__label">Escribe tu nombre y apellidos</label>
             <input class="input1" type="text" name="name" placeholder="Nombre y apellidos" id="nombre">
@@ -406,21 +423,23 @@
 					<textarea class="input1" name="message" placeholder="Message"></textarea>
 					<span class="shadow-input1"></span>
 				</div> -->
-         
-
-            <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
-            <select id="servicio" name="listaservicios" class="formulario__input input1">
-              <option>PNIE primeras visitas 90 min - $VALOR</option>
-              <option>PNIE revisiones 45 min - $VALOR</option>
-              <option>Consultas express 30 min - $VALOR</option>
-              <option>Psicoterapia 50 min - $VALOR</option>
-              <option>SERVICIO 5 - $VALOR</option>
-            </select>
 
 
-            <label for="fecha" class="formulario__label">Indica la fecha de tu reserva. <br> <p class="text-secondary">Dias disponibles: Lunes, Martes y Viernes</p>  </label>
-            <input id="fecha" type="date" class="formulario__input input1" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-              name="somedate" />
+          <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
+          <select id="servicio" name="listaservicios" class="formulario__input input1">
+            <option>PNIE primeras visitas 90 min - $VALOR</option>
+            <option>PNIE revisiones 45 min - $VALOR</option>
+            <option>Consultas express 30 min - $VALOR</option>
+            <option>Psicoterapia 50 min - $VALOR</option>
+            <option>SERVICIO 5 - $VALOR</option>
+          </select>
+
+
+          <label for="fecha" class="formulario__label">Indica la fecha de tu reserva. <br>
+            <p class="text-secondary">Dias disponibles: Lunes, Martes y Viernes</p>
+          </label>
+          <input id="fecha" type="date" class="formulario__input input1" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+            name="somedate" />
 
           <label for="time" class="formulario__label">Indica la hora de tu reserva</label>
           <!-- <input id="hora" type="time" class="formulario__input input1" min="12:00" max="18:00" step="900" /> -->
@@ -429,7 +448,7 @@
 
             <option value="9:00 AM">--:--</option>
           </select>
-         
+
 
           <div class="container-contact1-form-btn">
             <button class="contact1-form-btn">
@@ -448,7 +467,7 @@
 
   <!-- Calendario fecha minima hoy -->
   <script>
-    var deMañanas=true;
+    var deMañanas = true;
 
     const picker = document.getElementById("fecha");
     var today = new Date().toISOString().split('T')[0];
@@ -461,72 +480,72 @@
         this.value = '';
         alert('Por favor, elija un dia permitido. \n Muchas gracias.');
       }
-      else if([5].includes(day)){
-        deMañanas=false;
+      else if ([5].includes(day)) {
+        deMañanas = false;
       }
-      else{deMañanas=true;}
+      else { deMañanas = true; }
     });
 
     //Selector de horas
 
-  var x = document.getElementById("servicio");
-  var items;
-  x.addEventListener('click', function (e){
-    if (x.value === "PNIE primeras visitas 90 min - $VALOR") {
-      //4:45 PM
-      if(deMañanas){
-        items = ["9:00 AM", "10:30 AM", "12:00 PM"];
+    var x = document.getElementById("servicio");
+    var items;
+    x.addEventListener('click', function (e) {
+      if (x.value === "PNIE primeras visitas 90 min - $VALOR") {
+        //4:45 PM
+        if (deMañanas) {
+          items = ["9:00 AM", "10:30 AM", "12:00 PM"];
+        }
+        else {
+          items = ["9:00", "10:30", "12:00", "16:00", "17:30"];
+        }
+
       }
-      else{
-        items = ["9:00", "10:30", "12:00", "16:00", "17:30"];
+      else if (x.value === "PNIE revisiones 45 min - $VALOR") {
+        //4:45 PM
+        if (deMañanas) {
+          items = ["9:00 AM", "9:45 AM", "10:30 AM", "11:15 AM", "12:00 PM", "12:45 PM"];
+        }
+        else {
+          items = ["9:00", "9:45", "10:30", "11:15", "12:00", "12:45 ", "16:00 ", "16:45", "17:30"];
+        }
+
       }
-   
-  } 
-  else if (x.value === "PNIE revisiones 45 min - $VALOR") {
-      //4:45 PM
-      if(deMañanas){
-        items = ["9:00 AM", "9:45 AM", "10:30 AM", "11:15 AM", "12:00 PM", "12:45 PM"];
+      else if (x.value === "Consultas express 30 min - $VALOR") {
+        //4:45 PM
+        if (deMañanas) {
+          items = ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "13:00 PM"];
+        }
+        else {
+          items = ["9:00", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "16:00", "16:30", "17:00", "17:30"];
+        }
+
       }
-      else{
-        items = ["9:00", "9:45", "10:30", "11:15", "12:00", "12:45 ", "16:00 ", "16:45", "17:30"];
+      else if (x.value === "Psicoterapia 50 min - $VALOR") {
+        //4:45 PM
+        if (deMañanas) {
+          items = ["9:00 AM", "9:50 AM", "10:40 AM", "11:30 AM", "12:20 PM", "13:10 PM"];
+        }
+        else {
+          items = ["9:00", "9:50", "10:40", "11:30", "12:20", "13:10", "16:00", "16:50", "17:40"];
+        }
+
       }
-   
-  }
-  else if (x.value === "Consultas express 30 min - $VALOR") {
-      //4:45 PM
-      if(deMañanas){
-        items = ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM" , "11:00 AM" , "11:30 AM" , "12:00 PM", "12:30 PM" , "13:00 PM"];
+      else {
+        items = [""]
       }
-      else{
-        items = ["9:00","10:00", "10:30","11:00","11:30", "12:00","12:30","13:00", "16:00","16:30", "17:00", "17:30"];
+      var str = ""
+      for (var item of items) {
+        str += "<option>" + item + "</option>"
       }
-   
-  }
-  else if (x.value === "Psicoterapia 50 min - $VALOR") {
-      //4:45 PM
-      if(deMañanas){
-        items = ["9:00 AM", "9:50 AM", "10:40 AM" , "11:30 AM", "12:20 PM", "13:10 PM"];
-      }
-      else{
-        items = ["9:00", "9:50", "10:40","11:30", "12:20", "13:10", "16:00", "16:50", "17:40"];
-      }
-   
-  }
-  else {
-    items = [""]
-  }
-  var str = ""
-  for (var item of items) {
-    str += "<option>" + item + "</option>"
-  }
-  document.getElementById("time").innerHTML = str;
-  });
-   
-  function controlHoras(){
-    
-  }
-  
- 
+      document.getElementById("time").innerHTML = str;
+    });
+
+    function controlHoras() {
+
+    }
+
+
 
 
   </script>
@@ -558,27 +577,27 @@
   <script type="text/javascript">
     window.addEventListener("scroll", function () {
       // var servicios= document.getElementById("titulo-sobre-mi").scrollHeight;
-      var about= document.getElementById("myCarousel").getBoundingClientRect().top;
+      var about = document.getElementById("myCarousel").getBoundingClientRect().top;
       var nav = document.querySelector("nav");
       nav.classList.toggle("sticky", window.scrollY > 0);
 
       var hT = $('#myCarousel').offset().top,
-       hH = $('#myCarousel').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-       console.log('H1 on the view!');
-       nav.classList.toggle("sticky");
-   }
+        hH = $('#myCarousel').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        console.log('H1 on the view!');
+        nav.classList.toggle("sticky");
+      }
 
-   var hT2 = $('#servicio').offset().top,
-       hH2 = $('#servicio').outerHeight(),
-       wH2 = $(window).height(),
-       wS2 = $(this).scrollTop();
-   if (wS2 > (hT2+hH2-wH2)){
-       console.log('H1 on the view!');
-       nav.classList.toggle("sticky");
-   }
+      var hT2 = $('#servicio').offset().top,
+        hH2 = $('#servicio').outerHeight(),
+        wH2 = $(window).height(),
+        wS2 = $(this).scrollTop();
+      if (wS2 > (hT2 + hH2 - wH2)) {
+        console.log('H1 on the view!');
+        nav.classList.toggle("sticky");
+      }
     });
 
   </script>
