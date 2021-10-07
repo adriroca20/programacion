@@ -43,6 +43,8 @@
 
 .intro-text{
     color: white;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .hide{
@@ -173,7 +175,7 @@ header{
     z-index: 1000;
 }
 
-nav ul li a{
+nav ul .nav-item a{
     letter-spacing: 3px;
     transition: 0.6s;
     text-decoration: none;

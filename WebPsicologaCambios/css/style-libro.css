@@ -109,7 +109,12 @@
     width: 100%;
 }
 
+.titulo-libro{
+	text-align: center;
+}
+
 @media (max-width: 576px) {  
+
 	.book{
 		width:90vw;
         height:35vh;
@@ -126,21 +131,30 @@
         height:35vh;
     }
 	.texto-libro{
-		font-size: 10px;
-		line-height: 10px;
+		font-size: 8px;
+		line-height: 11px;
 	}
+
+	.texto-libro2{
+		font-size: 8px;
+		line-height: 9px;
+	}
+
 	.titulo-libro{
 		margin-top: 10px;
 		margin-bottom: 10px;
-		font-size: 16px;
+		font-size: 12px;
+		text-align: center;
 	}
-	.next-btn{
+	.next-btn,.back-btn{
 		font-size: 10px;
 		
 	}
-	.back-btn{
-		font-size: 10px;
+
+	.lista-libro{
+		list-style-type: style type auto;
 	}
+
 }
 
 @media (min-width: 576px) {  
@@ -162,12 +176,14 @@
 	.texto-libro{
 		font-size: 10px;
 		line-height: 10px;
+		margin-bottom: 0px;
 	}
 	.titulo-libro{
 		margin-top: 10px;
 		margin-bottom: 10px;
 		font-size: 16px;
 	}
+
 	.next-btn{
 		font-size: 10px;
 		
@@ -178,34 +194,48 @@
 }
 
 
-@media (min-width: 580px) { 
-	.book{
-		width: 90vw;
-		height: 50vh;
-	}
 
-    .flip-book{
-        width:45vw;
-        height:50vh;
-    }
+@media (min-width: 767px) {
 
-    #cover{
-        width:45vw;
-        height:50vh;
-    }
 	.texto-libro{
-		font-size: 10px;
-		line-height: 10px;
+		font-size: 15px;
+		line-height: 25px;
 	}
 	.titulo-libro{
 		margin-top: 10px;
 		margin-bottom: 10px;
-		font-size: 16px;
+		font-size: 20px;
 	}
- }
+	.next-btn, .back-btn{
+		font-size: 20px;
+		
+	}
+
+	.texto-libro2{
+		font-size: 12px;
+		line-height: 25px;
+	}
+}
 
 @media (min-width: 992px) {
-    
+	.texto-libro{
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.titulo-libro{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+	.next-btn, .back-btn{
+		font-size: 20px;
+		
+	}
+
+	.texto-libro2{
+		font-size: 15px;
+		line-height: 35px;
+	}
 }
 
 
@@ -228,6 +258,7 @@
 		margin-bottom: 10px;
 		font-size: 16px;
 	}
+
 }
 
 @media (min-width: 1400px) { 
@@ -247,9 +278,15 @@
         height:70vh;
     }
 	.texto-libro{
+		font-size: 22px;
+		line-height: 50px;
+	}
+
+	.texto-libro2{
 		font-size: 20px;
 		line-height: 40px;
 	}
+
 	.titulo-libro{
 		margin-top: 10px;
 		margin-bottom: 10px;

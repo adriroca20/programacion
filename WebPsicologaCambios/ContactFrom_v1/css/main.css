@@ -4,7 +4,7 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
+/* 
 @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
@@ -27,16 +27,16 @@
 
 
 
-/*//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 
-body, html {
+/* body, html {
 	font-family: Montserrat-Regular, sans-serif;
-}
+} */
 
 /*---------------------------------------------*/
-a {
+/* a {
 	font-family: Montserrat-Regular;
 	font-size: 14px;
 	line-height: 1.7;
@@ -55,10 +55,10 @@ a:focus {
 a:hover {
 	text-decoration: none;
 	color: #57b846;
-}
+} */
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
+/* h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
@@ -73,7 +73,7 @@ p {
 ul, li {
 	margin: 0px;
 	list-style-type: none;
-}
+} */
 
 
 /*---------------------------------------------*/
