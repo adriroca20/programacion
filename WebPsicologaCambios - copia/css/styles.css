@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+.logo{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    display: inline;
+    margin: 0 20px;
+}
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider{
+    background: #71837F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+}
+
+.intro-text{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.principal{
+    height: 95vh;
+    background-image: url("../recursos/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagen-logo-central{
+    width: 60%;
+    height: 40%;
+    transition: all .5s ease-in-out;
+}
+.imagen-logo-central:hover{
+    transform: scale(1.1);
+}
+
+.iconos-barra-superior{
+    text-decoration: none;
+    color: #71837F;
+    transition: all .3s ease-in-out;
+    font-size: 1rem;
+}
+
+.iconos-barra-superior:hover{
+    transform: scale(1.2);
+}
+
+.nav-linkk{
+    
+    margin: 0 20px;
+    display: inline-block;
+  position: relative;
+  
+}
+
+.nav-linkk:hover{
+  color: black;
+}
+
+
+.nav-linkk:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.nav-linkk:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+}
+
+#sobre-mi{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #CCD4C9;
+    /* background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); */
+}
+
+#contacto{
+    height: 100vh;
+    background-color: #CCD4C9;
+}
+
+
+#servicios{
+    position: relative;
+    background-color: #71837F;
+    /* background-image: -webkit-linear-gradient(65deg, #71837F 50%, white 50%); */
+}
+
+#servicios p{
+    color: white;
+}
+#servicios h2{
+    color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+button a:hover{
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul .nav-item a{
+    letter-spacing: 3px;
+    transition: 0.6s;
+    text-decoration: none;
+    color: black;
+}
+nav{
+    transition: 0.4s;
+    background: white;
+    color: black;
+}
+
+nav.sticky{
+    padding: 5px 0px;
+    background: #71837F;
+    color: white;
+}
+
+nav.sticky .nav-linkk:hover{
+    color: white;
+  }
+  
+  
+  nav.sticky .nav-linkk:after{
+      background-color: white;
+
+  }
+
+
+
+
+.contenedor-principal-datos{
+   position: absolute;
+   top: 50%;
+   transform: translate(0,-50%);
+   display: block;
+}
+
+
+.boton-pantalla-principal {		
+    width: 600px;
+	position: relative;	
+    left: 50%;
+    transform: translate(-50%,0);
+	padding: 1.4rem 0;
+	font-size: 1.4rem;
+	color: white;
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.imagen-carousel{
+    display: block;
+    min-width: 900px;
+    width: auto;
+    height: 100%;
+}
+
+.carousel-item{
+    overflow: hidden;
+}
+
+.imagenes-circulo{
+    width: 140px;
+    height: 140px;
+    border-radius:50%;
+}
+
+.imagenes-servicios{
+    /* height: 500px;
+    width: 500px; */
+}
+
+
+/* .boton-carousel {		
+    width: 400px;
+    display: block;
+	
+	color: white;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+} */
+
+.boton:before, .boton:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.boton:hover {
+	color: black;
+	transition-delay: .5s;
+}
+
+.boton:hover:before {
+	transition-delay: 0s;
+}
+
+.boton:hover:after {
+	background: white;
+	transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid white;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+/*Fin animacion boton hover*/
+
+.boton-contactar{
+    background: transparent;
+
+	position: relative;	
+    transform: translate(-50%,0);
+	padding: 10px;
+	color: black;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.titulo{
+    /*Hacer resizeable*/
+    color: white;
+    font-size: 4vw;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.numero-colegiado{
+    color: white;
+    font-size: 2vw;
+}
+
+.row{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card-body{
+    background-color: blanchedalmond;
+}
+
+.card{
+    height: 200px;
+    transition: all .3s ease;
+
+}
+
+.botones{
+    /* Margin responsive */
+    margin-top: 20px;
+}
+
+.botones button{
+    width: 170px;
+}
+
+.fila-contacto{
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+
+/*Style form contact*/
+
+.textos-form{
+    font-size: 1.5rem;
+}
+
+
+
+.titulos-form{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+#sobre{
+    overflow: hidden;
+    height: 447px;
+    position: relative;
+    top: 0px;
+    transition: all 1s ease-in-out .3s;
+}
+
+#sobre:before{
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url(../recursos/ama/before.png);
+    width: 530px;
+    height: 317px;
+}
+
+#sobre:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: url(../recursos/ama/after.png);
+    width: 530px;
+    height: 259px;
+}
+
+#sobre.hide:after,#sobre.hide:before{
+    display: none;
+}
+
+#sobre:hover{
+    height: 700px;
+    top: -30px;
+}
+
+#sobre:hover .texto-sobre{
+    transform: translate(10px, 60px);
+}
+
+.texto-sobre{
+    transition: all 1s ease-in-out;
+    width:  510px;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: rgba(255, 255, 255, 0.97);
+    transform: translate(10px,0);
+}
+
+.boton-contacto-email, .boton-contacto-whatsapp{
+    width: 300px;
+
+}
+.boton-contacto-email{
+    border-color: rgb(250, 31, 31);
+    color: red;
+}
+.boton-contacto-whatsapp{
+    border-color: #04AA6D;
+    color: green;
+}
+
+/*Formulario Whastapp*/
+.formulario {
+   
+    width: 650px;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    background: white;
+    transition: all 1s ease-in-out;
+  }
+
+  .formulario:hover{
+      box-shadow: -15px 15px 5px -2px #939991; 
+  }
+  
+  .imgLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+  }
+  
+  .formulario__titulo,
+  .formulario__subtitulo,
+  .formulario__parrafo {
+    text-align: center;
+    margin-top: 0;
+  }
+  .formulario__titulo,
+  .formulario__subtitulo {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .formulario__parrafo {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .formulario__input,
+  .formulario__label {
+    display: block;
+    width: 100%;
+    font-size: 1, 3em;
+  }
+  .formulario__input {
+    padding: 10px;
+    background: transparent;
+    /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .formulario__input:focus {
+    /*outline: 1px solid rgba(0,0,0,0.7);*/
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+  }
+  /*.formulario__input:focus + .formulario__label{
+      margin-top: -120px;
+  }*/
+  .formulario__label {
+    padding-left: 15px;
+    /*position: absolute;*/
+    /*margin-top: -78px;*/
+    /*z-index: -20;*/
+    color: rgba(0, 0, 0, 0.7);
+    /*transition: all 0.2s;*/
+    margin: 2px;
+  }
+  .formulario__submit {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    width: 50%;
+    font-size: 1, 3em;
+  }
+  
+  /*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
+  
+  .formulario__input,
+  .formulario__submit {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*.fijar {
+      margin-top: -120px;
+  } */
+  
+  /* respuesta del formulario */
+  #respuesta {
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+  }
+  #respuesta.fail {
+    color: red;
+  }
+  #respuesta.send {
+    color: green;
+  }
+
+
+  /*Fondos*/
+  .dot1-princ {
+    height: 300px;
+    width: 300px;
+  }
+.dot2-princ {
+    height: 250px;
+    width: 250px;
+  }
+  .dot3-princ{
+    height: 350px;
+    width: 350px;
+  }
+ .dot4-princ {
+    height: 200px;
+    width: 200px;
+  }
+
+  .dot{
+      background-color: #D3C0A7;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      transform: translateX(-120%);
+  }
+  .imagenPrincipal{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 90vh;  
+  }
+
+  #titulo-sobre-mi{
+    display: block;
+    margin-top: 85px;
+    letter-spacing: 4px;
+}
+  
+.download-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+    transition: all 0.4s ease-in-out;
+  }
+  .download-btn a{
+    background: none;
+    padding: 13px 22px;
+    font-size: 16px;
+    color: green;
+    border-radius: 6px;
+    border: 2px solid green;
+    font-family: 'Poppins', sans-serif;
+   
+  }
+  .download-btn a:hover{
+      color: #ffffff;
+      background: green;
+  }
+
+  #link-whatsapp-subtitulo{
+    color: green;
+    display: inline-block;
+  position: relative;
+  }
+
+  #link-whatsapp-subtitulo:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+#link-whatsapp-subtitulo:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+  @media screen and (max-width: 600px){
+      .download-btn{
+          right: 20px;
+      }
+      .download-btn a{
+          font-size: 13px;
+          padding: 9px 15px;
+      }
+  }
+
+@media (max-width: 760px) { 
+    .imagen-logo-central{
+        
+        width: 100%;
+        height: 100%;
+    }
+    .boton{
+        text-align: center;
+        width: 90%
+    }
+    
+
+
+#contacto{
+    height: 200vh;
+}
+}
+
+@media (max-width: 768px) { 
+    .boton-pantalla-principal {		
+        width: 300px;
+        margin-top: 20px;
+        padding: 1.4rem 0;
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    .nav-linkk{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .imagen-logo-central{
+        width: 50%;
+        height: 35%;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .imagen-logo-central{
+        width: 50%;
+        height: 35%;
+    }
+}
+
+@media (min-width: 1400px) { 
+
+ }
+
