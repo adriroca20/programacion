@@ -14,6 +14,7 @@
     margin: 0 20px;
 }
 
+/*Animacion inicio*/
 .intro{
     background: black;
     position: fixed;
@@ -27,7 +28,7 @@
     justify-content: center;
 }
 
-.slider{
+.slider-intro{
     background: #71837F;
     position: fixed;
     top: 0;
@@ -57,6 +58,7 @@
     display: inline-block;
 }
 
+/*Pantalla inicio*/
 .principal{
     height: 95vh;
     background-image: url("../recursos/fondo2.jpg");
@@ -84,6 +86,7 @@
     color: #71837F;
     transition: all .3s ease-in-out;
     font-size: 1rem;
+    margin-left: 20px;
 }
 
 .iconos-barra-superior:hover{
@@ -91,10 +94,9 @@
 }
 
 .nav-linkk{
-    
     margin: 0 20px;
     display: inline-block;
-  position: relative;
+    position: relative;
   
 }
 
@@ -122,18 +124,64 @@
 }
 
 /*Sobre mi*/
+/* about section styling */
 
-
+ #foto-about{
+    transform: rotateY(3.142rad);
+ }
 #sobre-mi{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     height: 100vh;
     width: 100vw;
-    background-color: #CCD4C9;
-    /* background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); */
+    
+     background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); 
 }
+
+/*Boton sobre mi*/
+
+.boton-mas-about {
+    padding: 10px;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow:hidden;
+    transition: .3s;
+    color: #5bcaff;
+    width: 50%;
+    }
+
+    .boton-mas-about:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 3px;
+      background: black;
+  
+      
+      left: 0;
+      bottom: auto;
+      top: -3px;
+      width: 100%;
+  
+    }
+    .boton-mas-about:hover{
+      cursor: pointer;
+      color: #5bcaff;
+    }
+    .boton-mas-about:hover:after {
+        top: calc(100% - 3px);
+      }
+  
+
+
+
 
 #contacto{
     height: 100vh;
@@ -142,8 +190,8 @@
 
 
 #servicios{
-    position: relative;
-    background-color: #71837F;
+    /* position: relative;
+    background-color: #71837F; */
     /* background-image: -webkit-linear-gradient(65deg, #71837F 50%, white 50%); */
 }
 
@@ -233,7 +281,7 @@ nav.sticky .nav-linkk:hover{
 }
 
 .imagen-carousel1{
-    width:  200%;
+    width:  100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -264,20 +312,15 @@ nav.sticky .nav-linkk:hover{
 }
 
 .imagenes-servicios{
-    /* height: 500px;
-    width: 500px; */
+    height: 500px;
+    width: 500px;
+    font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
 }
 
-
-/* .boton-carousel {		
-    width: 400px;
-    display: block;
-	
-	color: white;
-	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
-	cursor: pointer;
-	user-select: none;
-} */
 
 .boton:before, .boton:after {
 	content: '';
@@ -401,58 +444,6 @@ nav.sticky .nav-linkk:hover{
     color: white;
 }
 
-/* #sobre{
-    overflow: hidden;
-    height: 447px;
-    position: relative;
-    top: 0px;
-    transition: all 1s ease-in-out .3s;
-}
-
-#sobre:before{
-    content: "";
-    position: absolute;
-    bottom: 128px;
-    left: 0px;
-    background: url(../recursos/ama/before.png);
-    width: 530px;
-    height: 317px;
-}
-
-#sobre:after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    background: url(../recursos/ama/after.png);
-    width: 530px;
-    height: 259px;
-}
-
-#sobre.hide:after,#sobre.hide:before{
-    display: none;
-}
-
-#sobre:hover{
-    height: 700px;
-    top: -30px;
-}
-
-#sobre:hover .texto-sobre{
-    transform: translate(10px, 60px);
-}
-
-.texto-sobre{
-    transition: all 1s ease-in-out;
-    width:  510px;
-    max-width: 100%;
-    margin-top: 30px;
-    padding: 20px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
-    position: relative;
-    background: rgba(255, 255, 255, 0.97);
-    transform: translate(10px,0);
-} */
 
 .boton-contacto-email, .boton-contacto-whatsapp{
     width: 300px;
@@ -620,7 +611,7 @@ nav.sticky .nav-linkk:hover{
     bottom: 40px;
     right: 40px;
     z-index: 99999;
-    transition: all 0.4s ease-in-out;
+   
   }
   .download-btn a{
     background: none;
@@ -630,6 +621,7 @@ nav.sticky .nav-linkk:hover{
     border-radius: 6px;
     border: 2px solid green;
     font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
    
   }
   .download-btn a:hover{
@@ -660,6 +652,129 @@ nav.sticky .nav-linkk:hover{
     transform-origin: bottom left;
 }
 
+/*Fondo servicios*/
+
+
+
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
   @media screen and (max-width: 600px){
       .download-btn{
           right: 20px;
@@ -668,6 +783,10 @@ nav.sticky .nav-linkk:hover{
           font-size: 13px;
           padding: 9px 15px;
       }
+      .imagen-carousel1{
+        width:  200%;
+    
+    }
   }
 
 @media (max-width: 760px) { 
@@ -701,11 +820,19 @@ nav.sticky .nav-linkk:hover{
     }
 }
 
+
+@media (min-width: 768px) {
+    .imagenes-servicios-lg{
+        font-size: 3.5rem;
+    }
+ }
+
 @media (min-width: 992px) {
     .imagen-logo-central{
         width: 50%;
         height: 35%;
     }
+    .rounded-lg-3 { border-radius: .3rem; }
  }
 
 @media (min-width: 1200px) { 
