@@ -1,3 +1,18 @@
+/*Fuentes*/
+@font-face {
+    font-family: Titulo;
+    src: url(../recursos/fonts/GeorgiaBallpark\ Serif.otf)
+    format("opentype");
+  }
+@font-face {
+    font-family: Subtitulo;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: CuerpoDeTexto;
+    src: url(sansation_light.woff);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +20,9 @@
     scroll-behavior: smooth;
     outline: none;
 }
-
+.cuerpo-de-texto{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .logo{
     width: 50px;
@@ -191,16 +208,27 @@
 
 
 #servicios {
-      background-color: #71837F;
-      background-size: 150px 150px;  
+      background-color: #CCD4C9;
+      background-size: 700px 700px;  
+      background-image:
+    radial-gradient(#FFF 30%, transparent 0),
+    radial-gradient(#FFF 20%, transparent 0),
+    radial-gradient(#FFF 10%, transparent 0);
+  background-position:
+    -200px -20px,
+    200px -105px,
+    100px 40px;
 }
 
 
 #servicios p{
-    color: white;
+    color: #71837F;
+    font-weight: 500;
 }
 #servicios h2{
-    color: #CCD4C9;
+    color: #71837F;
+    font-weight: 500;
+    font-family: Titulo;
 }
 
 button a{
