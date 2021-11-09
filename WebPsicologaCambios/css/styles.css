@@ -6,11 +6,7 @@
   }
 @font-face {
     font-family: Subtitulo;
-    src: url(sansation_light.woff);
-}
-@font-face {
-    font-family: CuerpoDeTexto;
-    src: url(sansation_light.woff);
+    src: url(../recursos/fonts/SourceCodePro-Regular.ttf);
 }
 
 *{
@@ -20,9 +16,7 @@
     scroll-behavior: smooth;
     outline: none;
 }
-.cuerpo-de-texto{
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 .logo{
     width: 50px;
@@ -148,12 +142,13 @@
     transform: rotateY(3.142rad);
  }
 #sobre-mi{
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center; 
     height: 100%;
-    width: 100vw;
+    width: 100%;
     
      background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); 
 }
@@ -208,12 +203,13 @@
 
 
 #servicios {
-      background-color: #CCD4C9;
+    overflow: hidden;
+      background-color: #FFF;
       background-size: 700px 700px;  
       background-image:
-    radial-gradient(#FFF 30%, transparent 0),
-    radial-gradient(#FFF 20%, transparent 0),
-    radial-gradient(#FFF 10%, transparent 0);
+    radial-gradient(#f0f1ef 30%, transparent 0),
+    radial-gradient(#d5e6cf 20%, transparent 0),
+    radial-gradient(#e5f7df 10%, transparent 0);
   background-position:
     -200px -20px,
     200px -105px,
@@ -223,12 +219,17 @@
 
 #servicios p{
     color: #71837F;
-    font-weight: 500;
+    font-weight: 200;
+    font-family: 'Subtitulo';
 }
 #servicios h2{
     color: #71837F;
     font-weight: 500;
     font-family: Titulo;
+}
+
+.cuerpo-de-texto{
+        font-family: 'Montserrat', sans-serif;
 }
 
 button a{
@@ -550,6 +551,7 @@ nav.sticky .nav-linkk:hover{
       margin-top: -120px;
   }*/
   .formulario__label {
+      border-radius: 10px;
     padding-left: 15px;
     /*position: absolute;*/
     /*margin-top: -78px;*/
@@ -839,6 +841,7 @@ nav.sticky .nav-linkk:hover{
     }
     #contacto{
         height: 200vh;
+        overflow: hidden;
     }
 }
 

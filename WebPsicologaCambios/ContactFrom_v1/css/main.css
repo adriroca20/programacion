@@ -146,7 +146,7 @@ iframe {
 .container-contact1 {
   width: 1163px;
   background: #CCD4C9;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
 
   display: -webkit-box;
@@ -190,21 +190,21 @@ iframe {
 
 input.input1 {
   height: 50px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   padding: 0 30px;
 }
 input.input1 + .shadow-input1 {
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 textarea.input1 {
   min-height: 150px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   padding: 12px 30px;
 }
-textarea.input1 + .shadow-input1 {
+/* textarea.input1 + .shadow-input1 {
   border-radius: 25px;
-}
+} */
 
 /*---------------------------------------------*/
 .wrap-input1 {
@@ -222,6 +222,7 @@ textarea.input1 + .shadow-input1 {
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
+  
 }
 
 .shadow-input1 {
@@ -270,7 +271,7 @@ textarea.input1 + .shadow-input1 {
 .contact1-form-btn {
   min-width: 193px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 25px; 
   background: #CCB5A1;
   font-family: Montserrat-Bold;
   font-size: 15px;
@@ -376,7 +377,7 @@ textarea.input1 + .shadow-input1 {
   max-width: 70%;
   background-color: white;
   border: 1px solid #c80000;
-  border-radius: 13px;
+  /* border-radius: 13px; */
   padding: 4px 25px 4px 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
