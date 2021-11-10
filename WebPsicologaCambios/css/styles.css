@@ -153,6 +153,9 @@
      background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); 
 }
 
+.esconder{
+    display: none;
+}
 /*Boton sobre mi*/
 
 .boton-mas-about {
