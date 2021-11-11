@@ -116,7 +116,7 @@
 
 
   <section id="sobre-mi">
-    <div class="container my-5 pagina-about" id="primera-pagina-about"
+    <div class="container my-5 pagina-about animacion" id="primera-pagina-about"
     data-aos="zoom-out" 
     data-aos-delay="50" 
     data-aos-duration="1000" 
@@ -126,7 +126,7 @@
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 col-sm-12 text-center">
           <h1 class="display-4 fw-bold lh-1 titulo-fuente">¡Conóceme!</h1>
-          <p class="lead cuerpo-de-texto">Soy isleña, enamorada del mar y de su forma tan pelicular de hacerme sentir la calma. Desde pequeña siempre tuve un sentido de la sensibilidad muy desarrollado, eso quiere decir, que las emociones, inquietudes o malestar de las personas, era capaz de sentirlo sólo observando cómo se expresaba, su mirada incluso el tono de su piel.
+          <p class="lead cuerpo-de-texto texto-about">Soy isleña, enamorada del mar y de su forma tan pelicular de hacerme sentir la calma. Desde pequeña siempre tuve un sentido de la sensibilidad muy desarrollado, eso quiere decir, que las emociones, inquietudes o malestar de las personas, era capaz de sentirlo sólo observando cómo se expresaba, su mirada incluso el tono de su piel.
             A partir de ahí, supe que mi camino era la rama sanitaria. Pero, ¿cómo podía ayudar?
             </p>
           <div class="d-grid gap-2 d-md-flex d-sm-flex justify-content-md-start mb-4 mb-lg-3">
@@ -149,7 +149,7 @@
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 col-sm-12 text-center">
           <h1 class="display-4 fw-bold lh-1 titulo-fuente">¡Conóceme!</h1>
-          <p class="lead cuerpo-de-texto">
+          <p class="lead cuerpo-de-texto texto-about">
             </p>
           <div class="d-grid gap-2 d-md-flex d-sm-flex justify-content-md-start mb-4 mb-lg-3">
             <button type="button" class="btn btn-lg boton-mas-about px-4 border-dark"><a href="#contacto">¡Contáctame!</a> </button>
@@ -378,7 +378,7 @@
 
     <div class="contact1">
       <div class="container-contact1"
-      data-aos="zoom-out" 
+    data-aos="zoom-out" 
     data-aos-delay="50" 
     data-aos-duration="1000" 
     data-aos-easing="ease-in-out"
@@ -606,12 +606,12 @@
     });
 
     function alternarAbout(){
-    const aux=document.getElementById("primera-pagina-about");
     const paginasAbout= document.querySelectorAll(".pagina-about");
-
     paginasAbout.forEach(element=>{
       element.classList.toggle("esconder");
+      element.classList.toggle("animacion");
     })
+
     }
 
   </script>
