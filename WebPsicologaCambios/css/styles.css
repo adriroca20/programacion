@@ -222,9 +222,12 @@
 
 #contacto{
     height: 100vh;
-    background-color: #CCD4C9;
 }
-
+.contact1{
+    background: linear-gradient(100deg,#FFF,#F7F4F1,#71837F);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+  }
 
 #servicios {
     overflow: hidden;
@@ -883,7 +886,7 @@ nav.sticky .nav-linkk:hover{
         width: 90%
     }
     #contacto{
-        height: 200vh;
+        height: 100vh;
         overflow: hidden;
     }
 }
