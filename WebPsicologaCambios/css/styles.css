@@ -688,6 +688,7 @@ nav.sticky .nav-linkk:hover{
     bottom: 40px;
     right: 40px;
     z-index: 99999;
+    text-decoration: none;
    
   }
   .download-btn a{
@@ -698,6 +699,7 @@ nav.sticky .nav-linkk:hover{
     border-radius: 6px;
     border: 2px solid green;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
    
   }
@@ -709,7 +711,7 @@ nav.sticky .nav-linkk:hover{
   #link-whatsapp-subtitulo{
     color: green;
     display: inline-block;
-  position: relative;
+    position: relative;
   }
 
   #link-whatsapp-subtitulo:after{

@@ -1,3 +1,85 @@
+
+//Obtener datos del cliente
+var deMañanas = true;
+
+const picker = document.getElementById("fecha");
+var today = new Date().toISOString().split('T')[0];
+document.getElementsByName("somedate")[0].setAttribute('min', today);
+
+picker.addEventListener('input', function (e) {
+  var day = new Date(this.value).getUTCDay();
+  if ([6, 0, 3, 4].includes(day)) {
+    e.preventDefault();
+    this.value = '';
+    alert('Atendemos Lunes, Martes y Viernes. \nPor favor, elija un dia permitido. \n Muchas gracias.');
+  }
+  else if ([5].includes(day)) {
+    deMañanas = false;
+  }
+  else { deMañanas = true; }
+});
+
+//Selector de horas
+
+var x = document.getElementById("servicio");
+var items;
+
+var NoventaMins="PNIE primeras visitas 90 min - $VALOR";
+
+x.addEventListener('click', function (e) {
+  if (x.value == "PNIE primeras visitas 90 min - $VALOR") {
+    //4:45 PM
+    if (deMañanas) {
+      items = ["9:00 AM", "10:30 AM", "12:00 PM"];
+    }
+    else {
+      items = ["9:00", "10:30", "12:00", "16:00", "17:30"];
+    }
+
+  }
+  else if (x.value == "PNIE revisiones 45 min - $VALOR") {
+    //4:45 PM
+    if (deMañanas) {
+      items = ["9:00 AM", "9:45 AM", "10:30 AM", "11:15 AM", "12:00 PM", "12:45 PM"];
+    }
+    else {
+      items = ["9:00", "9:45", "10:30", "11:15", "12:00", "12:45 ", "16:00 ", "16:45", "17:30"];
+    }
+
+  }
+  else if (x.value === "Consultas express 30 min - $VALOR") {
+    //4:45 PM
+    if (deMañanas) {
+      items = ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "13:00 PM"];
+    }
+    else {
+      items = ["9:00", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "16:00", "16:30", "17:00", "17:30"];
+    }
+
+  }
+  else if (x.value === "Psicoterapia 50 min - $VALOR") {
+    //4:45 PM
+    if (deMañanas) {
+      items = ["9:00 AM", "9:50 AM", "10:40 AM", "11:30 AM", "12:20 PM", "13:10 PM"];
+    }
+    else {
+      items = ["9:00", "9:50", "10:40", "11:30", "12:20", "13:10", "16:00", "16:50", "17:40"];
+    }
+
+  }
+  else {
+    items = [""]
+  }
+  var str = ""
+  for (var item of items) {
+    str += "<option>" + item + "</option>"
+  }
+  document.getElementById("time").innerHTML = str;
+});
+
+
+
+//Crear la cita
 const { google } = require('googleapis')
 
 // Require oAuth2 from our google instance.
@@ -19,11 +101,13 @@ const calendar = google.calendar({ version: 'v3', auth: oAuth2Client })
 
 // Create a new event start date instance for temp uses in our calendar.
 const eventStartTime = new Date()
-eventStartTime.setDate(eventStartTime.getDay() + 2)
+eventStartTime.setDate(day)
 
 // Create a new event end date instance for temp uses in our calendar.
 const eventEndTime = new Date()
-eventEndTime.setDate(eventEndTime.getDay() + 4)
+eventEndTime.setDate(day)
+
+if(){}
 eventEndTime.setMinutes(eventEndTime.getMinutes() + 45)
 
 // Create a dummy event for temp uses in our calendar
