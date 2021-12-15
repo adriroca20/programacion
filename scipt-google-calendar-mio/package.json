@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "googleapis": "^91.0.0",
+    "node": "^17.0.1",
+    "process": "^0.11.10",
+    "require": "^2.4.20",
+    "uniqid": "^5.4.0"
+  },
+  "name": "scipt-google-calendar-mio",
+  "version": "1.0.0",
+  "main": "clienteSoniaCalendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Rocafull",
+  "license": "ISC",
+  "description": ""
+}

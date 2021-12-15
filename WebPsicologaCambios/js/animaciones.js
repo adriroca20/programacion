@@ -1,15 +1,15 @@
-//       const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+       const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 
-//       tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
-//       tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
-//       tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-//       tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
-//       tl.fromTo(".contenedor-principal-datos", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+       tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+       tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+       tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+       tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+       tl.fromTo(".contenedor-principal-datos", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
 
 //Animacion about me
-const links = document.getElementsByClassName("nav-linkk");
+const links = document.getElementsByClassName(".nav-linkk");
 const navbar = document.getElementById("navbarPrincipal");
 
 links.forEach(element => {

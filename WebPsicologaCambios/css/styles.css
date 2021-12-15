@@ -28,7 +28,7 @@
 
 /*Animacion inicio*/
 .intro{
-    background: black;
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -55,13 +55,13 @@
 }
 
 .intro-text{
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-align: center;
 }
 
 .hide{
-    background: black;
+    background: white;
     overflow: hidden;
 }
 
@@ -109,7 +109,7 @@
     margin: 0 20px;
     display: inline-block;
     position: relative;
-  
+    
 }
 
 .nav-linkk:hover{
@@ -149,7 +149,6 @@
     justify-content: center; 
     height: 100%;
     width: 100%;
-    
      background: linear-gradient(90deg, #F7F4F1 50%, #CCD4C9 50%); 
 }
 
