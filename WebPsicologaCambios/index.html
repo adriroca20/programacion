@@ -15,7 +15,7 @@
   <!-- Cosas carousel -->
   <link rel="stylesheet" href="./css/carousel.css">
   <!-- Cosas Contacto -->
-  <link rel="stylesheet" type="text/css" href="./ContactFrom_v1/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/style_form.css">
   <!-- Fin cosas contacto -->
 </head>
 
@@ -391,10 +391,17 @@
     data-aos-once="false"
     data-aos-anchor-placement="top">
         <div class="contact1-pic js-tilt" data-tilt>
-          <img src="./ContactFrom_v1/images/img-01.png" alt="IMG">
+          <img src="./recursos/sobre.png" alt="imagen-contacto">
         </div>
 
-        <form class="contact1-form validate-form">
+        <form class="contact1-form validate-form" target="_blank"  action="https://formsubmit.co/44e166eedb650c8f9d985218624426f2" method="POST">
+           <!-- Honeypot para cazar spam-->
+           <input type="text" name="_honey" style="display: none;">
+           <!-- Disable captcha-->
+           <input type="hidden" name="_captcha" value="false">
+           <!-- Successful email-->
+           <input type="hidden" name="_next" value="https://webpruebasadrian.x10.mx/">
+          
           <span class="contact1-form-title">
             ¡Pide una cita!
           </span>
@@ -403,7 +410,7 @@
           </p>
           <div class="wrap-input1 validate-input" data-validate="Es obligatorio indicar tu nombre">
             <label for="nombre" class="formulario__label">Escribe tu nombre y apellidos</label>
-            <input class="input1" type="text" name="name" placeholder="Nombre y apellidos" id="nombre">
+            <input class="input1 form-control" type="text" name="name&nbsp;apellidos" placeholder="Nombre y apellidos" id="nombre" required>
             <span class="shadow-input1"></span>
           </div>
          
@@ -417,7 +424,7 @@
           </select>
 
 
-          <label for="fecha" class="formulario__label">Indica la fecha de tu reserva. <br>
+          <label for="fecha" class="formulario__label">Indique la fecha de su reserva. <br>
             <p class="text-secondary">Dias disponibles: Lunes, Martes y Viernes</p>
           </label>
           <input id="fecha" type="date" class="formulario__input input1" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
@@ -430,9 +437,14 @@
             <option>Seleccione antes el dia</option>
           </select>
 
+          <div class="wrap-input1 validate-input" data-validate="Es obligatorio indicar tu nombre">
+            <label for="nombre" class="formulario__label">Escriba su correo electrónico.</label>
+            <input class="input1 form-control" type="email" name="email" placeholder="Correo electrónico " id="nombre" required>
+            <span class="shadow-input1"></span>
+          </div>
 
           <div class="container-contact1-form-btn">
-            <button class="contact1-form-btn" id="boton-reservar">
+            <button type="submit" class="contact1-form-btn" id="boton-reservar">
               <span>
                 Reservar
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -482,7 +494,6 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
   <script src="./js/animaciones.js"></script>
-  <script src="./js/form.js"></script>
   <script type="text/javascript" src="./js/googleCalendar.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -887,7 +887,7 @@ nav.sticky .nav-linkk:hover{
         width: 90%
     }
     #contacto{
-        height: 100vh;
+        height: 150vh;
         overflow: hidden;
     }
 }
@@ -905,6 +905,10 @@ nav.sticky .nav-linkk:hover{
         height: 50%;
     }
     .rounded-lg-3 { border-radius: .3rem; }
+    #contacto{
+        height: 150vh;
+        overflow: hidden;
+    }
  }
 
 @media (min-width: 1200px) { 
