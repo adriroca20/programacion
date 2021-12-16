@@ -890,6 +890,11 @@ nav.sticky .nav-linkk:hover{
         height: 150vh;
         overflow: hidden;
     }
+
+    .boton-mas-about{
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 
 

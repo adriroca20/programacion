@@ -29,10 +29,10 @@ var selectorHoraReserva= document.getElementById("time");
 var nombre= document.getElementById("nombre");
 var items;
 
-const NoventaMins="PNIE primeras visitas 90 min - $VALOR";
-const CuarentaYCincoMins="PNIE revisiones 45 min - $VALOR";
-const TreintaMins="Consultas express 30 min - $VALOR";
-const CincuentaMins="Psicoterapia 50 min - $VALOR";
+const NoventaMins="PNIE primeras visitas 90 min - 80€";
+const CuarentaYCincoMins="PNIE revisiones 45 min - 50€";
+const TreintaMins="Consultas express 30 min - 25€";
+const CincuentaMins="Psicoterapia 50 min - 50€";
 
 var servicio="";
 var nombreCliente="";

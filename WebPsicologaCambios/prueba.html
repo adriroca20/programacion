@@ -11,32 +11,42 @@
   <link rel="stylesheet" href="./css/style-libro.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link href="./css/bootstrap.min.css" rel="stylesheet">
-
-
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   <!-- Cosas carousel -->
   <link rel="stylesheet" href="./css/carousel.css">
   <!-- Cosas Contacto -->
-
   <link rel="stylesheet" type="text/css" href="./ContactFrom_v1/css/main.css">
-
   <!-- Fin cosas contacto -->
 </head>
 
 <body id="inicio">
-  <form action="mail.php" method="post">
-    <label for="name">Your Name</label>
-    <input type="text"  name="name" placeholder="Your name..">
-
-    <label for="email">Email</label>
-    <input type="email"  name="email" placeholder="Your email..">
-   
-    <label for="message">Message</label>
-    <textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
+  
+<div class="container">
+  <h1>FormSubmit Demo</h1>
+  <form target="_blank" action="https://formsubmit.co/44e166eedb650c8f9d985218624426f2" method="POST">
+    <!-- Honeypot para cazar spam-->
+    <input type="text" name="_honey" style="display: none;">
+    <!-- Disable captcha-->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Successful email-->
+    <input type="hidden" name="_next" value="https://webpruebasadrian.x10.mx/">
+    
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name&nbsp;apellidos" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
   </form>
+</div>
 </body>
 
 </html>
