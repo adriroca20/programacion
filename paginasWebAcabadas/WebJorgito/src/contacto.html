@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="text-white bg-black">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="../recursos/img/logo.png" alt="logo"
+                        class="w-50"></a>
+            </div>
+
+        </nav>
+        <input type="checkbox" id="active">
+        <label for="active" id="boton-nav"><i class="fa fa-bars"></i></label>
+        <div class="wrapper">
+            <ul class="menu">
+                <li data-text="Proyectos"><a href="proyectos.html">Proyectos</a></li>
+                <li data-text="Sobre mi"><a href="aboutMe.html">Sobre mi</a></li>
+                <li data-text="Contactar"><a href="contacto.html">Contactar</a></li>
+                <li data-text="Inicio"><a href="./index.html">Inicio</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row py-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-sm-12">
+                <div class="texto-contacto">
+                    <h2><b>Contactame</b></h2>
+                    <p>Puedes contactar conmigo en la forma que prefieras, por teléfono, email, o bien solicitando
+                        que sea yo quien contacte contigo rellenando el formulario de contacto.
+                        Si te ha gustado alguno de mis trabajos o estás interesado en contactar conmigo, ¡no dudes
+                        en hacerlo!</p>
+                </div>
+                <div class="imagenes-datos d-flex align-items-start">
+                    <i class="fas fa-male fs-1 py-3"></i>
+                    <div class="datos d-block px-4">
+                        <h4><b>Nombre</b></h4>
+                        <p>Jorge Espinosa Revuelta</p>
+                    </div>
+                </div>
+                <div class="imagenes-datos d-flex align-items-start">
+                    <i class="fas fa-mobile fs-1 py-3"></i>
+                    <div class="datos d-block px-4">
+                        <h4><b>Telefono</b></h4>
+                        <a href="tel:+34663235082" class="text-white"><p>+34 663 23 50 82</p></a>
+                    </div>
+                </div>
+                <div class="imagenes-datos d-flex align-items-start">
+                    <i class="fas fa-envelope fs-1 py-3"></i>
+                    <div class="datos d-block px-4">
+                        <h4><b>Email</b></h4>
+                        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJqSvslkfkdDCxzTMQNNJrvfWvFqQgDVWjpfWGKfthBfGsqPkxMcZhzCQvPzpTCqtVhTGlB" target="_blank" class=" text-white"><p>jorgeespinosaa13@gmail.com</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <h2><b>Escribeme</b></h2>
+                <form action="https://formsubmit.co/jorgeespinosaa13@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" class="form-control" name="name" id="" placeholder="Nombre" required>
+                                <small id="emailHelpId" class="form-text text-muted">Nombre</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" class="form-control" name="" id="" placeholder="Apellidos">
+                                <small id="emailHelpId" class="form-text text-muted">Apellidos</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        <small id="emailHelpId" class="form-text text-muted">Email</small>
+                    </div>
+
+                    <div class="form-group mensaje py-2">
+                        <textarea class="textarea w-100" name="messaje" id="" rows="6"
+                            placeholder="Mensaje"></textarea>
+                        <br>
+                        <small id="mensaje" class="form-text text-muted">Mensaje</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+                    <input type="hidden" class="form-control" name="_subject" value="Nuevo contacto pagina web"  id="">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+   
+    <footer class="container d-flex justify-content-between">
+        <h4 class="text-muted">&copy; 2021 Adrian Rocafull </h4>
+        <div class="redes me-2">
+            <a href="https://twitter.com/JorgeArtGames1" target="_blank" ><i class="fa fa-twitter fs-2" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCD9V601M3pkQtzYSvoA89NA" target="_blank" ><i class="fa fa-youtube fs-2" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/jorgeart.games/" target="_blank" ><i class="fa fa-instagram fs-2" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        let boton = document.getElementById("boton-nav");
+        let cuerpo = document.body;
+
+        boton.addEventListener("click", function () {
+            cuerpo.classList.toggle("overflow-hidden");
+        });
+    </script>
+
+
+    <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

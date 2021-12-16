@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Espinosa</title>
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="../recursos/img/logo.png" alt="logo"
+                        class="w-50"></a>
+            </div>
+
+        </nav>
+        <input type="checkbox" id="active">
+        <label for="active" id="boton-nav"><i class="fa fa-bars"></i></label>
+        <div class="wrapper">
+            <ul class="menu">
+                <li data-text="Proyectos"><a href="proyectos.html">Proyectos</a></li>
+                <li id="boton-sobre-mi" data-text="Sobre mi"><a href="aboutMe.html">Sobre mi</a></li>
+                <li data-text="Contactar"><a href="contacto.html">Contactar</a></li>
+                <li data-text="Inicio"><a href="./index.html">Inicio</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="particles-js">
+        <div class="row d-flex w-100">
+            <div class="titulo-central col-lg-12 col-sm-12 justify-content-center align-items-center text-white pe-sm-1">
+               
+               
+                <div class="title">
+                    <div class="title-inner">
+                      <div class="cafe">
+                        <div class="cafe-inner"><h1 class="nombre">Jorge Espinosa</h1></div>
+                      </div>
+                      <div class="mozart">
+                        <div class="mozart-inner"><h1 class="subtitulo">Diseñador 3D</h1></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <a href="../src/contacto.html"><button class="btn btn-primary mt-2">Contáctame</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="loadingio-spinner-bean-eater-439t861rbkg">
+        <div class="ldio-dghydgf6q0c">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader-wrapper" id="preloader">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', "../recursos/particles.json", function () {
+            console.log('callback - particles.js config loaded');
+        });
+
+    </script>
+
+
+    <script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script>
+</body>
+
+</html>

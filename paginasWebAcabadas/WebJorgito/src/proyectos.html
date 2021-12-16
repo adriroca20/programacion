@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
+
+  <link rel="stylesheet" href="../styles/proyectos.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/scroll.css">
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-white bg-black">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="../recursos/img/logo.png" alt="logo" class="w-50"></a>
+      </div>
+    </nav>
+    <input type="checkbox" id="active">
+    <label for="active" id="boton-nav"><i class="fa fa-bars"></i></label>
+    <div class="wrapper">
+      <ul class="menu">
+        <li data-text="Proyectos"><a href="proyectos.html">Proyectos</a></li>
+        <li data-text="Sobre mi"><a href="aboutMe.html">Sobre mi</a></li>
+        <li data-text="Contactar"><a href="contacto.html">Contactar</a></li>
+        <li data-text="Inicio"><a href="./index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+
+  <main>
+    <div class="position-relative overflow-hidden p-3 p-md-1 m-md-2 text-center bg-black">
+      <div class="col-md-5 p-lg-5 mx-auto">
+        <h1 class="display-4 fw-normal titulo-1">Proyectos</h1>
+        <p class="lead fw-normal titulo-2">En este apartado podrás encontrar algunos de los proyectos en los que he estado
+          trabajando</p>
+      </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center btn-contactar">
+      <a class="btn position-absolute" href="../src/contacto.html">Contactar</a>
+    </div>
+
+
+    <div class="album py-5 bg-black">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div id="carouselEnergia" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="40000">
+                    <img src="../recursos/img/energia_1 (1).png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="../recursos/img/energia_1 (2).png" class="d-block w-100" alt="...">
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselEnergia"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselEnergia"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <p class="card-text text-black d-inline">Cápsulas de energía.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver" data-original="../recursos/img/energia_1 (1).png" texto-original="Cápsulas de energía.">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm d-flex">
+              <div id="carouselCasco" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="40000">
+                    <img src="../recursos/img/casco_1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="../recursos/img/casco_2.png" class="d-block w-100" alt="...">
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasco"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselCasco"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body card-body-negro">
+                <p class="card-text text-white d-inline">Soldado SC-fi.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-light boton-ver"  data-original="../recursos/img/casco_1.png" texto-original="Soldado SC-fi.">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div id="carouselPiedra" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="40000">
+                    <img src="../recursos/img/piedra.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="../recursos/img/piedra (2).png" class="d-block w-100" alt="...">
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPiedra"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselPiedra"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-black d-inline">Gema mágica.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver" data-original="../recursos/img/piedra.png" texto-original="Gema mágica.">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div id="carouselCascoMoto" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="40000">
+                    <img src="../recursos/img/casco_de_moto (1).png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="../recursos/img/casco_de_moto (2).png" class="d-block w-100" alt="...">
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCascoMoto"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselCascoMoto"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body card-body-negro">
+                <p class="card-text text-white d-inline">Casco de moto.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-light boton-ver" data-original="../recursos/img/casco_de_moto (1).png" texto-original="Casco de moto.">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div id="carouselArma" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="40000">
+                    <img src="../recursos/img/arma1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="../recursos/img/arma3.png" class="d-block w-100" alt="...">
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselArma"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselArma"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-black d-inline">Arma Sci-fi</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-secondary boton-ver" data-original="../recursos/img/arma1.png" texto-original="Arma Sci-fi">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div id="carouselMecha" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="40000">
+                    <img src="../recursos/img/mecha.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="../recursos/img/mecha (1).jpg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMecha"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMecha"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body card-body-negro">
+                <p class="card-text text-white d-inline">Mecha Piloto.</p>
+                <br>
+                <div class="position-relative d-inline mt-auto">
+                  <button type="button" class="btn btn-sm btn-outline-light boton-ver" data-original="../recursos/img/mecha.jpg" texto-original="Mecha Piloto.">Ver</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-tuto">
+      <img src="" alt="imagen" class="full-img">
+      <p class="caption">Holaaaaaaaa</p>
+    </div>
+  </main>
+
+
+  <footer class="container d-flex justify-content-between">
+    <h4 class="text-muted">&copy; 2021 Adrian Rocafull </h4>
+    <div class="redes me-2">
+        <a href="https://twitter.com/JorgeArtGames1" target="_blank" ><i class="fa fa-twitter fs-2" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/channel/UCD9V601M3pkQtzYSvoA89NA" target="_blank" ><i class="fa fa-youtube fs-2" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/jorgeart.games/" target="_blank" ><i class="fa fa-instagram fs-2" aria-hidden="true"></i></a>
+    </div>
+</footer>
+  
+  <div class="loadingio-spinner-bean-eater-439t861rbkg">
+    <div class="ldio-dghydgf6q0c">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div class="loader-wrapper" id="preloader">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    });
+</script>
+
+  
+  <div class="loadingio-spinner-bean-eater-439t861rbkg">
+    <div class="ldio-dghydgf6q0c">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="loader-wrapper" id="preloader">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div> -->
+
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    });
+</script>
+
+
+  <script type="text/javascript">
+    let progress = document.getElementById("progressbar");
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+
+  <script type="text/javascript">
+    let boton = document.getElementById("boton-nav");
+    let cuerpo = document.body;
+
+    boton.addEventListener("click", function () {
+      cuerpo.classList.toggle("overflow-hidden");
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    const botonModal = document.querySelectorAll(".boton-ver");
+    const modal= document.querySelector(".modal-tuto");
+    const imagenModal= document.querySelector(".full-img");
+    const textoModal= document.querySelector(".caption");
+
+    botonModal.forEach((element) => {
+      element.addEventListener("click", function(){
+      modal.classList.add("open");
+      imagenModal.classList.add("open");
+      document.body.classList.add("overflow-hidden");
+
+
+      const imagenOriginal = element.getAttribute("data-original");
+      imagenModal.src= `${imagenOriginal}`
+
+      const textoOriginal= element.getAttribute("texto-original");
+      textoModal.textContent= `${textoOriginal}`
+
+    });
+    });
+
+    modal.addEventListener("click", (e) =>{
+      if(e.target.classList.contains('modal-tuto')){
+        modal.classList.remove("open");
+        imagenModal.classList.remove("open");
+        document.body.classList.remove("overflow-hidden");
+      }
+    });
+
+
+  </script>
+
+
+
+  <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

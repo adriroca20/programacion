@@ -1,0 +1,204 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.wrapper{
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    clip-path: circle(15px at calc(100% - 45px) 35px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+#active:checked ~ .wrapper{
+    z-index: 900;
+    clip-path: circle(75%);
+}
+
+#active:checked ~ #boton-nav{
+    background: black;
+    color: #2196f3;
+}
+
+#active:checked ~ #boton-nav i::before{
+    content: "\f00d";
+}
+
+#boton-nav{
+    position: absolute;
+    right: 18px;
+    transition: all 0.3s linear;
+    top: 3px;
+    z-index: 950;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    color: white;
+    background: #2196f3;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+#boton-nav:hover{ 
+    transform: rotate(90deg);
+}
+
+
+header ul{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    display: inline-block;
+    max-width: 50%;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li::before{
+    z-index: 800;
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 30px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+header ul li:hover:before{
+    opacity: .3;
+    letter-spacing: 0px ;
+}
+header ul li a{
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 30px 50px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #2c86be;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+    font-weight: 900;
+}
+
+header ul:hover li a{
+    opacity: 0;
+}
+
+header ul li a:hover{
+    transform: scale(
+        1.4
+    );
+    z-index: 1000;
+    background-color: rgb(218, 33, 88);
+    opacity: 1;
+    color: #2c86be;
+
+
+}
+
+header ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, 
+    rgba(255,255,255,0.8),transparent);
+    transform: skew(35deg);
+    transition: 0s;
+
+}
+
+header ul li a:hover:before{
+    left: calc(100%+100px);
+    transition: 0,5s;
+    transition-delay: .2s;
+}
+
+header input{
+    display: none;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    top: 20vh;
+}
+
+@media (max-width: 576px) {  
+    header ul li::before{
+        display: none;
+       }
+
+    header ul li a{
+        padding: 20px 0px;
+        margin: 20px 0;
+        font-size: 4vw;
+        width: 45vw;
+
+    }
+
+#boton-nav{
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 3vw;
+    line-height: 45px;
+    }
+
+    header ul{
+        padding-right: 2rem;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    header ul li::before{
+        font-size: 7vw;
+       font-weight: 700; 
+       }
+       header ul li a{
+        width: 30vw;
+    }
+ }
+
+@media (min-width: 992px) {
+    header ul li::before{
+     font-size: 10vw;
+    font-weight: 700; 
+    }
+    header ul li a{
+        width: 250px;
+        text-align: center;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+ 
+}
+
+@media (min-width: 1400px) { 
+
+ }
