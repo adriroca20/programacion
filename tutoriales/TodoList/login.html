@@ -11,7 +11,7 @@
 <body>
     <main>
         <div class="container">
-            <h1>Login</h1>
+            <h1>Iniciar sesión</h1>
             <form method="post" action="./index.html">
                 <div class="txt_field">
                     <input type="text" id="NombreUsuario" required>
@@ -25,15 +25,16 @@
                     <label for="contraseña">Contraseña</label>
                 </div>
                 <div class="pass">Recordar contraseña</div>
-                <input type="submit" value="Login">
+                <input type="submit" value="Iniciar sesion" class="botonInicioSesion">
+                <button type="button" id="iniciarSesionGoogle"> <a href="index.html">Iniciar Sesion con Google </a></button>
                 <div class="signup_link">
-                    <a href="#">Crear cuenta</a>
+                    <a href="index.html">Crear cuenta</a>
                 </div>
             </form>
         </div>
     </main>
 
 
-    <script src="./Login/app.js"></script>
+    <script src="./Login/app.js" type="module"></script>
 </body>
 </html>

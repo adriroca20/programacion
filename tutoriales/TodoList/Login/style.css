@@ -8,8 +8,6 @@
 body{
     background-image: linear-gradient(120deg,#2980b9,#8e44ad);
     height: 100vh;
-    overflow: hidden;
-    
 }
 
 a{
@@ -29,7 +27,7 @@ a{
 
 .container h1{
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
     border-bottom: 1px solid silver;
 }
 
@@ -98,24 +96,6 @@ form .txt_field{
     text-decoration: underline;
 }
 
-input[type="submit"]{
-    width: 100%;
-    height: 50px;
-    border: 1px solid;
-    background: #2691d9;
-    border-radius: 25px;
-    font-size: 18px;
-    color: #e9f4fb;
-    font-weight: 700;
-    outline: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover{
-    border-color: #2691d9;
-    transition: .5s;
-}
-
 .signup_link{
     margin: 30px 0;
     text-align: center;
@@ -131,4 +111,30 @@ input[type="submit"]:hover{
 }
 .signup_link a:hover{
     text-decoration: underline;
+}
+
+#iniciarSesionGoogle,input[type="submit"],#iniciarSesionGoogle a{
+    border-radius: 25px;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid #2691d9;
+    color: #2691d9;
+    background-color: white;
+}
+#iniciarSesionGoogle a{
+    border: none;
+    transition: all 0.4s ease;
+    color: #2691d9;
+    background-color: white;
+}
+#iniciarSesionGoogle:hover,input[type="submit"]:hover, #iniciarSesionGoogle:hover a{
+    border: none;
+    color: white;
+    background-color: #2691d9;
 }
