@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
-import { getAuth , GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+import { getAuth ,signInWithEmailAndPassword, GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyBTG9ZDprSVA7euWOG1trQFPKYKou1Armo",
@@ -21,16 +21,18 @@ import { getAuth , GoogleAuthProvider, signInWithRedirect, getRedirectResult } f
 //Selectors
 const botonInicioSesion= document.querySelector(".botonInicioSesion");
 const inicioGoogle =  document.getElementById("iniciarSesionGoogle");
+const checkBoxPass =  document.getElementById("checkBoxPass");
 const textBoxUsuario= document.getElementById("NombreUsuario");
 const textBoxContraseña=document.getElementById("contraseña");
 //Listeners
 inicioGoogle.addEventListener("click",iniciarSesionGoogle);
-
+botonInicioSesion.addEventListener("click",iniciarSesion);
+checkBoxPass.addEventListener("click",cambiarContra2Texto);
 //Functions
 function iniciarSesionGoogle(event){
     signInWithRedirect(auth,provider);
     
-   getRedirectResult(auth)
+    getRedirectResult(auth)
      .then((result) => {
        const credential = GoogleAuthProvider.credentialFromResult(result);
        const token = credential.accessToken;
@@ -46,6 +48,26 @@ function iniciarSesionGoogle(event){
        const credential = GoogleAuthProvider.credentialFromError(error);
 });
 }
+function iniciarSesion(event){
+  signInWithEmailAndPassword(auth,textBoxUsuario.value,textBoxContraseña.value).then((userCredential) => {
+    const user = userCredential.user;
+    console.log("Sesion iniciada con: " + user.email);
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+}
+
+function cambiarContra2Texto() {
+  if (textBoxContraseña.type === "password") {
+    textBoxContraseña.type = "text";
+  } else {
+    textBoxContraseña.type = "password";
+  }
+}
+
 
 
 

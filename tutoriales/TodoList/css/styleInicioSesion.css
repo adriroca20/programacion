@@ -90,10 +90,28 @@ form .txt_field{
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .pass:hover{
     text-decoration: underline;
+    color: #2691d9;
+}
+
+#mostrarContraseña{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    display: inline-block;
+    align-items: baseline;
+}
+
+#mostrarContraseña:hover{
+    text-decoration: underline;
+    color: #2691d9;
+}
+
+#checkBoxPass{
+    margin-right: 10px;
 }
 
 .signup_link{
@@ -113,7 +131,7 @@ form .txt_field{
     text-decoration: underline;
 }
 
-#iniciarSesionGoogle,input[type="submit"],#iniciarSesionGoogle a{
+#botonCrearCuenta,.botonInicioSesion{
     border-radius: 25px;
     padding: 5px 0 5px 0;
     width: 100%;
@@ -127,14 +145,15 @@ form .txt_field{
     color: #2691d9;
     background-color: white;
 }
-#iniciarSesionGoogle a{
+#botonCrearCuenta a,.botonInicioSesion a{
     border: none;
     transition: all 0.4s ease;
     color: #2691d9;
     background-color: white;
 }
-#iniciarSesionGoogle:hover,input[type="submit"]:hover, #iniciarSesionGoogle:hover a{
+#BotonCrearCuenta:hover a, #BotonCrearCuenta:hover, .botonInicioSesion:hover,.botonInicioSesion:hover a{
     border: none;
     color: white;
     background-color: #2691d9;
 }
+
