@@ -1,6 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
-import { getAuth ,signInWithEmailAndPassword, GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+import { getAuth ,signInWithEmailAndPassword, sendPasswordResetEmail,GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+var requirejs = require('requirejs');
+var file = require('file-system');
 
   const firebaseConfig = {
     apiKey: "AIzaSyBTG9ZDprSVA7euWOG1trQFPKYKou1Armo",
@@ -18,6 +20,7 @@ import { getAuth ,signInWithEmailAndPassword, GoogleAuthProvider, signInWithRedi
   const provider = new GoogleAuthProvider();
   const auth= getAuth();
 
+
 //Selectors
 const botonInicioSesion= document.querySelector(".botonInicioSesion");
 const inicioGoogle =  document.getElementById("iniciarSesionGoogle");
@@ -25,6 +28,7 @@ const checkBoxPass =  document.getElementById("checkBoxPass");
 const textBoxCorreo= document.getElementById("CorreoElectronico");
 const textBoxContraseña=document.getElementById("contraseña");
 const BotonRecordarContraseña= document.querySelector(".pass");
+
 //Listeners
 inicioGoogle.addEventListener("click",iniciarSesionGoogle);
 botonInicioSesion.addEventListener("click",iniciarSesion);
@@ -38,11 +42,15 @@ function iniciarSesionGoogle(event){
      .then((result) => {
        const credential = GoogleAuthProvider.credentialFromResult(result);
        const token = credential.accessToken;
-
-       const user = result.user;
-
-       set(ref())
-
+       fs.writeFile("./",token);
+      //  var datosUsuario={
+      //   nombre:token.user
+      //   email:result.user.email,
+      //   uid:result.user.uid
+      // }
+      // setDoc(doc(db,"Usuarios", result.user.uid),datosUsuario);
+      
+      window.location.href("../paginaPrincipal.html");
      }).catch((error) => {
        const errorCode = error.code;
        const errorMessage = error.message;
@@ -72,12 +80,11 @@ function cambiarContra2Texto() {
 
 function recordarContraseña(event){
   console.log("funciono");
-  auth.sendPasswordResetEmail(textBoxCorreo.value).then(function() {
+  auth.sendPasswordResetEmail(textBoxCorreo.value).then(()=> {
     window.alert("Se ha enviado un correo de recuperacion a: " + textBoxCorreo.value);
   }).catch(function(error) {
     window.alert("Usuario no registrado");
   });
-
   }
 
 
