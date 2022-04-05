@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Crear cuenta</title>
 
     <link rel="stylesheet" href="./Login/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
@@ -15,30 +15,32 @@
     <main>
         <div class="container">
             <h1>Iniciar sesión</h1>
-            <form method="post" action="./index.html">
-
+            <form>
+                
                 <div class="txt_field">
                     <input type="text" id="NombreUsuario" required>
                     <span></span>
                     <label for="NombreUsuario">Nombre</label>
                 </div>
-
                 <div class="txt_field">
-                    <input type="password" id="contraseña" required>
+                    <input type="text" id="Correo" required>
+                    <span></span>
+                    <label for="contraseña">Correo electrónico</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" id="contraseña" required>
                     <span></span>
                     <label for="contraseña">Contraseña</label>
                 </div>
-                <div class="pass">Recordar contraseña</div>
-                <input type="submit" value="Iniciar sesion" class="botonInicioSesion">
-                <button type="button" id="iniciarSesionGoogle"> <a href="#">Iniciar Sesion con Google </a></button>
+                <input type="submit" value="Crear cuenta" id="botonCrearCuenta" >
                 <div class="signup_link">
-                    <a href="SignUp.html">Crear cuenta</a>
+                    <a href="login.html">  <i class="fa fa-arrow-left" aria-hidden="true"></i></i> Volver a Inicio de sesión</a>
                 </div>
             </form>
         </div>
     </main>
 
 
-    <script src="./Login/appLogin.js" type="module"></script>
+    <script src="./Login/appSignUp.js" type="module"></script>
 </body>
 </html>

@@ -1,9 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
 import { getAuth , GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
-  
-// TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
   const firebaseConfig = {
     apiKey: "AIzaSyBTG9ZDprSVA7euWOG1trQFPKYKou1Armo",
@@ -24,6 +21,8 @@ import { getAuth , GoogleAuthProvider, signInWithRedirect, getRedirectResult } f
 //Selectors
 const botonInicioSesion= document.querySelector(".botonInicioSesion");
 const inicioGoogle =  document.getElementById("iniciarSesionGoogle");
+const textBoxUsuario= document.getElementById("NombreUsuario");
+const textBoxContraseña=document.getElementById("contraseña");
 //Listeners
 inicioGoogle.addEventListener("click",iniciarSesionGoogle);
 
@@ -33,21 +32,21 @@ function iniciarSesionGoogle(event){
     
    getRedirectResult(auth)
      .then((result) => {
-       // This gives you a Google Access Token. You can use it to access Google APIs.
        const credential = GoogleAuthProvider.credentialFromResult(result);
        const token = credential.accessToken;
 
-       // The signed-in user info.
        const user = result.user;
 
+       set(ref())
+
      }).catch((error) => {
-       // Handle Errors here.
        const errorCode = error.code;
        const errorMessage = error.message;
-       // The email of the user's account used.
        const email = error.email;
-       // The AuthCredential type that was used.
        const credential = GoogleAuthProvider.credentialFromError(error);
 });
 }
+
+
+
 
