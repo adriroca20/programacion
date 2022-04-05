@@ -19,25 +19,33 @@ import { getFirestore, collection,doc, setDoc} from "https://www.gstatic.com/fir
 //Selectors
   const usuario= document.getElementById("nombre");
   const correo= document.getElementById("Correo");
+  const pass= document.getElementById("contraseña");
   const botonCrear= document.getElementById("botonCrearCuenta");
+  const formulario= document.querySelector("form");
   //Listeners
   botonCrear.addEventListener("click", (e)=>{
-    createUserWithEmailAndPassword(auth,correo.value,"contraseña").then( Credential=> {
-      console.log(Credential.email);
-    let user ={
-      Nombre: usuario.value,
-      Uid: Credential.uid,
-      Email: Credential.email
-    };
-    console.log(Credential.uid);
-    console.log(user);
-    console.log("Funciona");
-    // setDoc(doc(db,"Usuarios", "userCredential.uid"),user);
+    createUserWithEmailAndPassword(auth,correo.value,pass.value).then( Credential => {
+      console.log(Credential);
+      console.log(Credential.user.uid);
+      var datosUsuario={
+        nombre:usuario.value,
+        email:Credential.user.email,
+        uid:Credential.user.uid
+      }
+     setDoc(doc(db,"Usuarios", Credential.user.uid),datosUsuario);
+     formulario.reset();
+     window.alert('¡Muchas gracias ${Credential.user.name} por registrarte!');
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorMessage);
+    console.log(errorCode);
+    if(errorCode=="auth/weak-password"){
+      window.alert("La contraseña debe contener al menos 6 caracteres");
+    }
+    else{
+      window.alert("Usuario ya registrado");
+    }
     // ..
   });
   });

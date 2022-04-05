@@ -22,12 +22,14 @@ import { getAuth ,signInWithEmailAndPassword, GoogleAuthProvider, signInWithRedi
 const botonInicioSesion= document.querySelector(".botonInicioSesion");
 const inicioGoogle =  document.getElementById("iniciarSesionGoogle");
 const checkBoxPass =  document.getElementById("checkBoxPass");
-const textBoxUsuario= document.getElementById("NombreUsuario");
+const textBoxCorreo= document.getElementById("CorreoElectronico");
 const textBoxContraseña=document.getElementById("contraseña");
+const BotonRecordarContraseña= document.querySelector(".pass");
 //Listeners
 inicioGoogle.addEventListener("click",iniciarSesionGoogle);
 botonInicioSesion.addEventListener("click",iniciarSesion);
 checkBoxPass.addEventListener("click",cambiarContra2Texto);
+BotonRecordarContraseña.addEventListener("click",recordarContraseña);
 //Functions
 function iniciarSesionGoogle(event){
     signInWithRedirect(auth,provider);
@@ -49,14 +51,14 @@ function iniciarSesionGoogle(event){
 });
 }
 function iniciarSesion(event){
-  signInWithEmailAndPassword(auth,textBoxUsuario.value,textBoxContraseña.value).then((userCredential) => {
+  signInWithEmailAndPassword(auth,textBoxCorreo.value,textBoxContraseña.value).then((userCredential) => {
     const user = userCredential.user;
     console.log("Sesion iniciada con: " + user.email);
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    // ..
+    window.alert('Correo o contraseña incorrecta');
   });
 }
 
@@ -67,6 +69,16 @@ function cambiarContra2Texto() {
     textBoxContraseña.type = "password";
   }
 }
+
+function recordarContraseña(event){
+  console.log("funciono");
+  auth.sendPasswordResetEmail(textBoxCorreo.value).then(function() {
+    window.alert("Se ha enviado un correo de recuperacion a: " + textBoxCorreo.value);
+  }).catch(function(error) {
+    window.alert("Usuario no registrado");
+  });
+
+  }
 
 
 
