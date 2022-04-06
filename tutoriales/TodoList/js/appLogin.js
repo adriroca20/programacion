@@ -1,8 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
 import { getAuth ,signInWithEmailAndPassword, sendPasswordResetEmail,GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
-var requirejs = require('requirejs');
-var file = require('file-system');
 
   const firebaseConfig = {
     apiKey: "AIzaSyBTG9ZDprSVA7euWOG1trQFPKYKou1Armo",
@@ -42,13 +40,6 @@ function iniciarSesionGoogle(event){
      .then((result) => {
        const credential = GoogleAuthProvider.credentialFromResult(result);
        const token = credential.accessToken;
-       fs.writeFile("./",token);
-      //  var datosUsuario={
-      //   nombre:token.user
-      //   email:result.user.email,
-      //   uid:result.user.uid
-      // }
-      // setDoc(doc(db,"Usuarios", result.user.uid),datosUsuario);
       
       window.location.href("../paginaPrincipal.html");
      }).catch((error) => {
@@ -80,11 +71,15 @@ function cambiarContra2Texto() {
 
 function recordarContraseña(event){
   console.log("funciono");
-  auth.sendPasswordResetEmail(textBoxCorreo.value).then(()=> {
-    window.alert("Se ha enviado un correo de recuperacion a: " + textBoxCorreo.value);
-  }).catch(function(error) {
-    window.alert("Usuario no registrado");
+  fs.writeFile('prueba.txt', 'Hello content!', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
   });
+  // auth.sendPasswordResetEmail(textBoxCorreo.value).then(()=> {
+  //   window.alert("Se ha enviado un correo de recuperacion a: " + textBoxCorreo.value);
+  // }).catch(function(error) {
+  //   window.alert("Usuario no registrado");
+  // });
   }
 
 
