@@ -18,11 +18,11 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-header{
+.titulo{
     font-size: 1.5 rem;
 }
 
-header,form{
+.titulo,form{
     min-height: 20vh;
     display: flex;
     justify-content: center;

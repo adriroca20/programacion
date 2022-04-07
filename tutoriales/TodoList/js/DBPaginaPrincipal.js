@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
 import { getAuth ,signInWithEmailAndPassword, sendPasswordResetEmail,GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
-import { getFirestore, collection,doc, setDoc,getDoc,getDatabase} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+import { getFirestore, collection,doc, setDoc,getDoc} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyBTG9ZDprSVA7euWOG1trQFPKYKou1Armo",
@@ -18,13 +18,34 @@ import { getFirestore, collection,doc, setDoc,getDoc,getDatabase} from "https://
   const analytics = getAnalytics(app);
   const provider = new GoogleAuthProvider();
   const auth= getAuth();
-  const database = getDatabase();
+  
+  const firebase= getFirestore(app);
+  var Documento= doc(firebase,"Usuarios","sBnDW7OEnpRqBQ1ORFTiCqsAuPD3");
+  const datosDoc = await getDoc(Documento);
 //Selectors
-
+const botonAux= document.getElementById("prueba");
+const BotonCerrarSesion = document.getElementById("cerrarSesion");
 //Listeners
-window.onload(cargarDatos);
+window.onload=cargarDatos;
+BotonCerrarSesion.addEventListener("click", cerrarSesion);
+botonAux.addEventListener("click", ()=>{
+  console.log(auth.currentUser.uid);
+});
 //Functions
 
 function cargarDatos(event){
   
+  if (datosDoc.exists()) {
+    console.log("Document data:", datosDoc.data());
+  } else {
+    console.log("No such document!");
+  }
+}
+
+function cerrarSesion(event){
+  auth.signOut().then(function() {
+    console.log('Signed Out');
+  }, function(error) {
+    console.error('Sign Out Error', error);
+  });
 }

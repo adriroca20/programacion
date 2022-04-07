@@ -11,13 +11,34 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <title>Todo List</title>
 
     <link rel="stylesheet" href="css/stylePaginaPrincipal.css">
 </head>
 <body>
     <header>
-        <h1>LISTA DE ADRIAN</h1>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/logo2.png" alt="logo" class="logo"></a>
+                <button class="navbar-toggler" id="botonNavbar" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end justify-content-sm-center px-2"
+                    id="navbarSupportedContent">
+                    <a class="nav-link active text-black" href="#" id="prueba">Datos</a>
+                    <a class="nav-link text-black" href="./html/login.html">Login</a>
+                    <a class="nav-link text-black" href="#" id="cerrarSesion"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="titulo">
+            <h1>LISTA DE ADRIAN</h1>
+        </div>
     </header>
 
     <form action="">
@@ -33,11 +54,11 @@
             </select>
         </div>
     </form>
-
     <div class="todo-container">
         <ul class="todo-list"></ul>
     </div>
     <script src="js/DBPaginaPrincipal.js" type="module"></script>
     <script src="js/appPaginaPrincipal.js" type="module"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
