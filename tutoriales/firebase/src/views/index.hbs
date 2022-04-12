@@ -1,0 +1,71 @@
+<div class="col-md-6 offset-md-3">
+
+    <div class="card bg-dark text-light">
+        <div class="card-header">
+            <h1 class="h4 text-white text-center">Lista de contactos</h1>
+        </div>
+          <div class="card-body">
+        {{!-- Si quedan contactos, hace esto --}}
+        {{#if contacts}}
+        {{!-- Crea una lista con n li segun cada elemento que tenga contacts --}}
+        {{!-- Es como un forEach --}}
+        <ul class="list-group">
+            {{#each contacts}}
+            <li class="list-group-item flex justify-content-betweeen align-items-center">
+                <h3>{{firstname}} {{lastname}} </h3>
+                <p>{{email}}</p>
+                <p>{{phone}}</p>
+
+                <a href="/delete-contact/{{id}}" class="btn btn-danger">Delete</a>
+                <a href="/edit-contact/{{id}}" class="btn btn-secondary">Edit</a>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>No hay contactos</p>
+        {{/if}}
+
+
+    </div>
+
+    <div class="card-footer">
+        <h1>Crear contacto</h1>
+
+        {{!-- Si no hay contact.id crea el contacto. Si lo hay, lo actualiza --}}
+        <form action="{{#unless contact.id}} /new-contact {{else}}/update-contact/{{contact.id}} {{/unless}}"
+            method="POST">
+
+            <div class="row">
+                <div class="col">
+                    <label for="firstname">Nombre:</label>
+                    <input type="text" name="firstname" placeholder="firstname" id="firstname"
+                        value="{{contact.firstname}}" class="form-control mb-2">
+                </div>
+                <div class="col">
+                    <label for="lastname">Apellidos:</label>
+                    <input type="text" name="lastname" placeholder="lastname" id="lastname" value="{{contact.lastname}}"
+                        class="form-control mb-2">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="email" id="email" value="{{contact.email}}" class="form-control mb-2">
+                </div>
+                <div class="col">
+                    <label for="phone">Numero de telefono:</label>
+                    <input type="text" name="phone" placeholder="phone" id="phone" value="{{contact.phone}}" class="form-control mb-2">
+                </div>
+            </div>
+
+            {{#if contact.id}}
+            <input type="submit" name="Crear" id="enviar" class="btn btn-primary btn-block" value="Update">
+            <a href="/"  class="btn btn-secondary btn-block">Cancel</a>
+            {{else}}
+            <input type="submit" name="Crear" id="enviar" class="btn btn-primary btn-block" value="Añadir">
+            {{/if}}
+        </form>
+    </div>
+    </div>
+</div>
