@@ -1,0 +1,197 @@
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+:root{
+    --principal:#0a192f;
+    --secundario:white;
+    --clickable: #64ffda;
+    --cajas: #112240;
+    --textoSecundario: #71837F;
+  }
+
+a{
+    text-decoration: none;
+    color: var(--clickable);
+}
+
+body{
+    background-color: var(--principal);
+}
+
+.prueba{
+    height: 100vh;
+}
+
+/*--------------------------------------------------------------
+# Animacion lluvia
+--------------------------------------------------------------*/
+.lluvia{
+    position: absolute;
+    height: 200px;
+    top: 0;
+    background: linear-gradient(transparent,#fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes animate{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar{
+     display: flex;
+     position: relative;
+     justify-content: space-between;
+     padding: 20px;
+     background-color: var(--principal);
+}
+
+.linkNavbar{
+    display: inline-block;
+    position: relative;
+    margin: 0px 20px;
+    font-size: large;
+}
+
+.linkNavbar:hover{
+    color: var(--secundario);
+}
+.linkNavbar:hover .numeroNav{
+    color: var(--clickable);
+}
+
+.iconos-barra-superior{
+    text-decoration: none;
+    color: var(--textoSecundario);
+    transition: all .3s ease-in-out;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.iconos-barra-superior:hover{
+    transform: scale(1.2);
+}
+
+.linkNavbar:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    padding-top: 5px;
+    background-color: var(--secundario);
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.linkNavbar:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.botonNavbar{
+    color: var(--secundario);   
+    transition: all 0.3s ease-in-out;
+}
+.botonNavbar:hover{
+    transform: rotate(90deg);
+}
+.fa-xmark{
+    color: red;
+}
+
+.numeroNav{
+    display: inline-block;
+    color: var(--secundario);
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+#hero{
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-container h3{
+    color: var(--clickable);
+}
+.hero-container h1{
+    color: var(--secundario);
+    font-size: 5vw;
+    text-shadow: 0 0 2px rgba(255,255,255,.4),
+                 0 0 8px rgba(255,255,255,.4),
+                 0 0 10px rgba(255,255,255,.4),
+                 0 0 20px rgba(66,220,219,.4),
+                 0 0 30px rgba(66,220,219,.4),
+                 0 0 40px rgba(66,220,219,.4),
+                 0 0 50px rgba(66,220,219,.1),
+                 0 0 80px rgba(66,220,219,.1);
+    margin: 30px 0px;
+}
+.hero-container p{
+    color: var(--textoSecundario);
+    font-size: 1.3vw;
+}
+
+#botonContacto{
+    width: 10vw;
+    height: 6vh;
+    border: 3px solid var(--clickable);
+    background-color: transparent;
+    box-shadow: 3px 5px 3px -2px var(--textoSecundario); 
+    transition: all 0.3s ease-out;
+    margin: 10px 0px;
+}
+#botonContacto:hover{
+    color: var(--secundario);
+    width: 10vw;
+    height: 6vh;
+    border: 3px solid var(--clickable);
+    background-color: var(--clickable);
+    box-shadow: none; 
+}
+
+#botonContacto:hover a{
+    color: var(--secundario);
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

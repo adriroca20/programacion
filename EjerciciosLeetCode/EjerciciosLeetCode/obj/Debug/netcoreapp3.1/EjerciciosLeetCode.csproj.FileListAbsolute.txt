@@ -1,0 +1,14 @@
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.AssemblyInfo.cs
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\bin\Debug\netcoreapp3.1\EjerciciosLeetCode.exe
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\bin\Debug\netcoreapp3.1\EjerciciosLeetCode.deps.json
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\bin\Debug\netcoreapp3.1\EjerciciosLeetCode.runtimeconfig.json
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\bin\Debug\netcoreapp3.1\EjerciciosLeetCode.runtimeconfig.dev.json
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\bin\Debug\netcoreapp3.1\EjerciciosLeetCode.dll
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\bin\Debug\netcoreapp3.1\EjerciciosLeetCode.pdb
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.dll
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.pdb
+C:\Users\Pc\Documents\Mio\programacion\cosasGit\programacion\EjerciciosLeetCode\EjerciciosLeetCode\obj\Debug\netcoreapp3.1\EjerciciosLeetCode.genruntimeconfig.cache

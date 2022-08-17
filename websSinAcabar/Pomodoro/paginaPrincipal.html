@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="css/stylePaginaPrincipal.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./recursos/logo.png" alt="logo" id="logo"></a>
+                <button class="navbar-toggler" id="botonNavbar" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end justify-content-sm-center px-2"
+                    id="navbarSupportedContent">
+                    <a class="nav-link active text-black" href="#" id="prueba">Datos</a>
+                    <a class="nav-link text-black" href="./html/login.html">Login</a>
+                    <a class="nav-link text-black" href="#" id="cerrarSesion"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="titulo">
+            <h1>LISTA DE TAREAS</h1>
+        </div>
+    </header>
+
+    <form action="">
+        <input type="text" class=" todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    <div class="contenedor-boton">
+        <button  class="btn btn-light boton-empezar">Empezar</button>
+    </div>
+   
+    <script src="js/DBPaginaPrincipal.js" type="module"></script>
+    <script src="js/appPaginaPrincipal.js" type="module"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

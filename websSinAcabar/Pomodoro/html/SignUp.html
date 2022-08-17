@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+
+    <link rel="stylesheet" href="../css/styleInicioSesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Crear cuenta</h1>
+            <form action="#" onsubmit="return false">
+                <div class="txt_field">
+                    <input type="text" id="nombre" placeholder="Nombre de usuario">
+                    <span></span>
+                    <label for="NombreUsuario">Nombre</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" id="Correo" placeholder="Correo electrónico" >
+                    <span></span>
+                    <label for="contraseña">Correo electrónico</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" id="contraseña" placeholder="Contraseña">
+                    <span></span>
+                    <label for="contraseña">Contraseña</label>
+                </div>
+                <button type="button" id="botonCrearCuenta"> <a href="#">Crear cuenta </a></button>
+                <div class="signup_link">
+                    <a href="login.html">  <i class="fa fa-arrow-left" aria-hidden="true"></i></i> Volver a Inicio de sesión</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/appSignUp.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- <div class="intro">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">Descubre lo que la medicina integrativa puede hacer por ti</span>
+          </h1>
+        </div>
+      </div>
+      <div class="slider-intro"></div> -->
+
+      <div class="container d-flex align-items-center text-center justify-content-center pt-5">
+          <h1>Hola</h1>
+      </div>
+      <div class="contenedor-gato d-flex align-items-center text-center justify-content-center pt-3">
+        <img src="../resources/Gato.jpg" alt="gato" id="imagen-gato">
+      </div>
+     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/index.js" type="module"></script>
+    <script>
+        const tl = gsap.timeline({
+          defaults: {ease: "power1.out"}
+        });
+        tl.to(".text", {
+        y: "0%",
+        duration: 1,
+        stagger: 0.25
+        });
+        tl.to(".slider", {
+        y: "-100%",
+        duration: 1.5,
+        delay: 0.5
+        });
+        tl.to(".intro", {
+          y: "-100%",
+          duration: 1
+        }, "-=1");
+      </script>
+</body>
+</html>
