@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Adrian Rocafull" />
+    <title>3AH Barber</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/inicio/logo.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Barra superior -->
+        <div id="barraSuperior">
+            <a class="navbar-brand" href="#inicio"><img class="logo" src="assets/img/inicio/logo.jpg"alt="Logo"></a>
+        </div>
+    
+    <!-- Barra principal -->
+        <nav class="navbar navbar-expand-md" aria-label="">
+          <div class="container-fluid">
+            <button class="navbar-toggler collapsed botonNavbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+            aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="botonNavbar fa fa-bars" id="botonNavbar" aria-hidden="true"></i>
+          </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarPrincipal">
+              <ul class="navbar-nav w-75 justify-content-between">
+                <li class="nav-item mb-1">
+                  <a class="linkNavbar" href="index.html"> <p class="numeroNav">1. </p> Inicio</a>
+                </li>
+                <li class="nav-item mb-1 ">
+                  <a class="linkNavbar" href="./tienda.html"><p class="numeroNav">2. </p> Tienda</a>
+                </li>
+                <li class="nav-item mb-1">
+                  <a class="linkNavbar" href="#myCarousel"><p class="numeroNav">3. </p> Servicios</a>
+                </li>
+                <li class="nav-item mb-1">
+                  <a class="linkNavbar" href="#contacto"><p class="numeroNav">4.</p> Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <a class="linkNavbar" href="#contacto" id="carrito"><p class="numeroNav"><i class="fa-solid fa-cart-shopping"></i></p> Cesta</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="pruebas d-flex justify-content-center align-items-center w-100 h-100 pt-5">
+          <div class="card text-center card-producto">
+            <div class="card-title">
+              <h1>Nombre del producto</h1>
+            </div>
+            <div class="imagen-card">
+              <img src="./assets/img/cortes/barba.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Pequeña descripción  del producto</p>
+              </div>
+              <div class="card-footer">
+                <p>Precio</p>
+              </div>
+              <div class="botones-carta">
+                <button class="btn">
+                  <a href="#">Añadir al carrito</a>
+                </button>
+                <button class="btn">
+                  <a href="#">Info</a>
+                </button>
+              </div>
+            </div>
+        </div>
+        <section id="Productos">
+          <div class="section-title">
+            <h2>Galeria</h2>
+            <p>Aqui encontrarás algunos de nuestros cortes y tintes. Más en <a href="https://www.instagram.com/3ah_barber/?hl=es" target="_blank">instagram</a></p>
+        </div>
+  
+          <!-- Control buttons -->
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <div id="myBtnContainer">
+                  <button class="boton-filtro active" onclick="filterSelection('all')" checked> Show all</button>
+                  <button class="boton-filtro" onclick="filterSelection('cars')"> Cars</button>
+                  <button class="boton-filtro" onclick="filterSelection('animals')"> Animals</button>
+                  <button class="boton-filtro" onclick="filterSelection('fruits')"> Fruits</button>
+                  <button class="boton-filtro" onclick="filterSelection('colors')"> Colors</button>
+              </div>
+            </div>
+          </div>
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="container">
+                <div class="filterDiv colors fruits">
+                  <div class="card text-center card-producto">
+                    <div class="card-title">
+                      <h1>Nombre del producto</h1>
+                    </div>
+                    <div class="imagen-card">
+                      <img src="./assets/img/cortes/barba.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Pequeña descripción  del producto</p>
+                      </div>
+                      <div class="card-footer">
+                        <p>Precio</p>
+                      </div>
+                      <div class="botones-carta">
+                        <button class="btn">
+                          <a href="#">Añadir al carrito</a>
+                        </button>
+                        <button class="btn">
+                          <a href="#">Info</a>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="filterDiv cars">
+                  <div class="card text-center card-producto">
+                    <div class="card-title">
+                      <h1>Nombre del producto</h1>
+                    </div>
+                    <div class="imagen-card">
+                      <img src="./assets/img/cortes/barba.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Pequeña descripción  del producto</p>
+                      </div>
+                      <div class="card-footer">
+                        <p>Precio</p>
+                      </div>
+                      <div class="botones-carta">
+                        <button class="btn">
+                          <a href="#">Añadir al carrito</a>
+                        </button>
+                        <button class="btn">
+                          <a href="#">Info</a>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="filterDiv colors">
+                  <div class="card text-center card-producto">
+                    <div class="card-title">
+                      <h1>Nombre del producto</h1>
+                    </div>
+                    <div class="imagen-card">
+                      <img src="./assets/img/cortes/barba.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Pequeña descripción  del producto</p>
+                      </div>
+                      <div class="card-footer">
+                        <p>Precio</p>
+                      </div>
+                      <div class="botones-carta">
+                        <button class="btn">
+                          <a href="#">Añadir al carrito</a>
+                        </button>
+                        <button class="btn">
+                          <a href="#">Info</a>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="filterDiv cars animals">
+                  <div class="card text-center card-producto">
+                    <div class="card-title">
+                      <h1>Nombre del producto</h1>
+                    </div>
+                    <div class="imagen-card">
+                      <img src="./assets/img/cortes/barba.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Pequeña descripción  del producto</p>
+                      </div>
+                      <div class="card-footer">
+                        <p>Precio</p>
+                      </div>
+                      <div class="botones-carta">
+                        <button class="btn">
+                          <a href="#">Añadir al carrito</a>
+                        </button>
+                        <button class="btn">
+                          <a href="#">Info</a>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="filterDiv colors">Blue</div>
+                <div class="filterDiv animals">Cat</div>
+                <div class="filterDiv animals">Dog</div>
+                <div class="filterDiv fruits">Melon</div>
+                <div class="filterDiv fruits animals">Kiwi</div>
+                <div class="filterDiv fruits">Banana</div>
+                <div class="filterDiv fruits">Lemon</div>
+                <div class="filterDiv animals">Cow</div>
+            </div>
+        </section>
+        
+      </main>
+
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap-->
+        <script src="vendor/bootstrap/bootstrap.min.js"></script>
+        <!-- Filtos -->
+        <script src="assets/js/script.js"></script>
+</body>
+</html>

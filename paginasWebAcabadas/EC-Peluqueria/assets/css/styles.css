@@ -1,0 +1,317 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+:root{
+    /* Variables de colores */
+    --principal:black;
+    --secundario:purple;
+    --secundarioOscuro:rgb(77, 2, 77);
+}
+
+a{
+    text-decoration: none;
+    color: var(--secundario);
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.navbar{
+     display: flex;
+     position: relative;
+     justify-content: space-between;
+     background-color: var(--principal);
+    
+}
+
+.linkNavbar{
+    display: inline-block;
+    position: relative;
+    margin: 0px 20px;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.linkNavbar:hover{
+    color: var(--secundario);
+}
+
+.numeroNav{
+    transition: all 0.3s ease;
+}
+
+.linkNavbar:hover .numeroNav{
+    color: white;
+}
+
+.iconos-barra-superior:hover{
+    transform: scale(1.2);
+}
+
+.linkNavbar:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    padding-top: 5px;
+    background-color: var(--secundario);
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.linkNavbar:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.botonNavbar{
+    color: var(--secundario);   
+}
+
+.fa-xmark{
+    color: red;
+}
+
+.numeroNav{
+    display: inline-block;
+    color: var(--secundario);
+}
+
+#barraSuperior{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#barraSuperior img{
+    height: 80px;
+    border: 1px solid black;
+}
+
+#navbarPrincipal{
+    font-size: 2em;
+}
+
+#carrito{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+#hero{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -20;
+    
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /* transform: skewY(30deg); */
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    z-index: -20;
+}
+
+.boton-hero{
+    width: 40%;
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    box-shadow: -5px -5px 7px var(--secundarioOscuro);
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-hero:hover{
+    box-shadow: 5px 5px 7px --secundarioOscuro;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.boton-hero a{
+    text-decoration: none;
+    color: whitesmoke;
+    pointer-events: none;
+}
+.texto-hero{
+    box-sizing: content-box;
+    border: 2px solid var(--secundarioOscuro);
+    letter-spacing: 1.8px;
+    color: whitesmoke;
+    background-color: rgba(77, 2, 77,0.3);
+    font-size: 30px;
+    padding: 10px;
+}
+/*--------------------------------------------------------------
+# Ofertas
+--------------------------------------------------------------*/
+
+#ofertas{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: -10;
+}
+
+#myCarousel{
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.imagen-carousel{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-item{
+    object-fit: cover;
+    object-position: center;
+}
+
+/*--------------------------------------------------------------
+# preview-productos
+--------------------------------------------------------------*/
+#preview-productos{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+}
+
+.imagen-producto{
+    width: 80%; 
+    height: 300px; 
+    border-radius: 21px 21px 0 0;
+}
+/*--------------------------------------------------------------
+# Tienda
+--------------------------------------------------------------*/
+#Productos{
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-title{
+    text-align: center;
+}
+
+#myBtnContainer{
+    padding: 0;
+    margin: 0 auto 35px auto;
+    text-align: center;
+    background: var(--secundarioOscuro);
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.boton-filtro{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    background-color: transparent;
+}
+.filterDiv {
+    float: left;
+    margin: 10px;
+    display: none; /* Hidden by default */
+
+  }
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.botones-carta a{
+    text-decoration: none;
+    color: var(--secundarioOscuro);
+}
+.botones-carta button{
+    display: block;
+}
+.botones-carta{
+    padding-right: 30px;
+    position: absolute;
+    top: 20%;
+    right: -50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+.botones-carta button{
+    border: 2px solid red;
+   
+}
+.imagen-card{
+    overflow: hidden;
+}
+.imagen-card img{
+    transition: all 0.4s ease-in-out;
+}
+.card-producto{
+    overflow: hidden;
+    width: 20%;
+}
+.card-producto:hover{
+    cursor: pointer;
+}
+.card-producto:hover .imagen-card img{ 
+    transform: rotate(-20deg) translate(-40%) scale(120%);
+}
+.card-producto:hover .botones-carta{ 
+    opacity: 1;
+    right: 0;
+    pointer-events: all;
+}
