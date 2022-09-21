@@ -12,7 +12,7 @@
 }
 
 :root{
-    --principal:#0a192f;
+    --principal: #989696;
     --secundario:white;
     --clickable: #64ffda;
     --cajas: #112240;
@@ -25,34 +25,16 @@ a{
 }
 
 body{
-    background-color: var(--principal);
+    background-image: radial-gradient(100% 100% at 51.34% 0%, #989696 0%, #696868 15.07%, #4B4949 31.54%, #272727 58.45%, #000000 100%);
 }
 
 .prueba{
     height: 100vh;
 }
 
-/*--------------------------------------------------------------
-# Animacion lluvia
---------------------------------------------------------------*/
-.lluvia{
-    position: absolute;
-    height: 200px;
-    top: 0;
-    background: linear-gradient(transparent,#fff);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    animation: animate 5s linear infinite;
-    z-index: -1;
-}
-
-@keyframes animate{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 100%;
-    }
+.contenedor-proyecto{
+    width: 100vw;
+    height: 70vh;
 }
 
 /*--------------------------------------------------------------
@@ -69,7 +51,7 @@ header{
      position: relative;
      justify-content: space-between;
      padding: 20px;
-     background-color: var(--principal);
+     background-color: transparent;
 }
 
 .linkNavbar{
@@ -140,6 +122,9 @@ header{
 #hero{
     height: 100vh;
     width: 100vw;
+    padding: 10%;
+    margin-top: 20px;
+    z-index: -10;
 }
 
 .hero-container h3{
@@ -148,14 +133,6 @@ header{
 .hero-container h1{
     color: var(--secundario);
     font-size: 5vw;
-    text-shadow: 0 0 2px rgba(255,255,255,.4),
-                 0 0 8px rgba(255,255,255,.4),
-                 0 0 10px rgba(255,255,255,.4),
-                 0 0 20px rgba(66,220,219,.4),
-                 0 0 30px rgba(66,220,219,.4),
-                 0 0 40px rgba(66,220,219,.4),
-                 0 0 50px rgba(66,220,219,.1),
-                 0 0 80px rgba(66,220,219,.1);
     margin: 30px 0px;
 }
 .hero-container p{
@@ -171,11 +148,10 @@ header{
     box-shadow: 3px 5px 3px -2px var(--textoSecundario); 
     transition: all 0.3s ease-out;
     margin: 10px 0px;
+    white-space:nowrap;
 }
 #botonContacto:hover{
     color: var(--secundario);
-    width: 10vw;
-    height: 6vh;
     border: 3px solid var(--clickable);
     background-color: var(--clickable);
     box-shadow: none; 
@@ -186,12 +162,152 @@ header{
 }
 
 /*--------------------------------------------------------------
-# About
+# Proyectos
 --------------------------------------------------------------*/
 
-#about{
+#proyectos{
     height: 100vh;
+    z-index: 10;
+    padding: 10%;
+}
+#contenedor-proyectos{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#titulo-proyectos{
+    color: white;
+}
+
+
+.datos-proyecto{
+    height: fit-content;
+}
+.contenedor-caracteristicas p{
+    display: inline-block;
+    border: 1px solid white;
+    font-size: 1vw;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    min-width: 100px;
+    text-align: center;
+
+}
+.datos-proyecto p{
+    color: wheat;
+}
+
+.datos-proyecto h3{
+    color: var(--clickable);
+}
+.datos-proyecto h1{
+    color: var(--secundario);
+    font-size: 2vw;
+    margin: 30px 0px;
+}
+
+.boton-ver-proyecto{
+    position: relative;
+    bottom: 10%;
+    left: 90%;
+    padding: 20px;
+    border-radius: 10%;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+.boton-ver-proyecto a{
+    color: #000000;
+}
+
+
+/*--------------------------------------------------------------
+# Proyectos Extra
+--------------------------------------------------------------*/
+#proyectos-secundarios{
+    height: fit-content;
+    width: 100vw;
+    padding: 10%;
+}
+
+#proyectos-secundarios p{
+    color: rgb(123, 122, 122);
+}
+
+#proyectos-secundarios strong{
+    color: rgb(203, 203, 203);
+}
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width:426px)  {
+    .hero-container h3{
+        
+    }
+    .hero-container h1{
+        font-size: 10vw;
+    }
+    .hero-container p{
+        font-size: 3vw;
+    }
+    #botonContacto{
+        width: 100px;
+    }
+ }
+@media (min-width:481px)  { 
+    .hero-container h3{
+        
+    }
+    .hero-container h1{
+        font-size: 12vw;
+    }
+    .hero-container p{
+        font-size: 4vw;
+    }
+    #botonContacto{
+        width: 300px;
+        font-size: 4vw;
+    }
+}
+@media (min-width:641px)  { 
+    .hero-container h3{
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+    .hero-container h1{
+        font-size: 7vw;
+    }
+    .hero-container p{
+        font-size: 2vw;
+    }
+    #botonContacto{
+        width: 200px;
+        height: fit-content;
+        font-size: 4vw;
+    }
+}
+@media (min-width:961px)  { 
+
+ }
+@media (min-width:1023px) {
+    .hero-container h3{
+        font-size: 3vw;
+        margin-top: 30px;
+    }
+    .hero-container h1{
+        font-size: 6vw;
+    }
+    .hero-container p{
+        font-size: 2vw;
+    }
+    #botonContacto{
+        width: 250px;
+        font-size: 2vw;
+    }
+ }
+@media (min-width:1281px) {
+
 }
