@@ -12,11 +12,11 @@
 }
 
 :root{
-    --principal: #989696;
-    --secundario:white;
+    --principal: #00ADB5;
+    --secundario:#EEEEEE;
     --clickable: #64ffda;
     --cajas: #112240;
-    --textoSecundario: #71837F;
+    --textoSecundario: #758197;
   }
 
 a{
@@ -25,7 +25,8 @@ a{
 }
 
 body{
-    background-image: radial-gradient(100% 100% at 51.34% 0%, #989696 0%, #696868 15.07%, #4B4949 31.54%, #272727 58.45%, #000000 100%);
+    /* background-image: radial-gradient(100% 100% at 51.34% 0%, #989696 0%, #696868 15.07%, #4B4949 31.54%, #272727 58.45%, #000000 100%); */
+    background-color: #000000;
 }
 
 .prueba{
@@ -34,7 +35,11 @@ body{
 
 .contenedor-proyecto{
     width: 100vw;
-    height: 70vh;
+    height: fit-content;
+}
+
+.titulos{
+    color: var(--principal);
 }
 
 /*--------------------------------------------------------------
@@ -44,6 +49,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 200;
 }
 
 .navbar{
@@ -51,7 +57,8 @@ header{
      position: relative;
      justify-content: space-between;
      padding: 20px;
-     background-color: transparent;
+     background-color: #000000;
+     border-bottom: 1px solid var(--secundario);
 }
 
 .linkNavbar{
@@ -115,6 +122,7 @@ header{
     color: var(--secundario);
 }
 
+
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
@@ -122,13 +130,25 @@ header{
 #hero{
     height: 100vh;
     width: 100vw;
-    padding: 10%;
+    padding: 5% 5% 10% 5%;
     margin-top: 20px;
     z-index: -10;
+    overflow: hidden;
+    
 }
-
+.contenedor-hero{
+    width: fit-content;
+    overflow: hidden;
+    height: 60vh;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.hero-container{
+    text-align: center;
+}
 .hero-container h3{
     color: var(--clickable);
+    font-size: 3vw;
 }
 .hero-container h1{
     color: var(--secundario);
@@ -141,14 +161,16 @@ header{
 }
 
 #botonContacto{
-    width: 10vw;
-    height: 6vh;
+    width: fit-content;
+    height: fit-content;
     border: 3px solid var(--clickable);
     background-color: transparent;
     box-shadow: 3px 5px 3px -2px var(--textoSecundario); 
     transition: all 0.3s ease-out;
     margin: 10px 0px;
     white-space:nowrap;
+    padding: 0 2vw;
+    font-size: 3vw;
 }
 #botonContacto:hover{
     color: var(--secundario);
@@ -166,22 +188,21 @@ header{
 --------------------------------------------------------------*/
 
 #proyectos{
-    height: 100vh;
-    z-index: 10;
-    padding: 10%;
+    height: fit-content;
+    padding: 5% 5% 10% 5%;
+    width: 100vw;
+    overflow: hidden;
 }
 #contenedor-proyectos{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#titulo-proyectos{
-    color: white;
-}
 
+}
 
 .datos-proyecto{
     height: fit-content;
+    text-align: center;
 }
 .contenedor-caracteristicas p{
     display: inline-block;
@@ -196,32 +217,76 @@ header{
 
 }
 .datos-proyecto p{
-    color: wheat;
+    color: var(--textoSecundario);
 }
 
-.datos-proyecto h3{
-    color: var(--clickable);
-}
 .datos-proyecto h1{
     color: var(--secundario);
     font-size: 2vw;
     margin: 30px 0px;
 }
-
-.boton-ver-proyecto{
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
     position: relative;
-    bottom: 10%;
-    left: 90%;
-    padding: 20px;
-    border-radius: 10%;
-    width: fit-content;
-    height: fit-content;
-    padding: 20px;
-}
-.boton-ver-proyecto a{
-    color: #000000;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    white-space: nowrap;
+  }
+  .btn-16 {
+    border: none;
+    color: #000;
+  }
+  .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .btn-16:hover {
+    color: #000;
+  }
+  .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .btn-16:active {
+    top: 2px;
+  }
+
+.imagen-proyecto{
+    border: 1px solid var(--secundario);
+    box-shadow: 5px 5px 3px var(--textoSecundario);
 }
 
+.separador-proyectos{
+    background-color: var(--secundario);
+    padding: 2px;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
 
 /*--------------------------------------------------------------
 # Proyectos Extra
@@ -229,7 +294,8 @@ header{
 #proyectos-secundarios{
     height: fit-content;
     width: 100vw;
-    padding: 10%;
+    padding: 5% 5% 10% 5%;
+    overflow: hidden;
 }
 
 #proyectos-secundarios p{
@@ -239,74 +305,86 @@ header{
 #proyectos-secundarios strong{
     color: rgb(203, 203, 203);
 }
+
+
+/*--------------------------------------------------------------
+# Contacto
+--------------------------------------------------------------*/
+#contacto{
+    color: white;
+    padding: 5% 10% 10% 5%;
+}
+.contenedor-contacto{
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 10px whitesmoke;
+}
+.informacion{
+    display: grid;
+    place-content: center;
+}
+.contenedor-datos{
+    display: flex;
+    justify-content: end;
+    padding: 10%;
+    width: max-content;
+}
+.icono-redes{
+    font-size: 70px;
+    padding-right: 30px;
+}
+.datos{
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.datos p, .datos h4{
+    margin: 0;
+}
+.datos p{
+    white-space: nowrap;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer{
+    height: 50vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    grid-auto-columns: 100%;
+    padding: 5% 5% 10% 5%;
+}
+
+
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 
 @media (max-width:426px)  {
-    .hero-container h3{
-        
-    }
-    .hero-container h1{
-        font-size: 10vw;
-    }
-    .hero-container p{
-        font-size: 3vw;
-    }
-    #botonContacto{
-        width: 100px;
-    }
+
+
  }
 @media (min-width:481px)  { 
-    .hero-container h3{
-        
-    }
-    .hero-container h1{
-        font-size: 12vw;
-    }
-    .hero-container p{
-        font-size: 4vw;
-    }
-    #botonContacto{
-        width: 300px;
-        font-size: 4vw;
-    }
+
+
 }
 @media (min-width:641px)  { 
-    .hero-container h3{
-        font-size: 4vw;
-        margin-top: 20px;
-    }
-    .hero-container h1{
-        font-size: 7vw;
-    }
-    .hero-container p{
-        font-size: 2vw;
-    }
-    #botonContacto{
-        width: 200px;
-        height: fit-content;
-        font-size: 4vw;
-    }
+
+
 }
 @media (min-width:961px)  { 
 
  }
 @media (min-width:1023px) {
-    .hero-container h3{
-        font-size: 3vw;
-        margin-top: 30px;
-    }
-    .hero-container h1{
-        font-size: 6vw;
-    }
-    .hero-container p{
-        font-size: 2vw;
-    }
-    #botonContacto{
-        width: 250px;
-        font-size: 2vw;
-    }
+
+
  }
 @media (min-width:1281px) {
 

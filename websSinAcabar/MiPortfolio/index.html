@@ -1,210 +1,365 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Contenido al acabar la web -->
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-   
-    <!-- Icono web -->
-    <title>Adrian Rocafull</title>
-    <link href="#" rel="icon">
-    <!-- CSS files -->
-    <link rel="stylesheet" href="vendor/bootsrap/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/styles/style.css">
-    <link rel="stylesheet" href="vendor/bootsrap/all.min.css">
+  <!-- Contenido al acabar la web -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Icono web -->
+  <title>Adrian Rocafull</title>
+  <link href="#" rel="icon">
+  <!-- CSS files -->
+  <link rel="stylesheet" href="vendor/bootsrap/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/styles/style.css">
+  <link rel="stylesheet" href="vendor/bootsrap/all.min.css">
 </head>
-<body>
-      <!-- ======= Header ======= -->
-      <header>
 
-        <!-- Barra superior -->
-        <div id="barraSuperior">
-          <ul class="nav justify-content-center bg-white">
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=+34 722 56 18 09&amp&text= ¡Hola! ↑ Tengo una idea para un proyecto web ↑"><i class="fab fa-whatsapp iconos-barra-superior"></i></a>
+<body>
+  <!-- ======= Header ======= -->
+  <header>
+
+    <!-- Barra superior -->
+    <div id="barraSuperior">
+      <ul class="nav justify-content-center bg-white">
+        <li class="nav-item">
+          <a class="nav-link" target="_blank"
+            href="https://api.whatsapp.com/send?phone=+34 722 56 18 09&amp&text= ¡Hola! ↑ Tengo una idea para un proyecto web ↑"><i
+              class="fab fa-whatsapp iconos-barra-superior"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:+34722561809"><i class="fas fa-mobile-alt iconos-barra-superior"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank"
+            href="mailto: adrianrocafull1@gmail.com?subject=Proyecto web &body= ¡Hola! Me gustaría saber [ escribe tu mensaje aquí ]"><i
+              class="far fa-envelope iconos-barra-superior"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Barra principal -->
+    <nav class="navbar navbar-expand-md" aria-label="">
+      <div class="container-fluid ">
+        <a class="navbar-brand " href="#inicio"><img class="logo" src="./recursos/logos/Logo_SoniaEDnanou-12.png"
+            alt="Logo"></a>
+        <button class="navbar-toggler botonNavbar" id="botonNavbarAux" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="botonNavbar fa fa-bars" id="botonNavbar" aria-hidden="true"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarPrincipal">
+          <ul class="navbar-nav">
+            <li class="nav-item mb-1">
+              <a class="linkNavbar" href="#hero">
+                <p class="numeroNav">1.</p> Inicio
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tel:+34722561809"><i class="fas fa-mobile-alt iconos-barra-superior"></i></a>
+            <li class="nav-item mb-1 ">
+              <a class="linkNavbar" href="#proyectos">
+                <p class="numeroNav">2.</p> Sobre mi
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank"
-                href="mailto: adrianrocafull1@gmail.com?subject=Proyecto web &body= ¡Hola! Me gustaría saber [ escribe tu mensaje aquí ]"><i
-                  class="far fa-envelope iconos-barra-superior"></i></a>
+            <li class="nav-item mb-1">
+              <a class="linkNavbar" href="#proyectos-secundarios">
+                <p class="numeroNav">3.</p>Servicios
+              </a>
+            </li>
+            <li class="nav-item mb-1">
+              <a class="linkNavbar" href="#contacto">
+                <p class="numeroNav">4.</p>Contacto
+              </a>
             </li>
           </ul>
         </div>
-    
-    <!-- Barra principal -->
-        <nav class="navbar navbar-expand-md" aria-label="">
-          <div class="container-fluid ">
-            <a class="navbar-brand " href="#inicio"><img class="logo" src="./recursos/logos/Logo_SoniaEDnanou-12.png"
-                alt="Logo"></a>
-            <button class="navbar-toggler botonNavbar" id="botonNavbarAux" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
-              aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="botonNavbar fa fa-bars" id="botonNavbar" aria-hidden="true"></i>
-            </button>
-    
-            <div class="collapse navbar-collapse justify-content-end" id="navbarPrincipal">
-              <ul class="navbar-nav">
-                <li class="nav-item mb-1">
-                  <a class="linkNavbar" href="#hero"> <p class="numeroNav">1.</p> Inicio</a>
-                </li>
-                <li class="nav-item mb-1 ">
-                  <a class="linkNavbar" href="#proyectos"><p class="numeroNav">2.</p> Sobre mi</a>
-                </li>
-                <li class="nav-item mb-1">
-                  <a class="linkNavbar" href="#proyectos-secundarios"><p class="numeroNav">3.</p>Servicios</a>
-                </li>
-                <li class="nav-item mb-1">
-                  <a class="linkNavbar" href="#contacto"><p class="numeroNav">4.</p>Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      </div>
+    </nav>
+  </header>
 
-      <section id="hero" class="d-flex justify-content-center align-items-center">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="hero-container">
-              <h3>Hi, my name is</h3>
-              <h1>Adrian Rocafull</h1>
-              <p>I am a software engineer specialized in web development and portfolio's building. <br> Currently I'm focused on 
-                making more accesible to everyone having a tailor-made web.</p> 
-    
-                <button class="button" id="botonContacto"><a href="#" class="d-inline-block">Contact me</a></button>
-            </div>
-          </div>
-          <div class="col-lg-4">
-              <p>gsdfsdf</p>
-          </div>
-        </div>
-      </section>
+  <section id="hero" class="d-flex justify-content-center align-items-center ">
+    <div class="row contenedor-hero">
+      <div class="col-lg-8 d-grid align-items-center">
+        <div class="hero-container ">
+          <h3>Hi, my name is</h3>
+          <h1>Adrian Rocafull</h1>
+          <p>I am a software engineer specialized in web development and portfolio's building. <br> Currently I'm
+            focused on
+            making more accesible to everyone having a tailor-made web.</p>
 
-      <section id="proyectos">
-        <div id="titulo-proyectos" class="w-100 d-flex align-items-center justify-content-center">
-          <h1>Proyectos</h1>
-        </div> 
-        <div id="contenedor-proyectos">
-          <div class="row contenedor-proyecto">
-            <div class="col-lg-4 d-flex align-items-end justify-content-start">
-              <div class="datos-proyecto">
-                <h1>Nombre del proyecto</h3>
-                <div class="contenedor-caracteristicas">
-                  <p>React</p>
-                  <p>Bootstrap</p>
-                  <p>CSS</p>
-                </div>
-                <p>I am a software engineer specialized in web development and portfolio's building. <br> Currently I'm focused on 
-                  making more accesible to everyone having a tailor-made web.</p> 
-              </div>
-            </div>
-            <div class="col-lg-8  d-flex align-items-center justify-content-center">
-                <img src="resources/imagenes/Proyectos/Sonia.png" alt="" class="w-100">
-            </div>
-            <button class="button boton-ver-proyecto"><a href="#" class="d-inline-block">Contact me</a></button>
-          </div>   
+          <button class="button" id="botonContacto"><a href="#contacto" class="d-inline-block">Contact me</a></button>
         </div>
-      </section>
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center align-items-center">
+        <img src="resources/imagenes/Principal/hero.gif" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="section-title text-center  mb-md-5 pb-md-5 titulos">
+      <h1>PROYECTOS</h1>
+      <hr class="bg-info">
+    </div>
+    <div id="contenedor-proyectos">
+      <div class="row contenedor-proyecto mb-lg-5">
+        <div class="col-lg-4 d-flex align-items-end justify-content-start">
+          <div class="datos-proyecto">
+            <h1>Nombre del proyecto</h3>
+              <div class="contenedor-caracteristicas">
+                <p>React</p>
+                <p>Bootstrap</p>
+                <p>CSS</p>
+              </div>
+              <p>I am a software engineer specialized in web development and portfolio's building. <br> Currently I'm
+                focused on
+                making more accesible to everyone having a tailor-made web.</p>
+                <!-- <a href="#" class="boton-ver-proyecto">Contact me</a> -->
+                <button class="custom-btn btn-16">Read More</button>
+          </div>
+        </div>
+        <div class="col-lg-8  d-flex align-items-center justify-content-center">
+          <img  src="resources/imagenes/Proyectos/Sonia.png" alt="" class="w-100 imagen-proyecto">
+        </div>
+       
+      </div>
+    </div>
+    <hr class="separador-proyectos">
+    <div id="contenedor-proyectos">
+      <div class="row contenedor-proyecto">
+        <div class="col-lg-4 d-flex align-items-end justify-content-start">
+          <div class="datos-proyecto">
+            <h1>Nombre del proyecto</h3>
+              <div class="contenedor-caracteristicas">
+                <p>React</p>
+                <p>Bootstrap</p>
+                <p>CSS</p>
+              </div>
+              <p>I am a software engineer specialized in web development and portfolio's building. <br> Currently I'm
+                focused on
+                making more accesible to everyone having a tailor-made web.</p>
+                <a href="#contacto" class="boton-ver-proyecto">Contact me</a>
+          </div>
+        </div>
+        <div class="col-lg-8  d-flex align-items-center justify-content-center">
+          <img src="resources/imagenes/Proyectos/Sonia.png" alt="" class="w-100 imagen-proyecto">
+        </div>
+       
+      </div>
+    </div>
+  </section>
 
 
-      <section id="proyectos-secundarios">
-        <div class="row mb-2 d-flex align-items-center justify-content-center">
-          <div class="col-md-5">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 ">Proyecto web</strong>
-                <h3 class="mb-0 text-primary">Nombre proyeto</h3>
-                <div class="mb-1 text-muted">Fechas</div>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Mas informacion</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-      
-              </div>
-            </div>
+  <section id="proyectos-secundarios">
+    <div class="section-title text-center mb-md-5 pb-md-5 titulos">
+      <h1>MAS PROYECTOS</h1>
+      <hr class="bg-info">
+    </div>
+    <div class="row mb-2 d-flex align-items-center justify-content-center">
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 ">Proyecto web</strong>
+            <h3 class="mb-0 text-primary">Nombre proyeto</h3>
+            <div class="mb-1 text-muted">Fechas</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Mas informacion</a>
           </div>
-          <div class="col-md-5">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 ">Proyecto desktop</strong>
-                <h3 class="mb-0 text-success">Nombre proyeto</h3>
-                <div class="mb-1 text-muted">Nov 11</div>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Mas informacion</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
+
           </div>
         </div>
-        <div class="row mb-2  d-flex align-items-center justify-content-center">
-          <div class="col-md-5">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 ">Proyecto web</strong>
-                <h3 class="mb-0 text-primary">Nombre proyeto</h3>
-                <div class="mb-1 text-muted">Fechas</div>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Mas informacion</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-      
-              </div>
-            </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 ">Proyecto desktop</strong>
+            <h3 class="mb-0 text-success">Nombre proyeto</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Mas informacion</a>
           </div>
-          <div class="col-md-5">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 ">Proyecto desktop</strong>
-                <h3 class="mb-0 text-success">Nombre proyeto</h3>
-                <div class="mb-1 text-muted">Nov 11</div>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Mas informacion</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
           </div>
         </div>
-        <div class="row mb-2  d-flex align-items-center justify-content-center">
-          <div class="col-md-5">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 ">Proyecto web</strong>
-                <h3 class="mb-0 text-primary">Nombre proyeto</h3>
-                <div class="mb-1 text-muted">Fechas</div>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Mas informacion</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-      
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="row mb-2  d-flex align-items-center justify-content-center">
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 ">Proyecto web</strong>
+            <h3 class="mb-0 text-primary">Nombre proyeto</h3>
+            <div class="mb-1 text-muted">Fechas</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Mas informacion</a>
           </div>
-          <div class="col-md-5">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 ">Proyecto desktop</strong>
-                <h3 class="mb-0 text-success">Nombre proyeto</h3>
-                <div class="mb-1 text-muted">Nov 11</div>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Mas informacion</a>
-              </div>
-              <div class="col-auto d-none d-lg-block">
-              </div>
-            </div>
+          <div class="col-auto d-none d-lg-block">
+
           </div>
         </div>
-      </section>
-    <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
-    <script src="resources/scripts/animations.js"></script>
-    <script src="vendor/bootsrap/bootstrap.min.js"></script>
-    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+      </div>
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 ">Proyecto desktop</strong>
+            <h3 class="mb-0 text-success">Nombre proyeto</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Mas informacion</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2  d-flex align-items-center justify-content-center">
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 ">Proyecto web</strong>
+            <h3 class="mb-0 text-primary">Nombre proyeto</h3>
+            <div class="mb-1 text-muted">Fechas</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Mas informacion</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 ">Proyecto desktop</strong>
+            <h3 class="mb-0 text-success">Nombre proyeto</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Mas informacion</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+
+      <div class="section-title text-center mb-5 pb-5 titulos">
+        <h1>CONTACTO</h1>
+        <hr class="bg-info">
+      </div>
+
+      <div class="row mt-5 contenedor-contacto">
+        <div class="col-lg-5 informacion">
+
+          <div class="contenedor-datos">
+            <i class="fa fa-github icono-redes" aria-hidden="true"></i>
+            <div class="datos">
+              <h4>Dirección:</h4>
+              <p>Torrent, Valencia</p>
+            </div>
+          </div>
+
+          <div class="contenedor-datos">
+            <i class="fa fa-github icono-redes" aria-hidden="true"></i>
+            <div class="datos">
+              <h4>Dirección:</h4>
+              <p>Torrent, Valencia</p>
+            </div>
+          </div>
+          <div class="contenedor-datos">
+            <i class="fa fa-github icono-redes" aria-hidden="true"></i>
+            <div class="datos">
+              <h4>Dirección:</h4>
+              <p>Torrent, Valencia</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 informacion">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Nombre y apellidos</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Asunto</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Mensaje</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Cargando...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Mensaje enviado, gracias!</div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+
+      </div>
+
+
+      <div class="text-center p-3">
+        &copy; Copyright <strong><span>2022</span></strong> Designed by <strong>Adrian Rocafull</strong>
+      </div>
+
+    </footer>
+  </section>
+
+
+  <script type="text/javascript" src="https://kit.fontawesome.com/0e39a0142a.js" crossorigin="anonymous"></script>
+  <script src="resources/scripts/animations.js"></script>
+  <script src="vendor/bootsrap/bootstrap.min.js"></script>
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 </body>
+
 </html>
