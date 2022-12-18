@@ -1,0 +1,70 @@
+
+#landing {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../assets/background-landing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.hero {
+    background: rgba(58, 38, 38, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 50%;
+    height: 50%;
+    min-width: 500px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+.hero h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.hero p{
+    font-size: 20px;
+}
+.hero a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.hero a:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .hero a:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    color: black;
+    background-color: white;
+  }
+  .hero a:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
